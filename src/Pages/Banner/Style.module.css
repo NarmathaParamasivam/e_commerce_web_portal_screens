@@ -9,7 +9,7 @@
   /* width: 100%; */
 }
 .freshProduct {
-  font-family: 'Poppins';
+  font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin-top: 1rem;
@@ -24,6 +24,7 @@
     font-size: small;
   color: #727272;
   margin-top: 0.9rem;
+  font-weight: 400;
 }
 button.btnStyle {
   background: none;
@@ -148,7 +149,7 @@ button.btnStyle {
 }
 .bannerImg22{
   
-    width: 80%;
+  width: 78%;
    
 }
 /* .cardBanner{
@@ -163,10 +164,10 @@ button.btnStyle {
 }
 .banner2Content{
    
-    padding-left: 1.3rem !important;
-    padding-top: 2.5rem !important;
-    position:absolute !important;
-    margin-right: 11.5rem;
+  padding-left: 1rem !important;
+  padding-top: 2rem !important;
+  position: absolute !important;
+  margin-right: 11.5rem;
 }
 .cardBody{
     background-color: #eef5e4;
@@ -194,6 +195,8 @@ font-size: x-large;
 }
 .bannerTitle{
     font-size: 1.7rem;
+    font-family:'Nunito', sans-serif;
+    font-weight: bold;
 }
 .rectangle{
     padding-top: 0.5rem;

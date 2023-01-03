@@ -13,6 +13,8 @@ import Vector8 from "../../assets/Images/Vector8.png";
 import Rectangle24 from "../../assets/Images/Rectangle24.png";
 import { height } from "@mui/system";
 const BannerImage = () => {
+
+  
   return (
     <div className="container mt-5">
       <div className="row">
