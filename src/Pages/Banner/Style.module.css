@@ -1,0 +1,205 @@
+.bannerImage {
+  background-color: #e6f3fa;
+  padding-top: 3rem;
+  padding-bottom: 2.6rem;
+  padding-left: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* width: 100%; */
+}
+.freshProduct {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.percentage {
+  color: #ed8939;
+  font-size: medium;
+  margin-top: 0.5rem;
+  font-family: "Garamond";
+}
+.adverticement {
+    font-size: small;
+  color: #727272;
+  margin-top: 0.9rem;
+}
+button.btnStyle {
+  background: none;
+  color: black;
+  /* border:1px solid #727272; */
+}
+.btnStyle {
+  border: 1px solid #727272;
+  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: x-small;
+}
+.fruit {
+  width: 13rem;
+  height: -webkit-fill-available;
+}
+.banner3 {
+  /* width: 100%;
+  height: 48%; */
+}
+.vegBackery {
+  /* display: flex;
+    flex-direction: column; */
+}
+.banner2 {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 180px;
+
+  /* background-color: #eef5e4;
+    /* padding: 1rem; */
+  /* border-radius: 0.5rem;
+    display: flex;
+    justify-content: end;
+    flex-direction: row; */
+}
+.fruitsVegBag {
+  /* width: 250px;
+  height: 130px;
+  justify-content: flex-end;
+  align-self: flex-end; */
+  width: 50%;
+}
+.bannerBtn2 {
+  background-color: #eef5e4;
+  font-size: x-small;
+}
+.fruitVeg {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: large;
+}
+.bannerContent {
+  /* padding: 2rem; */
+  /* padding: 2rem;  */
+  /* width: max-content;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem; */
+    display: flex;
+    justify-content: flex-end;
+}
+.fruitsVegBag {
+  /* padding: 0rem; */
+}
+.bakery {
+  /* width: 70%;
+  height: 100%; */
+
+  /* width: 47%;
+  height: 100%;
+  padding: 0rem;
+  padding-top: 1.5rem;
+  padding-right: 1rem; */
+}
+.banner3 {
+  /* display: flex;
+  flex-direction: row;
+  background-color: #f9ebe7;
+  border-radius: 0.5rem; */
+  width: 400px;
+}
+.backedBanner {
+  /* padding: 2rem; */
+  display: flex;
+  padding:0rem;
+}
+.bannerBtn3 {
+  background-color: #f9ebe7;
+  font-size: small;
+}
+.backed {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+}
+.offer {
+  font-family: "Garamond";
+  font-style: normal;
+  font-weight: 400;
+}
+.fruitContent {
+  display: flex;
+  flex-direction: column;
+}
+.btnStyle {
+  background: none;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 900;
+  width: fit-content;
+  padding-right: 17px;
+  padding-left: 17px;
+}
+.backery {
+  /* width: 70%;
+  height: 100%; */
+  width: 70%;
+}
+.bannerImg22{
+  
+    width: 80%;
+   
+}
+/* .cardBanner{
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  
+} */
+.bannerContent {
+  display: flex;
+ 
+}
+.banner2Content{
+   
+    padding-left: 1.3rem !important;
+    padding-top: 2.5rem !important;
+    position:absolute !important;
+    margin-right: 11.5rem;
+}
+.cardBody{
+    background-color: #eef5e4;
+}
+.discount{
+    font-family: 'Garamond';
+font-style: normal;
+font-weight: 400;
+font-size: x-large;
+/* margin-bottom: 1rem; */
+}
+.bannerBtn2{
+    font-size: smaller;
+}
+.backedBanner3{
+    position:absolute;
+    margin-right:13rem;
+    margin-top:2rem;
+}
+.cardBody3{
+    background-color: #f9ebe7;
+}
+.cardContent2{
+    margin-bottom: 1.3rem;
+}
+.bannerTitle{
+    font-size: 1.7rem;
+}
+.rectangle{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.3rem;
+}
+.sale{
+    font-size: 0.7rem;
+}

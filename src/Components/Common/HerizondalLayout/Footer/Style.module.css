@@ -1,0 +1,22 @@
+/* Footer */
+.footerLogo {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+.footerImg {
+  width: 10px;
+}
+.fImg {
+  width: 5px;
+}
+.footerLogos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+.quickLinks {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 15px;
+}

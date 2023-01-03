@@ -1,0 +1,520 @@
+.container {
+  width: 100%;
+  height: 30%;
+  margin-top: 1rem;
+}
+/* dropDown/Search */
+.dropdown {
+  align-items: center;
+}
+.dropdown select {
+  width: 40%;
+  height: 39px;
+  color: #222222;
+  font-family: "Poppins";
+  font-weight: 900;
+  font-size: small;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 0.2rem;
+  border: none;
+}
+select {
+  margin-top: 10px;
+}
+
+.searchIcon {
+  position: relative;
+}
+
+.dropdown input {
+  width: 60% !important;
+  height: 39px;
+  border: none;
+  position: absolute;
+  font-size: revert;
+  text-align: center;
+  border-radius: 0.2rem;
+  background-color: #f8f8f8;
+  font-family: "Poppins";
+  font-size: x-small;
+  padding: 7px;
+}
+.searchInput {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+}
+/* .inputBox{
+align-self:center;
+} */
+
+.search {
+  position: absolute;
+  margin-left: -35px;
+  top: 33px;
+}
+.logo {
+  left: 154px;
+  top: 42px;
+  width: 150px;
+  height: 37px;
+}
+.mainImg {
+  align-self: center;
+}
+.contact2 {
+  height: 16px;
+  left: 1358px;
+  top: 52px;
+  font-size: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: end;
+  font-weight: 900;
+  font-family: "Poppins";
+}
+.contact1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #898989;
+  display: flex;
+  justify-content: end;
+  font-family: "Poppins";
+}
+
+/* Icons */
+
+.icon2 {
+  background-color: #f1f1f1;
+  border-radius: 1.2rem;
+  width: 0.4rem;
+  height: 1rem;
+  margin-right: 0.6rem;
+  padding: 0.3rem;
+}
+.icon3 {
+  background-color: #f1f1f1;
+  border-radius: 1.2rem;
+  width: 0.4rem;
+  height: 1rem;
+  padding: 0.2rem;
+  margin-right: 0rem;
+  margin-top: 0.2rem;
+  background-color: #f1f1f1;
+}
+.icon1 {
+  background-color: #f1f1f1;
+  border-radius: 1.2rem;
+  width: 0.2rem;
+  height: 1rem;
+  margin-right: 0.6rem;
+  padding: 0.2rem;
+  margin-left: 1.3rem;
+  margin-top: 0.2rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+.iconContent {
+  align-self: center;
+}
+
+.text1 {
+  font-size: 0.8rem;
+  color: #898989;
+  text-align: start;
+  margin: 0rem;
+  padding: 0rem;
+}
+.text2 {
+  font-weight: 600;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.line {
+  background-color: #f6f6f6;
+}
+
+/* Bottom Header */
+.gift {
+  width: 9%;
+  height: fit-content;
+  margin-right: 0.3rem;
+}
+.couponCode {
+  justify-content: flex-end;
+}
+.textLine {
+  font-size: 0.8rem;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.department {
+  border: none;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.btnStyle:hover {
+  border-radius: 0.3rem;
+  background-color: none;
+  background-color: #ffc43f;
+  color: black;
+}
+button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: white;
+  margin-left: 0.8rem;
+  transition-duration: 0.4s;
+  font-family: "Poppins";
+  padding: 0.3rem 0.6rem;
+}
+
+/* //@media Query */
+@media only screen and (max-width: 320px) {
+  .mainImg {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    left: 0px;
+    top: 0px;
+    width: 70%;
+    height: 70%;
+    margin: 1rem;
+  }
+  .dropdown {
+    margin: 0.5rem;
+  }
+  .search {
+    position: absolute;
+
+    top: 101px;
+    /* margin-right: 0.5rem; */
+  }
+  .mobileNo {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 0rem;
+  }
+  .icon1 {
+    margin: 0rem;
+  }
+  .text1,
+  .text2 {
+    display: none;
+  }
+  .pages {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .couponCode {
+    justify-content: center !important;
+  }
+  .department {
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .dropDown {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mainImg {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    left: 0px;
+    top: 0px;
+    width: 63%;
+    height: 70%;
+    margin: 1rem;
+  }
+  .dropdown {
+    margin: 0.5rem;
+  }
+  .search {
+    position: absolute;
+
+    top: 111px;
+    /* margin-right: 0.5rem; */
+  }
+  .mobileNo {
+    display: none;
+  }
+  .gift {
+    width: 22px;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 0rem;
+  }
+  .icon1 {
+    margin: 0rem;
+  }
+  .text1,
+  .text2 {
+    display: none;
+  }
+  .pages {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .couponCode {
+    justify-content: center !important;
+  }
+  .department {
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .dropDown {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .mainImg {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    left: 0px;
+    top: 0px;
+    width: 58%;
+    height: 70%;
+    margin: 1rem;
+  }
+  .dropdown {
+    margin: 0.5rem;
+  }
+  .search {
+    position: relative;
+    top: auto !important;
+
+    
+    /* margin-right: 0.5rem; */
+  }
+  .mobileNo {
+    display: none;
+  }
+  .gift {
+    width: 22px;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 0rem;
+  }
+  .icon1 {
+    margin: 0rem;
+  }
+  .text1,
+  .text2 {
+    display: none;
+  }
+  .pages {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .couponCode {
+    justify-content: center !important;
+  }
+  .department {
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .dropDown {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search {
+    top: 34px;
+    /* margin-left: -27px; */
+  }
+  .logo {
+    width: 143px;
+    height: 35px;
+  }
+  .dropDown{
+    width: 100%;
+    padding-left: 1rem;
+  }
+  select{
+    padding:0rem;
+  }
+
+  .text1,
+  .text2 {
+    display: none;
+  }
+  .gift,
+  .textLine {
+    display: none;
+  }
+  .icon1 {
+    margin-left: 0rem;
+    margin-bottom: 1px;
+  }
+}
+
+/* @media only screen and (max-width:768px) {
+  .logo {
+    width: 122px;
+    height: 30px;
+  }
+  .text1 {
+    display: none !important;
+  }
+  .cartContent {
+    display: none;
+  }
+  .search { */
+/* margin-left: -27px; */
+/* top: 34px;
+  }
+  .iconContent {
+    display: flex;
+    justify-content: center;
+  }
+  .icon1 {
+    margin-left: 0rem;
+    margin-right: 1.5rem;
+  }
+  .icon3{
+    margin-right:1rem !important;
+    margin-top: 0.2rem;
+    
+  }
+  .inputBox {
+    margin-left: 1rem;
+  }
+  .content1 {
+    font-size: 10px;
+  }
+  .content2 {
+    font-size: 11px;
+  }
+
+  .mainRow {
+    display: flex;
+    justify-content: space-around;
+  }
+  .icon3 {
+    margin-right: 4rem;
+    margin-top: 0.2rem;
+  }
+  .icon2 {
+    margin-right: 0.6rem;
+    margin-top: 3px;
+  }
+  .badgeStyle {
+    right: 8px;
+  }
+  .columnSpace {
+    display: none;
+  }
+  .rowContent {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: 0rem;
+  }
+
+  .gift,
+  .textLine {
+    display: none;
+  }
+  .couponCode {
+    display: none !important;
+  }
+  .rowContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pages {
+    justify-content: flex-start;
+  }
+  .select {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (max-width: 1044px) {
+    .logo{
+        width: 143px;
+        height: 35px;
+    
+    }
+    .gift,
+  /* .textLine {
+    display: block;
+  } */
+/* .couponCode{
+    justify-content: flex-end;
+  }
+  .gift{
+    margin-top: 2px;
+  } */
+
+/* @media only screen and (max-width: 768px){
+.search {
+    
+    top: 95px;
+    
+}
+}
+
+@media only screen and (max-width: 768px){
+.search {
+ 
+    top: 33px;
+}
+} */
