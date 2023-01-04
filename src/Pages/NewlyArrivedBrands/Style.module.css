@@ -1,0 +1,74 @@
+.categoryTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.arrowImg {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  gap: 1rem;
+}
+.viewAll {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.4rem;
+}
+.carosuelTitle {
+  font-size: 11px;
+  color: #787878;
+}
+
+.arrow {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.3rem;
+}
+.sliderbtn1 {
+  width: 50%;
+  /* background-color: gray; */
+  margin-bottom: 0.5rem;
+  background-color: #f1f1f1;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.sliderbtn1:hover {
+  background-color: #ffc43f;
+}
+.sliderbtn2 {
+  display: flex;
+  justify-content: space-between;
+  height: 1.7rem;
+  width: 33%;
+  gap: 0.5rem;
+}
+
+.newBrand {
+  width: 7rem;
+  margin-right: 0.5rem;
+}
+.cardTitle {
+  font-size: 0.7rem;
+  font-family: Poppins;
+  font-family: poppins;
+  font-weight: bold;
+  line-height: 18px;
+}
+.cardSubtitle {
+  font-size: 0.8rem;
+  font-size: 0.67rem;
+  font-family: "Poppins";
+  color: #c7c7c7;
+  font-weight: 600;
+  line-height: 17px;
+}
+.cardStyle {
+  background-color: #ffffff;
+  padding: 0.8rem;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+}
+.cardStyle:hover{
+    transform: scale(1.1);
+
+}

@@ -28,6 +28,7 @@ const Header = () => {
       right: `${8}px`,
       "@media (min-width: 768px)": {
         right: `${10}px`,
+        top: `${13}px`,
       },
       width: 15,
       px: 1,
@@ -58,6 +59,7 @@ const Header = () => {
       minWidth: 15,
       "@media (min-width: 768px)": {
         // right: `${11}px`,
+        top: `${13}px`,
       },
     },
   };
@@ -71,7 +73,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`col-lg-5 col-md-5 col-sm-5 align-self-center ml-4 ${style.inputbox}`}
+            className={`col-lg-6 col-md-6 col-sm-6 align-self-center ml-4 ${style.inputbox}`}
           >
             <div className={style.dropdown}>
               <select>
@@ -139,12 +141,13 @@ const Header = () => {
                 </Badge> */}
               </div>
             </div>
-          </div>
+         
           <div
-            className={`col-lg-1 col-md-0 col-sm-1 align-self-center ${style.cartContent}`}
+            className={` align-self-center ${style.cartContent}`}
           >
             <p className={style.text1}>Your Cart</p>
             <p className={style.text2}> $1260.00</p>
+          </div>
           </div>
         </div>
       </div>

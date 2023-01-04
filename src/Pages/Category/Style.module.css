@@ -1,39 +1,81 @@
-.multiCards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.multiCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.categoryCards{
-    background: #FFFFFF;
-border: 1px solid #FBFBFB;
-box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
-border-radius: 16px;
-display: flex;
-justify-content: center;
-align-items: center;
+.categoryCards {
+  background: #ffffff;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 4px;
 
-
-padding: 0.2rem;
-width: 12%;
-height: 127px;
+  padding: 0.2rem;
+  width: 12%;
+  height: 127px;
 }
 
-.categoryCards img{
-    width: 60% ;
-    align-self: center;  
-    
+.categoryCards img {
+  width: 60%;
+  align-self: center;
 }
-.categoryImg img{
-    width: 25% !important;
-    align-self: center;
-    
-    
+.categoryCards:hover {
+  transform: scale(1.1);
+}
+.categoryImg img {
+  width: 25% !important;
+  align-self: center;
 }
 /* box-shadow: 10px solid black; */
-.cardTitle{
-    font-size: 11px;
-    font-family: Poppins;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    
+.cardTitle {
+  font-size: 11px;
+  font-family: Poppins;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.categoryTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.carosuelTitle {
+  font-size: 11px;
+  color: #787878;
+}
+.arrowImg {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  gap: 1rem;
+}
+.arrow {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.3rem;
+}
+.sliderbtn1 {
+  width: 50%;
+  /* background-color: gray; */
+  margin-bottom: 0.5rem;
+  background-color: #f1f1f1;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.sliderbtn1:hover {
+  background-color: #ffc43f;
+}
+.sliderbtn2 {
+  display: flex;
+  justify-content: space-between;
+  height: 1.7rem;
+  width: 33%;
+  gap: 0.5rem;
+}
+.viewAll {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.4rem;
 }

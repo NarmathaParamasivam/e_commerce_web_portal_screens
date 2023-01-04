@@ -6,12 +6,27 @@ import breadBaguette from "../../assets/Images/breadBaguette.png";
 import softDrinks from "../../assets/Images/softDrinks.png";
 import animalDrumstrick from "../../assets/Images/animalDrumstrick.png";
 import breadherbflour from "../../assets/Images/breadherbflour.png";
+import Vector8 from "../../assets/Images/Vector8.png";
+import sliderbtn from "../../assets/Images/sliderbtn.png";
+import sliderbtn1 from "../../assets/Images/sliderbtn1.png";
 
 const Category = () => {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
-        <h3 className="mb-5">Category</h3>
+        <div className={`mt-5 ${Style.categoryTitle}`}>
+          <h4 className="mb-5">Category</h4>
+          <div className={Style.arrowImg}>
+            <div className={Style.viewAll}>
+            <h6 className={Style.carosuelTitle}>ViewAllCategory</h6>
+            <img className={Style.arrow} src={Vector8} />
+            </div>
+            <div className={Style.sliderbtn2}>
+              <img className={Style.sliderbtn1} src={sliderbtn} />
+              <img className={Style.sliderbtn1} src={sliderbtn1} />
+            </div>
+          </div>
+        </div>
         <div className={Style.multiCards}>
           <div className={`card ${Style.categoryCards}`}>
             <div clasName={Style.categoryImg}>
@@ -22,10 +37,7 @@ const Category = () => {
           </div>
           <div className={`card ${Style.categoryCards}`}>
             <div clasName={Style.categoryImg}>
-              <img
-                clasName={Style.categoryImg1}
-                src={breadBaguette}
-              />
+              <img clasName={Style.categoryImg1} src={breadBaguette} />
             </div>
             <h6 className={Style.cardTitle}>Fruits & Veges</h6>
           </div>

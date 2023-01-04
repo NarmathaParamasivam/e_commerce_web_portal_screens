@@ -1,0 +1,107 @@
+.productHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productSubtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  cursor: pointer;
+}
+.subTitle {
+  font-size: 0.7rem;
+  color: #858585;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.subTitle:hover {
+  color: black;
+  font-weight: 900;
+}
+.productDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardPrice {
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 13px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+    color: black;
+}
+.cardPrice:hover{
+    color:#FFA801;
+    font-family: "Poppins";
+    /* font-weight: 900; */
+
+}
+.unitText {
+  color: #9d9d9d;
+  font-family: "poppins";
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-size: small;
+  margin-top: 0.2rem;
+}
+.star {
+  width: 0.8rem;
+  height: 0.7rem;
+}
+.product {
+  width: 50%;
+}
+.cardStyle {
+  /* background: #F9F9F9; */
+  padding: 0.7rem;
+  width: 20%;
+}
+.cardImg {
+  background: #f9f9f9;
+}
+.add {
+      /* width: 1rem; */
+          /* width: 1rem; */
+    width: 14px;
+    height: 13px;
+    margin-top: 0.4rem;
+    /* height: 0.4rem; */
+    /* padding-top: 0.9rem; */
+    /* padding-bottom: 2rem; */
+    padding: rem;
+    padding: 0.2rem;
+    background-color: 
+    #FFFFFF
+}
+.add:hover{
+    background-color:#E2E2E2
+}
+.sub{
+    width: 18px;
+    height: 15px;
+    padding-top: 0.7rem;
+    margin-top: 0.2rem;
+    background-color: #F2F2F2;
+    padding:0.3rem;
+}
+.addCard {
+  font-size: 0.8rem;
+  font-family: "Poppins";
+  font-weight: bold;
+ color:
+#787878
+}
+.addCard:hover{
+    color:#222222;
+    font-family: "Poppins";
+}
+.price {
+  font-weight: 600;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  
+}
