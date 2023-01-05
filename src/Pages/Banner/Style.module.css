@@ -7,18 +7,26 @@
   flex-direction: row;
   justify-content: space-evenly;
   /* width: 100%; */
+  margin-top: 6.5rem;
+}
+.background{
+  background-image: url("../../assets/Images/background.png") !important;
+  height: 100vh;
+  margin-top:1rem;
 }
 .freshProduct {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin-top: 1rem;
+  letter-spacing: 1px;
 }
 .percentage {
   color: #ed8939;
   font-size: medium;
   margin-top: 0.5rem;
   font-family: "Garamond";
+  letter-spacing: 1px;
 }
 .adverticement {
     font-size: small;
@@ -67,9 +75,7 @@ button.btnStyle {
     display: flex;
     justify-content: flex-end;
 }
-.fruitsVegBag {
-  /* padding: 0rem; */
-}
+
 
 .banner3 {
   width: 400px;
@@ -101,9 +107,11 @@ button.btnStyle {
   color: black;
   font-family: "Poppins";
   font-weight: 900;
-  width: fit-content;
+  width: max-content;
   padding-right: 17px;
   padding-left: 17px;
+  font-size: small;
+
 }
 .backery {
   width: 70%;
@@ -121,7 +129,7 @@ button.btnStyle {
   padding-left: 1rem !important;
   padding-top: 2rem !important;
   position: absolute !important;
-  margin-right: 11.5rem;
+  margin-right: 10rem;
 }
 .cardBody{
     background-color: #eef5e4;
@@ -137,14 +145,16 @@ font-size: x-large;
 }
 .backedBanner3{
     position:absolute;
-    margin-right:13rem;
+    margin-right: 12rem;
     margin-top:2rem;
+
 }
 .cardBody3{
     background-color: #f9ebe7;
 }
 .cardContent2{
     margin-bottom: 1.3rem;
+    margin-top: 6.5rem;
 }
 .bannerTitle{
     font-size: 1.7rem;
@@ -158,4 +168,5 @@ font-size: x-large;
 }
 .sale{
     font-size: 0.7rem;
+    letter-spacing: 1px;
 }

@@ -16,7 +16,7 @@ const brandList = () => {
           <h4 className="mb-5">Newly Arrived Brands</h4>
           <div className={Style.arrowImg}>
             <div className={Style.viewAll}>
-              <h6 className={Style.carosuelTitle}>ViewAllCategory</h6>
+              <h6 className={Style.carosuelTitle}>View All Category</h6>
               <img className={Style.arrow} src={Vector8} />
             </div>
             <div className={Style.sliderbtn2}>

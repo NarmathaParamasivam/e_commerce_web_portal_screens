@@ -20,6 +20,7 @@
   border-radius: 0.2rem;
   border: none;
   border-right: 2px solid rgb(187, 185, 185);
+  letter-spacing: 1px;
 }
 select {
   margin-top: 10px;
@@ -79,6 +80,7 @@ align-self:center;
   justify-content: end;
   font-weight: 900;
   font-family: "Poppins";
+  letter-spacing: 1px;
 }
 .contact1 {
   font-style: normal;
@@ -90,6 +92,7 @@ align-self:center;
   display: flex;
   justify-content: end;
   font-family: "Poppins";
+  letter-spacing: 1px;
 }
 
 /* Icons */
@@ -142,11 +145,13 @@ align-self:center;
   text-align: start;
   margin: 0rem;
   padding: 0rem;
+  letter-spacing: 0.5px;
 }
 .text2 {
   font-weight: 600;
   margin: 0rem;
   padding: 0rem;
+  letter-spacing: 0.5px;
 }
 
 .line {
@@ -171,6 +176,7 @@ align-self:center;
   margin-top: 0.2rem;
   font-weight: bold;
   font-family: "Poppins";
+  letter-spacing: 1px;
 }
 .pages {
   display: flex;
@@ -183,12 +189,14 @@ align-self:center;
   font-size: 0.8rem;
   font-weight: 600;
   margin-top: 8px;
+  letter-spacing: 1px;
 }
 .btnStyle:hover {
   border-radius: 0.3rem;
   background-color: none;
   background-color: #ffc43f;
   color: black;
+  letter-spacing: 1px;
 }
 button {
   border: none;
@@ -198,6 +206,7 @@ button {
   transition-duration: 0.4s;
   font-family: "Poppins";
   padding: 0.3rem 0.6rem;
+  letter-spacing: 1px;
 }
 
 /* //@media Query */

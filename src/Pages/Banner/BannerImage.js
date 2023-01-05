@@ -11,15 +11,18 @@ import fruitsVegBag from "../../assets/Images/fruitsVegBag.png";
 import bakery from "../../assets/Images/bakery.png";
 import Vector8 from "../../assets/Images/Vector8.png";
 import Rectangle24 from "../../assets/Images/Rectangle24.png";
+
 import { height } from "@mui/system";
 const BannerImage = () => {
 
   
   return (
-    <div className="container mt-5">
+    <div className={Styles.background}>
+
+    <div className="container">
       <div className="row">
         <div className="col-lg-7 col-md-7 col-sm-7">
-          <div className={`card h-100 ${Styles.bannerImage}`}>
+          <div className={`card ${Styles.bannerImage}`}>
             <div className={Styles.fruitContent}>
               <h5 className={Styles.percentage}>100% Natural</h5>
               <h3 className={Styles.freshProduct}>
@@ -74,7 +77,7 @@ const BannerImage = () => {
           </div>
 
              </div>
-            
+             </div> 
   );
 };
 export default BannerImage;
