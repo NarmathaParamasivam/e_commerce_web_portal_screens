@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-evenly;
   gap: 0.4rem;
+  cursor: pointer;
 }
 .carosuelTitle {
   font-size: 11px;
@@ -43,6 +44,7 @@
   height: 1.7rem;
   width: 33%;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .newBrand {
@@ -72,6 +74,7 @@
   border: 1px solid #ffffff;
   box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.08);
   border-radius: 9px;
+  cursor: pointer;
 }
 .cardStyle:hover{
     transform: scale(1.1);

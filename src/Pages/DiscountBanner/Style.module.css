@@ -1,0 +1,68 @@
+.cardBanner1 {
+  background-image: url("../../assets/Images/bgpattern.png");
+  background-image: url("../../assets/Images/Rectangle86.png");
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+}
+.pexels {
+  width: 18rem;
+  margin-left: 15rem;
+}
+.discount {
+  font-family: "Nunito", sans-serif;
+  font-family: "poppins", sans-serif;
+  color: #bc4b68;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.content {
+  line-height: 20px;
+ 
+  line-height: 20px;
+  position: absolute;
+  padding-left: 1rem;
+  justify-content: center;
+  
+}
+.title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  font-size: x-large;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
+.subTitle{
+  letter-spacing: 0.03em;
+  font-weight: 600;
+color: #777777;
+font-family: "poppins";
+font-size: 12px;
+    width: 83%;
+}
+.btnShop{
+  background: #222222;
+border-radius: 4px;
+color:white;
+font-family: "poppins";
+font-size: small;
+width: 33%;
+
+}
+button{
+  padding:0.5rem;
+}
+.card2{
+  width: 49%;
+}
+.cardBanner2{
+  background: #E1F7F9;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  width: 98%;
+}

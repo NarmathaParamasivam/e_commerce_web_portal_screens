@@ -21,7 +21,7 @@ const BannerImage = () => {
 
     <div className="container">
       <div className="row">
-        <div className="col-lg-7 col-md-7 col-sm-7">
+        <div className={`col-lg-7 col-md-7 col-sm-7 ${Styles.topBanner}`}>
           <div className={`card ${Styles.bannerImage}`}>
             <div className={Styles.fruitContent}>
               <h5 className={Styles.percentage}>100% Natural</h5>
@@ -39,7 +39,7 @@ const BannerImage = () => {
           </div>
         </div>
 
-        <div className="col-lg-5">
+        <div className={`col-lg-5 ${Styles.cardBanner2}`}>
             <div className={`card ${Styles.cardContent2}`} >
               <div className={`card-body d-flex flex-row justify-content-end p-0 ${Styles.cardBody}`}>
                 <div className={Styles.banner2Content}>

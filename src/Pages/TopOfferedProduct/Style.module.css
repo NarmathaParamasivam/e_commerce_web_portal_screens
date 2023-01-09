@@ -1,3 +1,81 @@
+.title{
+  display: flex;
+  justify-content: flex-start;
+  gap:3rem;
+  align-items: center;
+  
+
+}
+.mainTitle{
+  font-size: x-large;
+}
+.clockImg{
+  width: 16px;
+  height: 15px;
+}
+.clockCard{
+  background: #FFC43F;
+  border-radius: 4px;
+  align-items: center;
+  padding:1rem;
+ 
+
+}
+.clkContent{
+  letter-spacing: 0.03rem;
+  font-size: small;
+}
+.sliderbtn1 {
+  /* margin-bottom: 0.5rem;
+  background-color: #f1f1f1;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.4rem;
+  width: auto; */
+
+
+    background-color: #f1f1f1;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.4rem;
+    width: auto;
+    width: 1.2rem;
+    
+}
+.sliderbtn1:hover {
+  background-color: #ffc43f;
+}
+.sliderbtn2 {
+  display: flex;
+  justify-content: space-between;
+  height: 1.7rem;
+  width: 33%;
+  gap: 0.5rem;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* .arrow {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.3rem;
+}
+.arrowImg {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  gap: 1rem;
+} */
+
+
+
+
 .productHeader {
   display: flex;
   flex-direction: row;
@@ -60,13 +138,13 @@
 .product {
   width: 100%;
   /* margin-left: 2rem; */
-  height: 200px;
+  height: 160px;
 }
 .cardStyle {
   /* background: #F9F9F9; */
   padding: 0.7rem;
   width: 20%;
-  height: 320px;
+  height: 95%;
   border: 1px solid #ffffff;
   box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
   border-radius: 9px;
@@ -77,8 +155,8 @@
   border: 1px;
 }
 .add {
-  width: 14px;
-  height: 12px;
+  width: 17px;
+  height: 16px;
   margin-top: 0.4rem;
   background-color: #f2f2f2;
   padding: 4px;
@@ -92,8 +170,8 @@
   background-color: #e2e2e2;
 }
 .sub {
-  width: 16px;
-  height: 13px;
+  width: 20px;
+  height: 15px;
   padding-top: 0.7rem;
   margin-top: 0.4rem;
   background-color: #f2f2f2;
@@ -137,3 +215,25 @@
 .addCartIcon:hover{
     color: #222222;
 }
+.discountValue{
+  display: flex;
+  gap: 0.5rem;
+}
+.value{
+  margin-top: 0.7rem;
+  justify-content: center;
+  font-size: small;
+  color: #A8A8A8;
+}
+.sold{
+  color: #ED8939;
+  font-weight: 600;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  font-size: small;
+  margin-bottom: 0rem;
+  line-height: 28px; 
+
+}
+
+

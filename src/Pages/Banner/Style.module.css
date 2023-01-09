@@ -1,21 +1,26 @@
 .bannerImage {
   background-color: #e6f3fa;
   padding-top: 3rem;
-  padding-bottom: 2.6rem;
-  padding-left: 3.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 3.9rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* width: 100%; */
-  margin-top: 6.5rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
 }
-.background{
+.topBanner{
+  height: fit-content;
+  cursor: pointer;
+}
+.background {
   background-image: url("../../assets/Images/background.png") !important;
-  height: 100vh;
-  margin-top:1rem;
+  margin-top: 1rem;
+  height: 75vh;
 }
 .freshProduct {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin-top: 1rem;
@@ -29,7 +34,7 @@
   letter-spacing: 1px;
 }
 .adverticement {
-    font-size: small;
+  font-size: small;
   color: #727272;
   margin-top: 0.9rem;
   font-weight: 400;
@@ -49,7 +54,7 @@ button.btnStyle {
 }
 .fruit {
   width: 13rem;
-  height: -webkit-fill-available;
+  height: fit-content;
 }
 
 .banner2 {
@@ -72,17 +77,16 @@ button.btnStyle {
   font-size: large;
 }
 .bannerContent {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
-
 
 .banner3 {
   width: 400px;
 }
 .backedBanner {
   display: flex;
-  padding:0rem;
+  padding: 0rem;
 }
 .bannerBtn3 {
   background-color: #f9ebe7;
@@ -101,6 +105,7 @@ button.btnStyle {
 .fruitContent {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .btnStyle {
   background: none;
@@ -111,62 +116,69 @@ button.btnStyle {
   padding-right: 17px;
   padding-left: 17px;
   font-size: small;
-
 }
 .backery {
   width: 70%;
 }
-.bannerImg22{
-  
+.bannerImg22 {
   width: 78%;
-   
 }
 .bannerContent {
   display: flex;
- }
-.banner2Content{
-   
+}
+.banner2Content {
+
   padding-left: 1rem !important;
   padding-top: 2rem !important;
   position: absolute !important;
   margin-right: 10rem;
 }
-.cardBody{
-    background-color: #eef5e4;
+.cardBody {
+  background-color: #eef5e4;
 }
-.discount{
-    font-family: 'Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: x-large;
+.discount {
+  font-family: "Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: x-large;
 }
-.bannerBtn2{
-    font-size: smaller;
+.bannerBtn2 {
+  font-size: smaller;
 }
-.backedBanner3{
-    position:absolute;
-    margin-right: 12rem;
-    margin-top:2rem;
+.backedBanner3 {
+  position: absolute;
+  margin-right: 12rem;
+  margin-top: 2rem;
+}
+.cardBody3 {
+  background-color: #f9ebe7;
+}
+.cardContent2 {
+     /* margin-bottom: 1.3rem; */
+     margin-top: 1rem;
+  
+}
+.bannerTitle {
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+.rectangle {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.3rem;
+}
+.sale {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.cardBanner2{
 
+  display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin-top: 1rem;
+    gap: 17px;
 }
-.cardBody3{
-    background-color: #f9ebe7;
-}
-.cardContent2{
-    margin-bottom: 1.3rem;
-    margin-top: 6.5rem;
-}
-.bannerTitle{
-    font-size: 1.7rem;
-    font-family:'Nunito', sans-serif;
-    font-weight: bold;
-}
-.rectangle{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 0.3rem;
-}
-.sale{
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-}
+
+
