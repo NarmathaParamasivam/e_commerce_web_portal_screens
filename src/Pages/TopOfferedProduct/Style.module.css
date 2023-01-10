@@ -10,8 +10,9 @@
   font-size: x-large;
 }
 .clockImg{
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 13px;
+  margin-top: 2px;
 }
 .clockCard{
   background: #FFC43F;
@@ -24,23 +25,33 @@
 .clkContent{
   letter-spacing: 0.03rem;
   font-size: small;
+  font-weight: 400;
 }
 .sliderbtn1 {
-  /* margin-bottom: 0.5rem;
+
   background-color: #f1f1f1;
-  padding: 0.3rem;
+
   border-radius: 0.3rem;
-  padding: 0.3rem 0.4rem;
-  width: auto; */
+  padding: 0.2rem 0.3rem;
 
+  width: 1.2rem;
+  height: 1.3rem;
 
-    background-color: #f1f1f1;
-    padding: 0.3rem;
-    border-radius: 0.3rem;
-    padding: 0.3rem 0.4rem;
-    width: auto;
-    width: 1.2rem;
+  
     
+}
+.discountCard{
+  background-color: #A3BF4C;
+  border-radius: 4px;
+  width:25%;
+  font-family: "poppins";
+  font-weight: 500;
+display: flex;
+justify-content: center;
+padding:1px;
+font-size: small;
+color:white;
+letter-spacing: 2px;
 }
 .sliderbtn1:hover {
   background-color: #ffc43f;
@@ -73,7 +84,13 @@
   gap: 1rem;
 } */
 
-
+.heartIcon{
+  background-color: white;
+    border-radius: 10px;
+    padding: 4px;
+   
+    
+}
 
 
 .productHeader {
@@ -104,7 +121,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  cursor: pointer;
+  
 }
 .cardPrice {
   font-family: "Poppins";
@@ -141,7 +158,7 @@
   height: 160px;
 }
 .cardStyle {
-  /* background: #F9F9F9; */
+  cursor: pointer;
   padding: 0.7rem;
   width: 20%;
   height: 95%;
@@ -153,6 +170,12 @@
   background: #f9f9f9;
   height: 180px;
   border: 1px;
+}
+.indian-Rupee{
+  width:30%
+}
+.rupee{
+  width: 33%;
 }
 .add {
   width: 17px;

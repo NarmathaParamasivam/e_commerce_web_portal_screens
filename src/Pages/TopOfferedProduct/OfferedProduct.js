@@ -13,17 +13,18 @@ import Vector13 from "../../assets/Images/Vector13.png";
 import Vector10 from "../../assets/Images/Vector10.png";
 import Vector11 from "../../assets/Images/Vector11.png";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { Style } from "@mui/icons-material";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+
 
 const OfferedProduct = () => {
   return (
     <div className="container mt-5 mb-5">
-      <div className="row mt-3">
+     
         <div class={Styles.headContent}>
           <div className={Styles.title}>
             <h4 className={Styles.mainTitle}>Top offered products</h4>
             <div
-              className={`card d-flex gap-1 justify-content-center flex-row py-1  align-item-center ${Styles.clockCard}`}
+              className={`card d-flex gap-2 justify-content-center flex-row py-1  align-item-center ${Styles.clockCard}`}
             >
               <img className={Styles.clockImg} src={Vector15} />
               <p className={`mb-0 ${Styles.clkContent}`}>
@@ -41,7 +42,10 @@ const OfferedProduct = () => {
           <div className={Styles.productDetails}>
             <div className={`card ${Styles.cardStyle}`}>
               <div className={`card ${Styles.cardImg}`}>
-              <div className={`d-flex justify-content-end p-2 ${Styles.heartIcon} `}><FavoriteBorderIcon /></div> 
+              <div className={"d-flex justify-content-between p-2 "}>
+<p className={Styles.discountCard}>-25%</p>
+                <FavoriteBorderIcon className={Styles.heartIcon} />
+                </div> 
                 <img className={Styles.product} src={brittany} />
               </div>
               <div className="d-flex flex-column">
@@ -54,8 +58,8 @@ const OfferedProduct = () => {
                   </div>
                 </div>
                 <div className={Styles.discountValue}>
-                  <del className={Styles.value}>$12.00</del>
-                  <p className={Styles.price}> $8.00</p>
+                  <del className={Styles.value}><CurrencyRupeeIcon className={Styles.rupee}/>12.00</del>
+                  <p className={Styles.price}> <CurrencyRupeeIcon className={Styles.rupee}/>8.00</p>
                 </div>
 <p className={Styles.sold}>Sold: 30/40</p>              
 
@@ -75,7 +79,9 @@ const OfferedProduct = () => {
 
             <div className={`card ${Styles.cardStyle}`}>
               <div className={`card ${Styles.cardImg}`}>
-              <div className={`d-flex justify-content-end p-2 ${Styles.heartIcon} `}><FavoriteBorderIcon /></div> 
+              <div className="d-flex justify-content-between p-2">
+              <p className={Styles.discountCard}>-35%</p>
+                <FavoriteBorderIcon className={Styles.heartIcon}/></div> 
                 <img className={Styles.product} src={tylerNix} />
               </div>
               <div className="d-flex flex-column">
@@ -89,8 +95,8 @@ const OfferedProduct = () => {
                 </div>
 
                 <div className={Styles.discountValue}>
-                  <del className={Styles.value}>$12.00</del>
-                  <p className={Styles.price}> $6.00</p>
+                  <del className={Styles.value}><CurrencyRupeeIcon className={Styles.rupee}/>12.00</del>
+                  <p className={Styles.price}> <CurrencyRupeeIcon className={Styles.rupee}/>6.00</p>
                 </div>
                 <p className={Styles.sold}>Sold: 9/25</p> 
                 <div className="d-flex flex-row justify-content-between">
@@ -109,7 +115,9 @@ const OfferedProduct = () => {
 
             <div className={`card ${Styles.cardStyle}`}>
               <div className={`card ${Styles.cardImg}`}>
-              <div className={`d-flex justify-content-end p-2 ${Styles.heartIcon} `}><FavoriteBorderIcon /></div> 
+              <div className="d-flex justify-content-between p-2">
+              <p className={Styles.discountCard}>-15%</p>
+                <FavoriteBorderIcon className={Styles.heartIcon} /></div> 
                 <img className={Styles.product} src={olga} />
               </div>
               <div className="d-flex flex-column">
@@ -123,8 +131,8 @@ const OfferedProduct = () => {
                 </div>
 
                 <div className={Styles.discountValue}>
-                  <del className={Styles.value}>$12.00</del>
-                  <p className={Styles.price}> $8.00</p>
+                  <del className={Styles.value}><CurrencyRupeeIcon className={Styles.rupee}/>12.00</del>
+                  <p className={Styles.price}> <CurrencyRupeeIcon className={Styles.rupee}/>8.00</p>
                 </div>
                 <p className={Styles.sold}>Sold: 12/60</p> 
                 <div className="d-flex flex-row justify-content-between">
@@ -143,7 +151,8 @@ const OfferedProduct = () => {
 
             <div className={`card ${Styles.cardStyle}`}>
               <div className={`card ${Styles.cardImg}`}>
-              <div className={`d-flex justify-content-end p-2 ${Styles.heartIcon} `}><FavoriteBorderIcon /></div> 
+              <div className="d-flex justify-content-between p-2">
+              <p className={Styles.discountCard}>-39%</p><FavoriteBorderIcon className={Styles.heartIcon}/></div> 
                 <img className={Styles.product} src={madalyn} />
               </div>
               <div className="d-flex flex-column">
@@ -157,8 +166,8 @@ const OfferedProduct = () => {
                 </div>
 
                 <div className={Styles.discountValue}>
-                  <del className={Styles.value}>$12.00</del>
-                  <p className={Styles.price}> $5.00</p>
+                  <del className={Styles.value}><CurrencyRupeeIcon className={Styles.rupee}/>12.00</del>
+                  <p className={Styles.price}> <CurrencyRupeeIcon className={Styles.rupee}/>5.00</p>
                 </div>
                 <p className={Styles.sold}>Sold: 12/35</p> 
                 <div className="d-flex flex-row justify-content-between">
@@ -177,7 +186,9 @@ const OfferedProduct = () => {
 
             <div className={`card ${Styles.cardStyle}`}>
               <div className={`card ${Styles.cardImg}`}>
-              <div className={`d-flex justify-content-end p-2 ${Styles.heartIcon} `}><FavoriteBorderIcon /></div> 
+              <div className="d-flex justify-content-between p-2">
+              <p className={Styles.discountCard}>-12%</p>
+                <FavoriteBorderIcon className={Styles.heartIcon}/></div> 
                 <img className={Styles.product} src={elsa} />
               </div>
               <div className="d-flex flex-column">
@@ -191,8 +202,8 @@ const OfferedProduct = () => {
                 </div>
 
                 <div className={Styles.discountValue}>
-                  <del className={Styles.value}>$12.00</del>
-                  <p className={Styles.price}> $8.00</p>
+                  <del className={Styles.value}><CurrencyRupeeIcon className={Styles.rupee}/>13.00</del>
+                  <p className={Styles.price}> <CurrencyRupeeIcon className={Styles.rupee}/>8.00</p>
                 </div>
                 <p className={Styles.sold}>Sold: 5/25</p> 
                 <div className="d-flex flex-row justify-content-between">
@@ -211,7 +222,6 @@ const OfferedProduct = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 export default OfferedProduct;

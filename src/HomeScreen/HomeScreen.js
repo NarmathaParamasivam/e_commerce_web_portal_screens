@@ -6,7 +6,9 @@ import TrendingProduct from "../Pages/TrendingProducts/ProductList.js";
 import Banner from "../Pages/DiscountBanner/Banner.js";
 import TopOfferedProduct from "../Pages/TopOfferedProduct/OfferedProduct.js";
 import RegisterForm from "../Pages/RegisterForm/Register.js";
-
+import BestSellingProduct from "../Pages/BestSellingProduct/BestSellingProduct.js";
+import JustLandedItems from "../Pages/JustLandedItems/JustLandedItems.js";
+import OurLatestArticles from "../Pages/OurLatestArticles/LatestArticles.js";
 
 const HomeScreen = () => {
   return (
@@ -18,6 +20,9 @@ const HomeScreen = () => {
       <Banner />
       <TopOfferedProduct />
       <RegisterForm/>
+      <BestSellingProduct/>
+      <JustLandedItems/>
+      <OurLatestArticles/>
     </div>
   );
 };

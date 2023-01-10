@@ -6,8 +6,12 @@
   padding: 1rem;
   align-items: center;
 }
-.pexels {
+.pexels1 {
   width: 18rem;
+  margin-left: 15rem;
+}
+.pexels2 {
+  width: 15rem;
   margin-left: 15rem;
 }
 .discount {

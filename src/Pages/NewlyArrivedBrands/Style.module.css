@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 .carosuelTitle {
-  font-size: 11px;
+  font-size: 13px;
   color: #787878;
   letter-spacing: 1px;
   width: max-content;
@@ -27,13 +27,20 @@
   margin-top: 0.3rem;
 }
 .sliderbtn1 {
-  width: 43%;
-  /* background-color: gray; */
+  /* width: 43%;
   margin-bottom: 0.5rem;
   background-color: #f1f1f1;
   padding: 0.3rem;
   border-radius: 0.3rem;
-  padding: 0.3rem 0.4rem;
+  padding: 0.2rem 0.3rem; */
+  background-color: #f1f1f1;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.2rem;
+    width: auto;
+    width: 1.1rem;
+    height: 1.3rem;
+  
 }
 .sliderbtn1:hover {
   background-color: #ffc43f;
@@ -76,11 +83,9 @@
   border-radius: 9px;
   cursor: pointer;
 }
-.cardStyle:hover{
-    transform: scale(1.1);
-
+.cardStyle:hover {
+  transform: scale(1.1);
 }
-h4{
-  
+h4 {
   letter-spacing: 1px;
 }

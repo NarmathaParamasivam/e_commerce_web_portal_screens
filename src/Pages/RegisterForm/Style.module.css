@@ -9,10 +9,6 @@
   color:#333333;
   border-radius: 5px;
 }
-
-.regLable{
-
-}
 .formBody{
   background-color: #E9F3F8;
   align-items: center;
@@ -52,10 +48,11 @@ input{
   letter-spacing: 1px;
 }
 .emailIcon{
-  width: 4%;
+  width: 3.7%;
   height: 7%;
   padding: 13px;
   position: absolute;
+
   
 }
 .passwordIcon{

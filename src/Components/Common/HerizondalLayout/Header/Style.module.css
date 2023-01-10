@@ -20,7 +20,7 @@
   border-radius: 0.2rem;
   border: none;
   letter-spacing: 1px;
-  cursor:pointer;
+  cursor: pointer;
 }
 select {
   margin-top: 10px;
@@ -54,7 +54,7 @@ select {
 .search {
   position: absolute;
   margin-right: 0rem;
-  margin-left: 38%;
+  margin-left: 38.5%;
 }
 .logo {
   left: 154px;
@@ -90,12 +90,12 @@ select {
   font-family: "Poppins";
   letter-spacing: 1px;
 }
-.contact{
-  cursor:pointer;
+.contact {
+  cursor: pointer;
 }
-.iconContent{
- display: flex;
- gap: 1rem;
+.iconContent {
+  display: flex;
+  gap: 1rem;
 }
 
 /* Icons */
@@ -106,7 +106,6 @@ select {
   width: 0.4rem;
   height: 1rem;
   padding: 0.3rem;
-  
 }
 .icon3 {
   background-color: #f1f1f1;
@@ -122,13 +121,12 @@ select {
   width: 0.2rem;
   height: 1rem;
   padding: 0.2rem;
- 
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  gap:1rem;
+  gap: 1rem;
   align-items: center;
 }
 .iconContent {
@@ -208,10 +206,10 @@ button {
   padding: 0.3rem 0.6rem;
   letter-spacing: 0.3px;
 }
-.contact{
+.contact {
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap: 20px;
 }
 
 /* //@media Query */

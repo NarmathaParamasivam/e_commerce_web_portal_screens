@@ -1,0 +1,38 @@
+.title{
+  /* background-color: 
+  #DEDEDE; */
+  line-height: 2.3rem;
+  font-weight: 600;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  font-size: larger;
+
+
+}
+.subTitle{
+  color:
+  #747474;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: "poppins";
+  font-size: small;
+
+}
+.cardStyle{
+border: 1px solid #ffffff;
+box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
+border-radius: 9px;
+}
+.imgcardStyle{
+  border: 1px solid #ffffff;
+  border-radius: 9px;
+}
+.mainTitle{
+  font-weight: 600;
+  font-size: x-large;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}

@@ -5,6 +5,7 @@ import iceCream from "../../assets/Images/iceCream.png";
 import deva1 from "../../assets/Images/deva1.png";
 import pexels from "../../assets/Images/pexels.png";
 import Rectangle86 from "../../assets/Images/Rectangle86.png";
+import cupCake from "../../assets/Images/cupCake.png";
 
 
 const Banner = () => {
@@ -23,7 +24,7 @@ const Banner = () => {
               <button className={Styles.btnShop}>SHOP IT</button>
             </div>
             <div className={Styles.bannerImg}>
-              <img className={Styles.pexels} src={pexels} />
+              <img className={Styles.pexels1} src={pexels} />
             </div>
           </div>
         </div>
@@ -43,7 +44,7 @@ const Banner = () => {
               {/* <img className={Styles.iceCream1} src={iceCream} />
               <img className={Styles.iceCream2} src={deva1} />
               <img className={Styles.iceCream1} src={iceCream} /> */}
-                <img className={Styles.pexels} src={pexels} />
+                <img className={Styles.pexels2} src={cupCake} />
             </div>
           </div>
         </div>
