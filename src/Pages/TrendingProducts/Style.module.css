@@ -110,8 +110,9 @@
   font-family: "Poppins";
   font-weight: bold;
   color: #787878;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   font-weight: bold;
+  margin-right: 5px;
 }
 .addCart:hover {
   color: #222222;
@@ -125,7 +126,7 @@
   margin-top: 0.5rem;
 }
 .rupee{
-  width:28%;
+  font-size: 15px !important;
 }
 .title {
   letter-spacing: 1px;

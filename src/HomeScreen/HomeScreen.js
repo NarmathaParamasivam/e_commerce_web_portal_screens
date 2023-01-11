@@ -9,6 +9,8 @@ import RegisterForm from "../Pages/RegisterForm/Register.js";
 import BestSellingProduct from "../Pages/BestSellingProduct/BestSellingProduct.js";
 import JustLandedItems from "../Pages/JustLandedItems/JustLandedItems.js";
 import OurLatestArticles from "../Pages/OurLatestArticles/LatestArticles.js";
+import MobileBanner from "../Pages/MobileBanner/MobileBanner.js";
+import PeopleFeedBack from "../Pages/PeopleFeedBack/PeopleFeedBack.js";
 
 const HomeScreen = () => {
   return (
@@ -23,6 +25,8 @@ const HomeScreen = () => {
       <BestSellingProduct/>
       <JustLandedItems/>
       <OurLatestArticles/>
+      <MobileBanner/>
+      <PeopleFeedBack/>
     </div>
   );
 };

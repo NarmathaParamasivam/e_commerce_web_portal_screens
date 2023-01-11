@@ -50,7 +50,7 @@ const JustLandedItems = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>18.00</p>
-            <div className="d-flex flex-row justify-content-between align-item-center ">
+            <div className="d-flex flex-row justify-content-between align-item-center mt-1 ">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>1</p>
@@ -82,7 +82,7 @@ const JustLandedItems = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>5.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>2</p>
@@ -114,7 +114,7 @@ const JustLandedItems = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>6.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>4</p>
@@ -146,7 +146,7 @@ const JustLandedItems = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>9.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>2</p>
@@ -180,7 +180,7 @@ const JustLandedItems = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>12.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>3</p>

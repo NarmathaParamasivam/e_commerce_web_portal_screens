@@ -4,7 +4,7 @@ import jar from "../../assets/Images/jar.png";
 import pharma from "../../assets/Images/pharma.png";
 import milk from "../../assets/Images/milk.png";
 import avocado from "../../assets/Images/avocado.png";
-import deva1 from "../../assets/Images/deva1.png";
+import cupCake1 from "../../assets/Images/cupCake1.png";
 import Vector13 from "../../assets/Images/Vector13.png";
 import Vector10 from "../../assets/Images/Vector10.png";
 import Vector11 from "../../assets/Images/Vector11.png";
@@ -45,7 +45,7 @@ const ProductList = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>18.00</p>
-            <div className="d-flex flex-row justify-content-between align-item-center ">
+            <div className="d-flex flex-row justify-content-between align-item-center mt-1 ">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>1</p>
@@ -77,7 +77,7 @@ const ProductList = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>10.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>4</p>
@@ -109,7 +109,7 @@ const ProductList = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>19.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>2</p>
@@ -141,7 +141,7 @@ const ProductList = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>8.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>2</p>
@@ -161,7 +161,7 @@ const ProductList = () => {
               <FavoriteBorderIcon className={Style.heartIcon} />
             </div>
             <div className={Style.iceCream}>
-              <img className={Style.iceProduct} src={deva1} />
+              <img className={Style.iceProduct} src={cupCake1} />
             </div>
           </div>
           <div className="d-flex flex-column">
@@ -175,7 +175,7 @@ const ProductList = () => {
             </div>
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>14.00</p>
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between mt-1">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
                 <p>6</p>

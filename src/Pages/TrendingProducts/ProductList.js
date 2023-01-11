@@ -41,6 +41,7 @@ const ProductList = () => {
           </div>
         </div>
       </div>
+
       <div className={Style.productDetails}>
         <div className={`card ${Style.cardStyle}`}>
           <div className={`card ${Style.cardImg}`}>
@@ -57,7 +58,7 @@ const ProductList = () => {
               </div>
             </div>
 
-            <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>18.00</p>
+            <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}  />18.00</p>
             <div className="d-flex flex-row justify-content-between">
               <div className="d-flex flex-row justify-content-between gap-2">
                 <img className={Style.sub} src={Vector10} />
@@ -163,7 +164,7 @@ const ProductList = () => {
             </div>
           </div>
         </div>
-
+ 
         <div className={`card ${Style.cardStyle}`}>
           <div className={`card ${Style.cardImg}`}>
           <div className={"d-flex justify-content-end p-2 "}><FavoriteBorderIcon className={Style.heartIcon} /></div> 
@@ -193,7 +194,7 @@ const ProductList = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
       {/* //row 2 */}
       <div className="row mt-3 mb-5">
@@ -350,6 +351,7 @@ const ProductList = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 export default ProductList;
