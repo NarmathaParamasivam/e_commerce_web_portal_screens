@@ -45,16 +45,18 @@ select {
   padding: 7px;
   display: flex;
 }
-.searchInput {
-  position: relative;
-}
+
 .searchIcon {
   position: absolute;
 }
 .search {
-  position: absolute;
-  margin-right: 0rem;
-  margin-left: 38.5%;
+  /* position: absolute; */
+  position: relative;
+  right: 25px;
+  padding:2px;
+  
+  /* margin-right: 0rem;
+  margin-left: 38.5%; */
 }
 .logo {
   left: 154px;

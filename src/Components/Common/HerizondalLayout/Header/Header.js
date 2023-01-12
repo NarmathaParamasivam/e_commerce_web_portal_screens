@@ -12,6 +12,7 @@ import cart1 from "../../../../assets/Images/cart1.png";
 import search from "../../../../assets/Images/search.png";
 import { makeStyles } from "@mui/material/styles";
 //Mui Badge Icons
+import SearchIcon from '@mui/icons-material/Search';
 import Badge from "@mui/material/Badge";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
@@ -86,12 +87,13 @@ const Header = () => {
                 name="search"
                 placeholder="Search for more than 20,000 products"
               />
-
-              <img
+              
+<SearchIcon className={style.search}/>
+              {/* <img
                 className={style.search}
                 alt="icon"
                 src={search}
-              />
+              /> */}
             </div>
           </div>
 
