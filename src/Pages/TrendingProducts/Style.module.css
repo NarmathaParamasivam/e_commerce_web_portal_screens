@@ -113,12 +113,15 @@
   /* letter-spacing: 0.5px; */
   font-weight: bold;
   margin-right: 5px;
+  margin-top: 4px;
 }
 .addCart:hover {
+  
   color: #222222;
   font-family: "Poppins";
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   font-weight: bold;
+  
 }
 .price {
   font-weight: 600;

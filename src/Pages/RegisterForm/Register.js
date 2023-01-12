@@ -3,7 +3,8 @@ import React from "react";
 import Styles from "./Style.module.css";
 import Vector19 from "../../assets/Images/Vector19.png";
 import Vector20 from "../../assets/Images/Vector20.png";
-
+import EmailIcon from '@mui/icons-material/Email';
+import HttpsIcon from '@mui/icons-material/Https';
 
 const RegisterForm = () => {
   return (
@@ -24,15 +25,18 @@ const RegisterForm = () => {
 <div className={Styles.form}>
     <lable className={Styles.regLable}>Email address</lable>
     <div className="d-flex">
-    <img className={Styles.emailIcon} src={Vector19}/>
+    {/* <img className={Styles.emailIcon} src={Vector19}/> */}
+    <EmailIcon className={Styles.emailIcon}/>
     <input className={Styles.regInput} type="text" placeholder="Enter the emailId..." ></input></div>
     <lable className={Styles.regLable}>Password</lable>
     <div className="d-flex">
-    <img className={Styles.passwordIcon} src={Vector20}/>
+    {/* <img className={Styles.passwordIcon} src={Vector20}/> */}
+    <HttpsIcon className={Styles.passwordIcon}/>
     <input className={Styles.regInput} type="text" placeholder="Create a password..." ></input></div>
     <lable className={Styles.regLable}>Repeat Password</lable>
     <div className="d-flex">
-    <img className={Styles.passwordIcon} src={Vector20}/>
+    {/* <img className={Styles.passwordIcon} src={Vector20}/> */}
+    <HttpsIcon className={Styles.passwordIcon}/>
     <input className={Styles.regInput} type="text" placeholder="Repeat a password..." ></input></div>
 
     <button className={Styles.regBtn}>REGISTER IT NOW</button>

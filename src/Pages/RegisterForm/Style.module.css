@@ -48,17 +48,21 @@ input{
   letter-spacing: 1px;
 }
 .emailIcon{
-  width: 3.7%;
-  height: 7%;
-  padding: 13px;
+ 
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
+  padding: 2px;
+  color:#C8C8C8;
   position: absolute;
+
 
   
 }
 .passwordIcon{
-  width: 3.7%;
-  height: 7.3%;
-  padding: 13px;
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
+  padding: 2px;
+  color:#C8C8C8;
   position: absolute;
   
 }

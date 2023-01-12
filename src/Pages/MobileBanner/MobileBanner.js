@@ -7,7 +7,7 @@ import Applelogo from "../../assets/Images/Applelogo.png";
 
 const MobileBanner = () => {
   return (
-    <div className="container">
+    <div className={`container ${Styles.mainContainer}`}>
       <div className="row">
 
       <div>  <img className={Styles.mobileBanner} src={phone} /></div>

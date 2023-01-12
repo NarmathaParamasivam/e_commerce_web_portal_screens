@@ -14,6 +14,7 @@ import Vector10 from "../../assets/Images/Vector10.png";
 import Vector11 from "../../assets/Images/Vector11.png";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 const OfferedProduct = () => {
@@ -71,7 +72,8 @@ const OfferedProduct = () => {
                   </div>
                   <div className="d-flex">
                     <p className={Styles.addCart}>Add To Cart</p>
-                    <img className={Styles.addCartIcon} src={Vector14} />
+                    <ShoppingCartIcon className={Styles.addCartIcon}/>
+                    {/* <img className={Styles.addCartIcon} src={Vector14} /> */}
                   </div>
                 </div>
               </div>
@@ -107,7 +109,8 @@ const OfferedProduct = () => {
                   </div>
                   <div className="d-flex">
                     <p className={Styles.addCart}>Add To Cart</p>
-                    <img className={Styles.addCartIcon} src={Vector14} />
+                    <ShoppingCartIcon className={Styles.addCartIcon}/>
+                    {/* <img className={Styles.addCartIcon} src={Vector14} /> */}
                   </div>
                 </div>
               </div>
@@ -143,7 +146,8 @@ const OfferedProduct = () => {
                   </div>
                   <div className="d-flex">
                     <p className={Styles.addCart}>Add To Cart</p>
-                    <img className={Styles.addCartIcon} src={Vector14} />
+                    <ShoppingCartIcon className={Styles.addCartIcon}/>
+                    {/* <img className={Styles.addCartIcon} src={Vector14} /> */}
                   </div>
                 </div>
               </div>
@@ -178,7 +182,8 @@ const OfferedProduct = () => {
                   </div>
                   <div className="d-flex">
                     <p className={Styles.addCart}>Add To Cart</p>
-                    <img className={Styles.addCartIcon} src={Vector14} />
+                    <ShoppingCartIcon className={Styles.addCartIcon}/>
+                    {/* <img className={Styles.addCartIcon} src={Vector14} /> */}
                   </div>
                 </div>
               </div>
@@ -214,7 +219,8 @@ const OfferedProduct = () => {
                   </div>
                   <div className="d-flex">
                     <p className={Styles.addCart}>Add To Cart</p>
-                    <img className={Styles.addCartIcon} src={Vector14} />
+                    <ShoppingCartIcon className={Styles.addCartIcon}/>
+                    {/* <img className={Styles.addCartIcon} src={Vector14} /> */}
                   </div>
                 </div>
               </div>

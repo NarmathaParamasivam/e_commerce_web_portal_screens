@@ -71,6 +71,8 @@ letter-spacing: 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 /* .arrow {
   width: 0.5rem;
@@ -209,11 +211,12 @@ letter-spacing: 2px;
   /* letter-spacing: 0.5px; */
   font-weight: bold;
   margin-right: 5px;
+  margin-top: 4px;
 }
 .addCart:hover {
   color: #222222;
   font-family: "Poppins";
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   font-weight: bold;
 }
 .price {

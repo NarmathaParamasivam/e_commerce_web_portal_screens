@@ -1,12 +1,17 @@
 .mobileBanner{
   
   width: 25%;
-    position: relative !important;
+    position: absolute !important;
     z-index: 1;
     /* bottom: -5px; */
-    top: 86%;
+    top: -15%;
     left: 121px;
  
+}
+.mainContainer{
+  position: relative;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
 }
 .cardDesign{
   background-color:#FFF9EB;

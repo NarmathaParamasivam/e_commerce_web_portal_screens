@@ -123,11 +123,12 @@
   /* letter-spacing: 0.5px; */
   font-weight: bold;
   margin-right: 5px;
+  margin-top: 4px;
 }
 .addCart:hover {
   color: #222222;
   font-family: "Poppins";
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   font-weight: bold;
 }
 .price {
@@ -144,9 +145,10 @@
   font-weight: bold;
 }
 .addCartIcon {
-  width: 17%;
+  /* width: 17%;
   height: 25%;
-  margin-top: 3px;
+  margin-top: 3px; */
+  width: 23% !important;
   color: #787878;
 }
 .addCartIcon:hover {

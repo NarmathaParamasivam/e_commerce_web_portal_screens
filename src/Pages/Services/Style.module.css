@@ -1,0 +1,32 @@
+.iconHeading {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.delivery {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2rem;
+}
+.mainContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.iconHeading img {
+    width: 20px !important ;
+    height: 20px !important;
+}
+.content {
+  font-size: 13px;
+  line-height: 1.5rem;
+  letter-spacing: 0.4px;
+  margin-left:2rem;
+}
+.title {
+  letter-spacing: 1px;
+  font-size: 16px;
+}

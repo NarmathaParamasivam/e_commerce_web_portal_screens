@@ -1,12 +1,13 @@
 import React from "react";
 import Styles from "./Style.module.css";
 import Rectangle94 from "../../assets/Images/Rectangle94.png";
-import Rectangle117 from "../../assets/Images/Rectangle117.png";
+import veg2 from "../../assets/Images/veg2.png";
 import Rectangle7 from "../../assets/Images/Rectangle7.png";
 import Vector8 from "../../assets/Images/Vector8.png";
 import Vector24 from "../../assets/Images/Vector24.png";
 import Vector25 from "../../assets/Images/Vector25.png";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
+
 const LatestArticles = () => {
   return (
     <div className="container mt-5 mb-5">
@@ -50,7 +51,7 @@ const LatestArticles = () => {
         <div className="col-lg-4 col-md-6 col-sm-12">
           <div className={`card ${Styles.cardStyle}`}>
             <div className={`card p-3 ${Styles.imgcardStyle}`}>
-              <img className="card-img-top" src={Rectangle117} />
+              <img className="card-img-top" src={veg2} />
             </div>
             <div className="card-body">
               <div className="d-flex justify-content-start gap-3 mb-3">

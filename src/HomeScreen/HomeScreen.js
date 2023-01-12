@@ -11,6 +11,7 @@ import JustLandedItems from "../Pages/JustLandedItems/JustLandedItems.js";
 import OurLatestArticles from "../Pages/OurLatestArticles/LatestArticles.js";
 import MobileBanner from "../Pages/MobileBanner/MobileBanner.js";
 import PeopleFeedBack from "../Pages/PeopleFeedBack/PeopleFeedBack.js";
+import Services from "../Pages/Services/Service.js";
 
 const HomeScreen = () => {
   return (
@@ -27,6 +28,7 @@ const HomeScreen = () => {
       <OurLatestArticles/>
       <MobileBanner/>
       <PeopleFeedBack/>
+      <Services/>
     </div>
   );
 };
