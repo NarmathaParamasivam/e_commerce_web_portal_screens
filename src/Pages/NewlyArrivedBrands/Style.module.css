@@ -75,6 +75,7 @@
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 1px;
+  text-align: start;
 }
 .cardStyle {
   background-color: #ffffff;
