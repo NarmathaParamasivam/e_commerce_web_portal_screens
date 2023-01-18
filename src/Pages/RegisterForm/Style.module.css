@@ -46,6 +46,7 @@ input{
 .subTitle{
   line-height:1.5rem;
   letter-spacing: 1px;
+  text-align: start;
 }
 .emailIcon{
  

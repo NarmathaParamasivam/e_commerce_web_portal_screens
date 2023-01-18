@@ -10,7 +10,7 @@ const MobileBanner = () => {
     <div className={`container ${Styles.mainContainer}`}>
       <div className="row">
 
-      <div>  <img className={Styles.mobileBanner} src={phone} /></div>
+      <img className={Styles.mobileBanner} src={phone} />
         <div className={`card ${Styles.cardDesign}`}>
           <div className={` ${Styles.cardText}`}>
             <h4 className={Styles.cardTitle}>Shop Faster With Foodmart App</h4>

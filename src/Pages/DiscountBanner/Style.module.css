@@ -70,3 +70,64 @@ button{
   align-items: center;
   width: 98%;
 }
+@media only screen and (max-width: 1024px){
+  .pexels1 {
+    width: 14.5rem;
+
+}
+.pexels2{
+width: 12rem;
+}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 425px){
+  .discount{
+    font-size: small;
+}
+.title{    font-size: smaller;;
+}
+.subTitle{
+  font-size: 10px;
+}
+.btnShop{
+ 
+  font-size: x-small;
+  width: 25%;
+}
+button{
+  padding: 0.3rem;
+}
+.cardBanner1{
+  width: 72%;
+  padding: 10px;
+}
+.banner{
+  flex-wrap: wrap;
+  gap:1rem;
+}
+.cardBanner1 {
+  width: 100%;
+}
+.pexels1{
+  width: 70%;
+  margin-left: 7rem;
+}
+.pexels2{
+  width: 55%;
+  margin-left: 9rem;
+}
+.content{
+  line-height: 14px;
+  padding-left: 0rem;
+}
+.card2{
+  width: 100%;
+
+}
+.subTitle{
+ 
+  width: 56%;
+}
+
+
+}

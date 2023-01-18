@@ -152,7 +152,10 @@ letter-spacing: 2px;
 .star {
   width: 0.8rem;
   height: 0.7rem;
-  margin-top: 0.3rem;
+  /* margin-top: 0.3rem; */
+}
+.starContent{
+  align-items: center;
 }
 .product {
   width: 100%;
@@ -233,8 +236,9 @@ letter-spacing: 2px;
   font-weight: bold;
 }
 .addCartIcon{
-    width: 17%;
-    height: 25%;
+    /* width: 17%;
+    height: 25%; */
+    width: 18px !important;
     margin-top: 3px;
     color: 
     #787878;
@@ -262,5 +266,20 @@ letter-spacing: 2px;
   line-height: 28px; 
 
 }
+.addSub{
+  gap:0.5rem;
+}
 
+@media only screen and (max-width: 1024px){
+
+  .cardPrice{
+    font-size: 11px;
+  }
+  .productDetails{
+    gap: 15px; 
+  }
+  .addSub{
+    gap:0.3rem;
+  }
+}
 

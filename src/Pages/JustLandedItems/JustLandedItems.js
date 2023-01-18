@@ -44,7 +44,7 @@ const JustLandedItems = () => {
             <p className={Style.cardPrice}>Jelly beans exxotics</p>
             <div className="d-flex flex-row gap-2 align-items-center">
               <p className={Style.unitText}>1 UNIT</p>
-              <div className="d-flex flex-row gap-1">
+              <div className={`d-flex flex-row gap-1 ${Style.starContent}`}>
                 <img className={Style.star} src={Vector13} />
                 <p className={`mb-0 ${Style.fixedPoint}`}>4.5</p>
               </div>
@@ -52,7 +52,7 @@ const JustLandedItems = () => {
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>18.00</p>
             <div className="d-flex flex-row justify-content-between align-item-center mt-1 ">
-              <div className="d-flex flex-row justify-content-between gap-2">
+              <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
                 <p>1</p>
                 <img className={Style.add} src={Vector11} />
@@ -77,7 +77,7 @@ const JustLandedItems = () => {
             <p className={Style.cardPrice}>Growers cider</p>
             <div className="d-flex flex-row gap-2 align-items-center">
               <p className={Style.unitText}>1 UNIT</p>
-              <div className="d-flex flex-row gap-1">
+              <div className={`d-flex flex-row gap-1 ${Style.starContent}`}>
                 <img className={Style.star} src={Vector13} />
                 <p className={`mb-0 ${Style.fixedPoint}`}>4.0</p>
               </div>
@@ -85,7 +85,7 @@ const JustLandedItems = () => {
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>5.00</p>
             <div className="d-flex flex-row justify-content-between mt-1">
-              <div className="d-flex flex-row justify-content-between gap-2">
+              <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
                 <p>2</p>
                 <img className={Style.add} src={Vector11} />
@@ -110,7 +110,7 @@ const JustLandedItems = () => {
             <p className={Style.cardPrice}>Fresh grapes</p>
             <div className="d-flex flex-row gap-2 align-items-center">
               <p className={Style.unitText}>1 KG</p>
-              <div className="d-flex flex-row gap-1">
+              <div className={`d-flex flex-row gap-1 ${Style.starContent}`}>
                 <img className={Style.star} src={Vector13} />
                 <p className={`mb-0 ${Style.fixedPoint}`}>4.5</p>
               </div>
@@ -118,7 +118,7 @@ const JustLandedItems = () => {
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>6.00</p>
             <div className="d-flex flex-row justify-content-between mt-1">
-              <div className="d-flex flex-row justify-content-between gap-2">
+              <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
                 <p>4</p>
                 <img className={Style.add} src={Vector11} />
@@ -143,7 +143,7 @@ const JustLandedItems = () => {
             <p className={Style.cardPrice}>Heinz tomato ketchup </p>
             <div className="d-flex flex-row gap-2 align-items-center">
               <p className={Style.unitText}>1 UNIT</p>
-              <div className="d-flex flex-row gap-1">
+              <div className={`d-flex flex-row gap-1 ${Style.starContent}`}>
                 <img className={Style.star} src={Vector13} />
                 <p className={`mb-0 ${Style.fixedPoint}`}>5.0</p>
               </div>
@@ -151,7 +151,7 @@ const JustLandedItems = () => {
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>9.00</p>
             <div className="d-flex flex-row justify-content-between mt-1">
-              <div className="d-flex flex-row justify-content-between gap-2">
+              <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
                 <p>2</p>
                 <img className={Style.add} src={Vector11} />
@@ -178,7 +178,7 @@ const JustLandedItems = () => {
             <p className={Style.cardPrice}>Sunstar Fresh Melon Juice</p>
             <div className="d-flex flex-row gap-2 align-items-center">
               <p className={Style.unitText}>1 UNIT</p>
-              <div className="d-flex flex-row gap-1">
+              <div className={`d-flex flex-row gap-1 ${Style.starContent}`}>
                 <img className={Style.star} src={Vector13} />
                 <p className={`mb-0 ${Style.fixedPoint}`}>3.5</p>
               </div>
@@ -186,7 +186,7 @@ const JustLandedItems = () => {
 
             <p className={Style.price}> <CurrencyRupeeIcon className={Style.rupee}/>12.00</p>
             <div className="d-flex flex-row justify-content-between mt-1">
-              <div className="d-flex flex-row justify-content-between gap-2">
+              <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
                 <p>3</p>
                 <img className={Style.add} src={Vector11} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Style from "./Style.module.css";
 import Broccoli from "../../assets/Images/Broccoli.png";
 import wineGlass from "../../assets/Images/wineGlass.png";
@@ -10,11 +11,49 @@ import Vector8 from "../../assets/Images/Vector8.png";
 import sliderbtn from "../../assets/Images/sliderbtn.png";
 import sliderbtn1 from "../../assets/Images/sliderbtn1.png";
 
+
+
 const Category = () => {
+  
+  
+  const basic = [
+    {
+      Image: require("../../assets/Images/Broccoli.png"),
+      Title:"Fruits & Veges",
+    },
+    {
+       Image: require("../../assets/Images/breadBaguette.png"),
+      Title:"Breads & Sweets",
+    
+  },
+  {
+    Image: require("../../assets/Images/wineGlass.png"),
+   Title:"Wine Drinks",
+ 
+},
+{
+  Image: require("../../assets/Images/softDrinks.png"),
+ Title:"Oil and Ghee",
+
+},
+{
+  Image: require("../../assets/Images/animalDrumstrick.png"),
+ Title:"Raw Meat",
+
+},
+{
+  Image: require("../../assets/Images/breadherbflour.png"),
+ Title:"Natural Herbs",
+
+},
+  ];
+  const [data, setData]= useState(basic);
+
+
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
-        <div className={`mt-5 ${Style.categoryTitle}`}>
+        <div className={`${Style.categoryTitle}`}>
           <h4 className={`mb-5 ${Style.titleStyle}`}>Category</h4>
           <div className={Style.arrowImg}>
             <div className={Style.viewAll}>
@@ -27,15 +66,20 @@ const Category = () => {
             </div>
           </div>
         </div>
-        <div className={Style.multiCards}>
-          <div className={`card ${Style.categoryCards}`}>
+        <div className={Style.categorys}>
+        {data.map((items,i) =>{
+          return(
+             <div  key={i}
+             className={`card ${Style.categoryCards}`}>
             <div className={Style.categoryImg}>
-              <img src={Broccoli} />
+              <img src={items.Image} />
             </div>
-
-            <h6 className={Style.cardTitle}>Fruits & Veges</h6>
+            <h6 className={Style.cardTitle}>{items.Title}</h6>
           </div>
-          <div className={`card ${Style.categoryCards}`}>
+          )
+        })}</div>
+       
+          {/* <div className={`card ${Style.categoryCards}`}>
             <div className={Style.categoryImg}>
               <img src={breadBaguette} />
             </div>
@@ -64,10 +108,10 @@ const Category = () => {
               <img src={breadherbflour} />
             </div>
             <h6 className={Style.cardTitle}>Natural Herbs</h6>
-          </div>
+          </div> */}
         </div>
       </div>
-    </div>
+ 
   );
 };
 export default Category;

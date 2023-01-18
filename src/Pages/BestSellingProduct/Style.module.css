@@ -56,7 +56,10 @@
 .star {
   width: 0.8rem;
   height: 0.7rem;
-  margin-top: 0.3rem;
+  /* margin-top: 0.3rem; */
+}
+.starContent{
+  align-items: center;
 }
 .product {
     width: 93%;
@@ -148,7 +151,7 @@
   /* width: 17%;
   height: 25%;
   margin-top: 3px; */
-  width: 23% !important;
+  width: 18px !important;
   color: #787878;
 }
 .addCartIcon:hover {
@@ -197,4 +200,19 @@
   cursor: pointer;
   justify-content: flex-end;
   align-items: center;
+}
+.addSub{
+  gap:0.5rem;
+}
+@media only screen and (max-width: 1024px){
+  .addSub{
+   gap: 0.3rem;
+  }
+  .productDetails{
+    gap: 12px;
+  }
+  .cardPrice{
+    font-size: 11px;
+  }
+  
 }

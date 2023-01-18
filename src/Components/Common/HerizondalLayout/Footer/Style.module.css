@@ -145,3 +145,20 @@ font-size: small;
   margin-bottom: 3px;
   padding: 0.2rem;
 }
+@media only screen and (max-width: 1024px){
+
+  .helpHeader{
+    
+    padding: 0rem 1.2rem;
+  }
+  .btnSend{
+    display: flex;
+    align-items: center;
+  }
+  .inputBox{
+    font-size: x-small;
+  }
+  .footerLogo{
+    width: 75%;
+  }
+}

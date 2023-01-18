@@ -1,6 +1,6 @@
 .mobileBanner{
   
-  width: 25%;
+  width: 25% !important;
     position: absolute !important;
     z-index: 1;
     /* bottom: -5px; */
@@ -73,4 +73,36 @@
   border:1px solid white;
   border-radius: 0.5rem;
 }
+
+@media only screen and (min-width: 1440px){
+  .mobileBanner{
+    /* top: -24% !important;
+    left: 140px !important; */
+    width: 23% !important;
+   
+    
+  }
+
+}
+@media only screen and (max-width: 1024px){
+  .mobileBanner{
+    width: 27% !important;
+    left: 115px;
+}
+.cardText{
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  font-size: large;
+}
+.textContent{
+  line-height: 25px;
+}
+.gPay{
+  font-size: small;
+}
+.cardTitle{
+  font-size: x-large;
+}
+}
+
 

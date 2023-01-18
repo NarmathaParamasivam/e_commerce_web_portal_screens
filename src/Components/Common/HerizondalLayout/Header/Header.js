@@ -18,12 +18,17 @@ import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { BorderColor, PaddingOutlined } from "@mui/icons-material";
-
+//import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
   const [position, setPosition] = useState(0); //Badge
+
+
+
+  // const isMobile = useMediaPredicate("(minWidth: 767px)");
+  // const laptopView =  useMediaPredicate("(maxWidth: 1044px)");
   const badgeStyle = {
-    "& .MuiBadge-badge": {
+    "& .MuiBadge-badge": {  
       color: "black",
       backgroundColor: "#ffc43f",
       right: `${8}px`,
@@ -63,14 +68,15 @@ const Header = () => {
 
   return (
     <div className={`container-fulid mt-2 mb-0 ${style.mainContainer}`}>
+     
       <div className="container ">
-        <div className={`row ${style.mainRow}`}>
-          <div className={`col-lg-2 col-md-3 col-sm-2 ${style.mainImg}`}>
+        <div className={`row w-100 ${style.mainRow}`}>
+          <div className={`col-lg-2  ${style.mainImg}`}>
             <img className={style.logo} src={MainLogo} />
           </div>
 
           <div
-            className={`col-lg-6 col-md-6 col-sm-6 align-self-center ml-4 ${style.inputbox}`}
+            className={`col-lg-6 align-self-center ml-4 ${style.inputbox}`}
           >
             <div className={style.dropdown}>
               <select>
@@ -82,7 +88,7 @@ const Header = () => {
 
               <input
                 style={{ position: "relative" }}
-                className="inputBox"
+                className={style.inputBox}
                 type="search"
                 name="search"
                 placeholder="Search for more than 20,000 products"
@@ -98,7 +104,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`col-lg-4 col-md-4 col-sm-4 align-self-center mt-3 ${style.contact}`}
+            className={`col-lg-4  align-self-center mt-3 ${style.contact}`}
           >
             <div className="d-flex flex-column align-item-center">
             <div className={style.mobileNo}>
@@ -141,11 +147,14 @@ const Header = () => {
           </div>
         </div>
       </div>
+      
       <hr className={style.line}></hr>
       {/* <Navbar> */}
+     
       <div className="container">
-        <div className={`row ${style.rowContent}`}>
-          <div className={`col-lg-3 col-md-3 col-sm-2 ${style.dropDown}`}>
+        <div className={`row w-100 ${style.rowContent}`}>
+          
+          <div className={`col-lg-3  topnav ${style.dropDown}`} id="myTopnav">
             <select className={style.department}>
               <option>Shop By Departments</option>
               <option>Oil and Ghee</option>
@@ -153,7 +162,7 @@ const Header = () => {
               <option>Fruits and Veg</option>
             </select>
           </div>
-          <div className={`col-lg-6 col-md-7 col-sm-6 ${style.pages}`}>
+          <div className={`col-lg-6  ${style.pages}`}>
             <div>
               <button className={style.btnStyle}>Home</button>
             </div>
@@ -178,13 +187,14 @@ const Header = () => {
             </div>
           </div>
           <div
-            className={`col-lg-3 col-md-2 col-sm-3 d-flex mt-1 ${style.couponCode}`}
+            className={`col-lg-3  d-flex mt-1 ${style.couponCode}`}
           >
             <img className={style.gift} src={gift} />
             <p className={style.textLine}>Get Your Coupon Code</p>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

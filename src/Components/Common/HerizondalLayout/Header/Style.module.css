@@ -415,3 +415,34 @@ button {
     margin-bottom: 1px;
   }
 }
+@media only screen and (min-width: 1440px){
+  .search{
+    right: 35px;
+  }
+
+ 
+
+}
+@media only screen and (max-width: 1024px){
+  .logo{
+    width: 145px;
+    height: 35px;
+  }
+  .icons{
+    gap: 5px;
+  }
+  .iconContent{
+    gap: 1rem;
+  }
+  .inputBox
+  {
+  font-size: x-small !important;
+ }
+}
+@media only screen and (max-width: 1024px){
+  
+}
+
+
+
+

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Style from "./Style.module.css";
 import Vector8 from "../../assets/Images/Vector8.png";
 import sliderbtn from "../../assets/Images/sliderbtn.png";
@@ -8,12 +9,36 @@ import Rectangle2 from "../../assets/Images/Rectangle2.png";
 import Rectangle3 from "../../assets/Images/Rectangle3.png";
 import Rectangle4 from "../../assets/Images/Rectangle4.png";
 
-const brandList = () => {
+const BrandList = () => {
+  const basic = [
+    {
+      Image: require("../../assets/Images/Rectangle85.png"),
+      Title: "Amber Jar",
+      SubTitle: "Honey Best Nectar You Wish To Get",
+    },
+    {
+      Image: require("../../assets/Images/Rectangle2.png"),
+      Title: "Pure Herb",
+      SubTitle: "Pure herb the only natural brand",
+    },
+    {
+      Image: require("../../assets/Images/Rectangle3.png"),
+      Title: "Tuna",
+      SubTitle: "Where's tuna? Tuna, clear choice!",
+    },
+    {
+      Image: require("../../assets/Images/Rectangle4.png"),
+      Title: "Hotz",
+      SubTitle: "the one junk food that’s natural",
+    },
+  ];
+  const [data, setData] = useState(basic);
+
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
-        <div className={`mt-5 ${Style.categoryTitle}`}>
-          <h4 className="mb-5">Newly Arrived Brands</h4>
+        <div className={` ${Style.categoryTitle}`}>
+          <h4 className={Style.title}>Newly Arrived Brands</h4>
           <div className={Style.arrowImg}>
             <div className={Style.viewAll}>
               <h6 className={Style.carosuelTitle}>View All Offers</h6>
@@ -26,9 +51,30 @@ const brandList = () => {
           </div>
         </div>
       </div>
-      <div className="row d-flex flex-row justify-content-between">
+      <div className={`row d-flex flex-row justify-content-between ${Style.newProduct}`}>
+        {data.map((items, i) => {
+          return (
+            <div key={i} className="col-lg-3 col-md-6 col-sm-3 d-flex">
+              <div
+                className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}
+              >
+                <div>
+                  <img className={Style.newBrand} src={items.Image} />
+                </div>
+
+                <div className="mt-4">
+                  <h6 className={Style.cardSubtitle}>{items.Title}</h6>
+                  <h5 className={Style.cardTitle}>{items.SubTitle}</h5>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* <div className="row d-flex flex-row justify-content-between">
        
-            <div className="col-lg-3 col-md-3 col-sm-3">
+            <div className="col-lg-3 col-md-6 col-sm-3">
           <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
            <div>
               <img className={Style.newBrand} src={Rectangle85} />
@@ -40,7 +86,8 @@ const brandList = () => {
             </div>
           </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-sm-3">
+          </div> */}
+      {/* <div className="col-lg-3 col-md-6 col-sm-3">
           <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
             <div>
               <img className={Style.newBrand} src={Rectangle2} />
@@ -51,7 +98,7 @@ const brandList = () => {
             </div>
           </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-sm-3">
+          <div className="col-lg-3 col-md-6 col-sm-3">
           <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
             <div>
               <img className={Style.newBrand} src={Rectangle3} />
@@ -62,7 +109,7 @@ const brandList = () => {
             </div>
           </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-sm-3">
+          <div className="col-lg-3 col-md-6 col-sm-3">
           <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
             <div>
               <img className={Style.newBrand} src={Rectangle4} />
@@ -72,10 +119,8 @@ const brandList = () => {
               <h5 className={Style.cardTitle}> the one junk food that’s natural</h5>
             </div>
           </div>
-          </div>
-        
-      </div>
+          </div> */}
     </div>
   );
 };
-export default brandList;
+export default BrandList;

@@ -38,12 +38,13 @@
   color: #727272;
   margin-top: 0.9rem;
   font-weight: 400;
+  text-align: start;
 }
 button.btnStyle {
   background: none;
   color: black;
   border-radius: 0.2rem;
-  /* border:1px solid #727272; */
+ 
 }
 .btnStyle {
   border: 1px solid #727272;
@@ -154,7 +155,7 @@ button.btnStyle {
   background-color: #f9ebe7;
 }
 .cardContent2 {
-     /* margin-bottom: 1.3rem; */
+
      margin-top: 1rem;
   
 }
@@ -176,9 +177,120 @@ button.btnStyle {
 
   display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+  
     margin-top: 1rem;
     gap: 17px;
 }
 
+@media only screen and (min-width: 1440px) {
+ .banner2Content{
+    margin-right: 14rem;
+}
+.bannerImg22{
+  width: 67%;
+}
+.backedBanner3{
+  margin-right: 16rem;
 
+}
+.bannerImage{
+  padding-right: 2rem;
+}
+.banner3 img{
+width:56%;
+}
+.bannerImg33{
+  width:55% !important;
+}
+
+
+}
+@media only screen and (max-width: 1024px){
+  .bannerImg22{
+   
+    width: 92%;
+  }
+  .bannerTitle{
+    font-size: 1.2rem;
+  }
+  .freshProduct{
+    font-size: 1.9rem;
+  }
+  .bannerImg33{
+    width:79% !important;
+  }
+  .adverticement {
+    font-size: x-small;
+
+}
+.background{
+  height: 87vh;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 425px)
+{
+  .btnStyle{
+    margin-top: 1rem;
+  width: max-content;
+  padding-right: 7px;
+  padding-left: 7px;
+  font-size: x-small;
+  }
+ 
+
+  .freshProduct{
+    font-size: small;
+  }
+
+.bannerImage{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.9rem;
+}
+.percentage{
+  color: #ed8939;
+  font-size: revert;
+}
+.fruit{
+     width: 7rem;
+}
+
+
+.bannerImg22{
+  width: 85%;
+
+}
+.banner2Content {
+  padding-left: 1rem !important;
+  padding-top: 1rem !important;
+  margin-right: 9rem;
+}
+.bannerTitle {
+  font-size: 0.8rem;
+}
+.bannerBtn2{
+  font-size: x-small;
+}
+.discount{
+  font-size: small;
+}
+.rectangle{
+  padding-top: 0.6rem;
+  padding-bottom: 0.7rem;
+  padding-right: 0.2rem;
+  width: 20px;
+}
+.bannerImg33{
+  width: 65%;
+
+}
+.backedBanner3 {
+  position: absolute;
+  margin-right: 10rem;
+  margin-top: 1rem;
+}
+.bannerBtn3{
+  background-color: #f9ebe7;
+  font-size: 10px;
+}
+}

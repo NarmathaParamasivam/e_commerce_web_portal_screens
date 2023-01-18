@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <div className="container mt-5 mb-5 ">
       <div className="row mt-4">
-        <div className="d-flex gap-4">
+        <div className={`d-flex gap-4 ${Styles.banner}`}>
         <div className={"col-lg-6"}>
           <div className={`card ${Styles.cardBanner1}`}>
             <div className={Styles.content}>
