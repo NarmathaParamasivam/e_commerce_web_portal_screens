@@ -1,8 +1,8 @@
-.mainContainer{
+.mainContainer {
   margin-top: 7rem;
   margin-bottom: 3rem;
 }
-h6{
+h6 {
   font-size: 11px;
   font-family: "poppins";
   color: black;
@@ -11,19 +11,17 @@ h6{
   margin-bottom: 0rem;
   letter-spacing: 0.3px;
 }
-.cardStyle{
-  
+.cardStyle {
   /* padding-right: 0.1px; */
   /* padding-left: 0.1px; */
   padding: 9px 8px;
-  background-color:#FCF7EB ;
-  border:none;
- }
-.cardRow1{
+  background-color: #fcf7eb;
+  border: none;
+}
+.cardRow1 {
   line-height: 3rem;
 }
-.title{
- 
+.title {
   /* font-family: "poppins"; */
   font-weight: 600;
   font-size: x-large;
@@ -31,11 +29,11 @@ h6{
   color: black;
   margin-bottom: 2.5rem;
 }
-@media only screen and (max-width: 1024px){
-  h6{
+@media only screen and (max-width: 1024px) {
+  h6 {
     font-size: 8px;
   }
-  .cardStyle{
-   padding: 12px 7px;
+  .cardStyle {
+    padding: 12px 7px;
   }
 }
