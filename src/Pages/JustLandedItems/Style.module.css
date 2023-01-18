@@ -96,7 +96,6 @@
 .add {
     width: 17px;
     height: 16px;
-  margin-top: 0.4rem;
   background-color: #f2f2f2;
   padding: 4px;
   border-radius: 3px;
@@ -113,7 +112,6 @@
     width: 20px;
     height: 15px;
   padding-top: 0.7rem;
-  margin-top: 0.4rem;
   background-color: #f2f2f2;
   padding: 6px;
   border-radius: 3px;
@@ -126,7 +124,8 @@
   /* letter-spacing: 0.5px; */
   font-weight: bold;
   margin-right: 5px;
-  margin-top: 4px;
+ 
+  margin-bottom: 0rem;
 }
 .addCart:hover {
   color: #222222;
@@ -141,6 +140,7 @@
 }
 .title {
   letter-spacing: 1px;
+  margin-bottom: 0rem;
 }
 .fixedPoint {
   font-size: small;
@@ -148,10 +148,7 @@
   font-weight: bold;
 }
 .addCartIcon {
-  /* width: 17%;
-  height: 25%;
-  margin-top: 3px; */
-  width: 18px !important;
+  width: 16px !important;
   color: #787878;
 }
 .addCartIcon:hover {
@@ -203,6 +200,7 @@
 }
 .addSub{
   gap:0.5rem;
+  align-items: center;
 }
 @media only screen and (max-width: 1024px){
   .addSub{

@@ -123,15 +123,14 @@
   font-family: "Poppins";
   font-weight: bold;
   color: #787878;
-  /* letter-spacing: 0.5px; */
   font-weight: bold;
   margin-right: 5px;
-  margin-top: 4px;
+  margin-bottom: 0rem;
+ 
 }
 .addCart:hover {
   color: #222222;
   font-family: "Poppins";
-  /* letter-spacing: 0.5px; */
   font-weight: bold;
 }
 .price {
@@ -141,6 +140,7 @@
 }
 .title {
   letter-spacing: 1px;
+  margin-bottom: 0rem;
 }
 .fixedPoint {
   font-size: small;
@@ -151,7 +151,7 @@
   /* width: 17%;
   height: 25%;
   margin-top: 3px; */
-  width: 18px !important;
+  width: 16px !important;
   color: #787878;
 }
 .addCartIcon:hover {
@@ -173,8 +173,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin:3rem 0rem;
 }
 .sliderbtn1 {
   background-color: #f1f1f1;
@@ -203,6 +202,7 @@
 }
 .addSub{
   gap:0.5rem;
+  align-items: center;
 }
 @media only screen and (max-width: 1024px){
   .addSub{

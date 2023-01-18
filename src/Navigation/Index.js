@@ -12,12 +12,7 @@ function Navigation() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-        <Route path="/homeScreen" element={<HomeScreen />}></Route> 
-          {/* <Route path="/banner" element={BannerImage} />
-          <Route path="/categoryList" element={Category} />
-          <Route path="/newArrivedbrands" element={NewBrandList}/>
-          <Route path="/trendingProducts" element={TrendingProduct}> */}
-          {/* </Route> */}
+          <Route path="/homeScreen" element={<HomeScreen />} />
         </Route>
       </Routes>
     </BrowserRouter>

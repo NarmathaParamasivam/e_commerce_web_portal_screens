@@ -1,34 +1,29 @@
-.title{
+.title {
   display: flex;
   justify-content: flex-start;
-  gap:3rem;
+  gap: 3rem;
   align-items: center;
-  
-
 }
-.mainTitle{
+.mainTitle {
   font-size: x-large;
 }
-.clockImg{
+.clockImg {
   width: 14px;
   height: 13px;
   margin-top: 2px;
 }
-.clockCard{
-  background: #FFC43F;
+.clockCard {
+  background: #ffc43f;
   border-radius: 4px;
   align-items: center;
-  padding:1rem;
- 
-
+  padding: 1rem;
 }
-.clkContent{
+.clkContent {
   letter-spacing: 0.03rem;
   font-size: small;
   font-weight: 400;
 }
 .sliderbtn1 {
-
   background-color: #f1f1f1;
   padding: 0.3rem;
   border-radius: 0.3rem;
@@ -36,22 +31,19 @@
   width: auto;
   width: 1.3rem;
   height: 1.3rem;
-
-  
-    
 }
-.discountCard{
-  background-color: #A3BF4C;
+.discountCard {
+  background-color: #a3bf4c;
   border-radius: 4px;
-  width:25%;
+  width: 25%;
   font-family: "poppins";
   font-weight: 500;
-display: flex;
-justify-content: center;
-padding: 1.2px;
-font-size: small;
-color:white;
-letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  padding: 1.2px;
+  font-size: small;
+  color: white;
+  letter-spacing: 2px;
 }
 .sliderbtn1:hover {
   background-color: #ffc43f;
@@ -67,33 +59,19 @@ letter-spacing: 2px;
   align-items: center;
 }
 
-.headContent{
+.headContent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 3rem 0rem;
+  align-items: center;
 }
-/* .arrow {
-  width: 0.5rem;
-  height: 0.5rem;
-  margin-top: 0.3rem;
-}
-.arrowImg {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.3rem;
-  gap: 1rem;
-} */
 
-.heartIcon{
+.heartIcon {
   background-color: white;
-    border-radius: 10px;
-    padding: 4px;
-   
-    
+  border-radius: 10px;
+  padding: 4px;
 }
-
 
 .productHeader {
   display: flex;
@@ -123,7 +101,6 @@ letter-spacing: 2px;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  
 }
 .cardPrice {
   font-family: "Poppins";
@@ -154,7 +131,7 @@ letter-spacing: 2px;
   height: 0.7rem;
   /* margin-top: 0.3rem; */
 }
-.starContent{
+.starContent {
   align-items: center;
 }
 .product {
@@ -166,7 +143,7 @@ letter-spacing: 2px;
   cursor: pointer;
   padding: 0.7rem;
   width: 20%;
-  height: 95%;
+  height: 100%;
   border: 1px solid #ffffff;
   box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
   border-radius: 9px;
@@ -176,16 +153,16 @@ letter-spacing: 2px;
   height: 180px;
   border: 1px;
 }
-.indian-Rupee{
-  width:30%
+.indian-Rupee {
+  width: 30%;
 }
-.rupee{
+.rupee {
   font-size: 15px !important;
 }
 .add {
   width: 17px;
   height: 16px;
-  margin-top: 0.4rem;
+
   background-color: #f2f2f2;
   padding: 4px;
   border-radius: 3px;
@@ -201,7 +178,7 @@ letter-spacing: 2px;
   width: 20px;
   height: 15px;
   padding-top: 0.7rem;
-  margin-top: 0.4rem;
+
   background-color: #f2f2f2;
   padding: 6px;
   border-radius: 3px;
@@ -214,7 +191,8 @@ letter-spacing: 2px;
   /* letter-spacing: 0.5px; */
   font-weight: bold;
   margin-right: 5px;
-  margin-top: 4px;
+  /* margin-top: 4px; */
+  margin-bottom: 0rem;
 }
 .addCart:hover {
   color: #222222;
@@ -235,51 +213,47 @@ letter-spacing: 2px;
   width: fit-content;
   font-weight: bold;
 }
-.addCartIcon{
-    /* width: 17%;
+.addCartIcon {
+  /* width: 17%;
     height: 25%; */
-    width: 18px !important;
-    margin-top: 3px;
-    color: 
-    #787878;
+  width: 16px !important;
+  /* margin-top: 3px; */
+  color: #787878;
 }
-.addCartIcon:hover{
-    color: #222222;
+.addCartIcon:hover {
+  color: #222222;
 }
-.discountValue{
+.discountValue {
   display: flex;
   gap: 0.5rem;
 }
-.value{
+.value {
   margin-top: 0.7rem;
   justify-content: center;
   font-size: small;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
-.sold{
-  color: #ED8939;
+.sold {
+  color: #ed8939;
   font-weight: 600;
   font-family: "poppins";
   letter-spacing: 1px;
   font-size: small;
   margin-bottom: 0rem;
-  line-height: 28px; 
-
+  line-height: 28px;
 }
-.addSub{
-  gap:0.5rem;
+.addSub {
+  gap: 0.5rem;
 }
 
-@media only screen and (max-width: 1024px){
-
-  .cardPrice{
+@media only screen and (max-width: 1024px) {
+  .cardPrice {
     font-size: 11px;
   }
-  .productDetails{
-    gap: 15px; 
+  .productDetails {
+    gap: 15px;
   }
-  .addSub{
-    gap:0.3rem;
+  .addSub {
+    gap: 0.3rem;
   }
 }
-

@@ -49,10 +49,10 @@ const ProductList = () => {
             <div className="d-flex flex-row justify-content-between align-item-center mt-1 ">
               <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
-                <p>1</p>
+                <p className="mb-0">1</p>
                 <img className={Style.add} src={Vector11} />
               </div>
-              <div className={`d-flex ${Style.mainCart}`}>
+              <div className={`d-flex align-items-center ${Style.mainCart}`}>
                 <p className={Style.addCart}>Add To Cart</p>
                 <ShoppingCartIcon className={Style.addCartIcon}/>
                 {/* <img className={Style.addCartIcon} src={Vector14} /> */}
@@ -82,10 +82,10 @@ const ProductList = () => {
             <div className="d-flex flex-row justify-content-between mt-1">
               <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
-                <p>4</p>
+                <p className="mb-0">4</p>
                 <img className={Style.add} src={Vector11} />
               </div>
-              <div className="d-flex">
+              <div className="d-flex align-items-center">
                 <p className={Style.addCart}>Add To Cart</p>
                 <ShoppingCartIcon className={Style.addCartIcon}/>
                 {/* <img className={Style.addCartIcon} src={Vector14} /> */}
@@ -115,10 +115,10 @@ const ProductList = () => {
             <div className="d-flex flex-row justify-content-between mt-1">
               <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
-                <p>2</p>
+                <p className="mb-0">2</p>
                 <img className={Style.add} src={Vector11} />
               </div>
-              <div className="d-flex">
+              <div className="d-flex align-items-center">
                 <p className={Style.addCart}>Add To Cart</p>
                 <ShoppingCartIcon className={Style.addCartIcon}/>
                 {/* <img className={Style.addCartIcon} src={Vector14} /> */}
@@ -148,10 +148,10 @@ const ProductList = () => {
             <div className="d-flex flex-row justify-content-between mt-1">
               <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
-                <p>2</p>
+                <p className="mb-0">2</p>
                 <img className={Style.add} src={Vector11} />
               </div>
-              <div className="d-flex">
+              <div className="d-flex align-items-center">
                 <p className={Style.addCart}>Add To Cart</p>
                 <ShoppingCartIcon className={Style.addCartIcon}/>
                 {/* <img className={Style.addCartIcon} src={Vector14} /> */}
@@ -183,10 +183,10 @@ const ProductList = () => {
             <div className="d-flex flex-row justify-content-between mt-1">
               <div className={`d-flex flex-row justify-content-between ${Style.addSub}`}>
                 <img className={Style.sub} src={Vector10} />
-                <p>6</p>
+                <p className="mb-0">6</p>
                 <img className={Style.add} src={Vector11} />
               </div>
-              <div className="d-flex">
+              <div className="d-flex align-items-center">
                 <p className={Style.addCart}>Add To Cart</p>
                 <ShoppingCartIcon className={Style.addCartIcon}/>
                 {/* <img className={Style.addCartIcon} src={Vector14} /> */}

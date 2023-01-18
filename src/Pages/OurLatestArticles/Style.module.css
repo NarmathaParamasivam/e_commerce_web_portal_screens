@@ -1,13 +1,9 @@
 .title{
-  /* background-color: 
-  #DEDEDE; */
   line-height: 2.3rem;
   font-weight: 600;
   font-family: "poppins";
   letter-spacing: 1px;
   font-size: larger;
-
-
 }
 .subTitle{
   color:#747474;
@@ -33,17 +29,17 @@ height: fit-content;
   font-size: x-large;
   letter-spacing: 1px;
   color: black;
-  /* margin-bottom: 3rem;
-  margin-top: 5rem; */
+  margin-bottom: 0rem;
+ 
 }
 .viewAll {
   display: flex;
   justify-content: space-evenly;
   gap: 0.4rem;
   cursor: pointer;
-  /* align-items: center; */
+  align-items: center;
+ }
 
-}
 .carosuelTitle {
   font-size: 13px;
   color: #787878;
@@ -57,7 +53,6 @@ height: fit-content;
   margin-top: 0.3rem;
 }
 .dateImg{
-  /* font-size: 10px; */
   width:12px;
   height: 12px;
 }

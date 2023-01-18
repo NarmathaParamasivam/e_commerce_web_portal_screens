@@ -39,6 +39,12 @@
   letter-spacing: 0.02em;
   color: #222222;
 }
+.mainTitle{
+  margin-bottom: 0rem;
+}
+.banner{
+  margin: 3rem 0rem;
+}
 .subTitle{
   letter-spacing: 0.03em;
   font-weight: 600;
@@ -73,10 +79,27 @@ button{
 @media only screen and (max-width: 1024px){
   .pexels1 {
     width: 14.5rem;
+   
 
 }
 .pexels2{
 width: 12rem;
+
+}
+
+}
+@media only screen and (max-width: 1440px){
+  .pexels1 {
+    width: 53%;
+    margin-left: 18rem !important;
+   }
+   .content{
+    padding-left: 2rem;
+   }
+.pexels2{
+  width: 46%;
+margin-left: 18rem !important;
+
 }
 
 }
@@ -104,6 +127,7 @@ button{
 .banner{
   flex-wrap: wrap;
   gap:1rem;
+  
 }
 .cardBanner1 {
   width: 100%;

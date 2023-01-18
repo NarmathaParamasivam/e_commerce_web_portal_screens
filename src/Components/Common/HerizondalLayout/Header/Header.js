@@ -67,7 +67,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`container-fulid mt-2 mb-0 ${style.mainContainer}`}>
+    <div className={`container-fulid mt-3 mb-0 ${style.mainContainer}`}>
      
       <div className="container ">
         <div className={`row w-100 ${style.mainRow}`}>
@@ -76,7 +76,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`col-lg-6 align-self-center ml-4 ${style.inputbox}`}
+            className={`col-lg-6 align-self-center  ${style.inputbox}`}
           >
             <div className={style.dropdown}>
               <select>
@@ -104,9 +104,9 @@ const Header = () => {
           </div>
 
           <div
-            className={`col-lg-4  align-self-center mt-3 ${style.contact}`}
+            className={`col-lg-4  align-self-center ${style.contact}`}
           >
-            <div className="d-flex flex-column align-item-center">
+            <div className="d-flex flex-column justify-content-center;">
             <div className={style.mobileNo}>
               <span className={style.contact1}> For support ?</span>
             </div>
@@ -154,7 +154,7 @@ const Header = () => {
       <div className="container">
         <div className={`row w-100 ${style.rowContent}`}>
           
-          <div className={`col-lg-3  topnav ${style.dropDown}`} id="myTopnav">
+          <div className={`col-lg-3 align-self-center topnav ${style.dropDown}`} id="myTopnav">
             <select className={style.department}>
               <option>Shop By Departments</option>
               <option>Oil and Ghee</option>
@@ -187,7 +187,7 @@ const Header = () => {
             </div>
           </div>
           <div
-            className={`col-lg-3  d-flex mt-1 ${style.couponCode}`}
+            className={`col-lg-3 d-flex align-items-center ${style.couponCode}`}
           >
             <img className={style.gift} src={gift} />
             <p className={style.textLine}>Get Your Coupon Code</p>

@@ -22,13 +22,13 @@ const HomeScreen = () => {
       <TrendingProduct />
       <Banner />
       <TopOfferedProduct />
-      <RegisterForm/>
-      <BestSellingProduct/>
-      <JustLandedItems/>
-      <OurLatestArticles/>
-      <MobileBanner/>
-      <PeopleFeedBack/>
-      <Services/>
+      <RegisterForm />
+      <BestSellingProduct />
+      <JustLandedItems />
+      <OurLatestArticles />
+      <MobileBanner />
+      <PeopleFeedBack />
+      <Services />
     </div>
   );
 };
