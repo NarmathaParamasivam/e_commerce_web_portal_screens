@@ -50,7 +50,6 @@ height: fit-content;
 .arrow {
   width: 0.5rem;
   height: 0.5rem;
-  margin-top: 0.3rem;
 }
 .dateImg{
   width:12px;
@@ -90,4 +89,15 @@ height: fit-content;
   .title{
     font-size: large;
   }
+}
+@media only screen and (max-width: 320px) and (max-width: 425px){
+.mainTitle{
+  font-size: 15px;
+}
+.carosuelTitle{
+  font-size: 10px;
+}
+.cardStyle{
+  margin:0.5rem;
+}
 }

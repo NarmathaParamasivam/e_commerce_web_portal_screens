@@ -20,8 +20,74 @@ import watermelonJuice from "../../assets/Images/watermelonJuice.png";
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
 const JustLandedItems = () => {
   const JustLandedItems = [
+    {
+      Image: require("../../assets/Images/chips.png"),
+      Title: "Jelly beans exxotics",
+      Unit: "1 UNIT",
+      Point: "4.5",
+      Amount: "18.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "1",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/juice.png"),
+      Title: "Growers cider",
+      Unit: "1 UNIT",
+      Point: "4.0",
+      Amount: "5.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "2",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/mockupgraphs.png"),
+      Title: "Fresh grapes",
+      Unit: "1 UNIT",
+      Point: "4.5",
+      Amount: "6.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "4",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/tomatoketchup.png"),
+      Title: "Heinz tomato ketchup",
+      Unit: "1 UNIT",
+      Point: "5.0",
+      Amount: "9.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "2",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/watermelonJuice.png"),
+      Title: "Sunstar Fresh Melon Juice",
+      Unit: "1 UNIT",
+      Point: "3.5",
+      Amount: "12.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "3",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
     {
       Image: require("../../assets/Images/chips.png"),
       Title: "Jelly beans exxotics",
@@ -86,7 +152,7 @@ const JustLandedItems = () => {
   const [justLandedItems, setJustLandedItems] = useState(JustLandedItems);
   
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div class={Style.headContent}>
         <h4 className={Style.title}>Just Landed Items</h4>
         <div className={Style.sliderbtn2}>
@@ -95,8 +161,14 @@ const JustLandedItems = () => {
         </div>
       </div>
       <div className={Style.productDetails}>
+      <Swiper
+            watchSlidesProgress={true}
+            slidesPerView={5}
+            className="mySwiper"
+          >
         {justLandedItems.map((data,i)=>{
           return(
+            <SwiperSlide>
             <div key={i} className={`card ${Style.cardStyle}`}>
             <div className={`card ${Style.cardImg}`}>
               <div className={"d-flex justify-content-end p-2 "}>
@@ -130,9 +202,10 @@ const JustLandedItems = () => {
               </div>
             </div>
           </div>
-  
+          </SwiperSlide>
           )
         })}
+        </Swiper>
        
         {/* <div className={`card ${Style.cardStyle}`}>
           <div className={`card ${Style.cardImg}`}>

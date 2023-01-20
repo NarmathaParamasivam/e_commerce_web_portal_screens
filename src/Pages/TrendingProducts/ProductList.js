@@ -149,7 +149,7 @@ const ProductList = () => {
 const [product,setProduct]=useState(TrendingProducts);
 
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div className="row">
         <div className={`${Style.productHeader}`}>
           <h4 className={`mb-0 ${Style.title}`}>Trending Product</h4>

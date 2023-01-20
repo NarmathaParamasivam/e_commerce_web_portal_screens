@@ -2,13 +2,16 @@
   display: flex;
   gap: 0.5rem;
   justify-content: flex-start;
-  align-items: center;
 }
 .delivery {
   display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.details {
+  display: flex;
   flex-direction: column;
-
-  gap: 0.2rem;
+  justify-content: flex-end;
 }
 .mainContainer {
   display: flex;
@@ -17,26 +20,27 @@
   margin-bottom: 3rem;
 }
 .iconHeading img {
-    width: 20px !important ;
-    height: 20px !important;
+  width: 20px !important ;
+  height: 20px !important;
 }
 .content {
   font-size: 13px;
   line-height: 1.5rem;
   letter-spacing: 0.4px;
-  margin-left:2rem;
+  /* margin-left:2rem; */
+  margin-bottom: 0rem;
 }
 .title {
   letter-spacing: 1px;
   font-size: 16px;
+  margin-bottom: 0rem;
 }
 
-@media only screen and (max-width: 1024px){
-  .title{
+@media only screen and (max-width: 1024px) {
+  .title {
     font-size: 12px;
   }
-  content{
+  content {
     font-size: 13px;
-  
-}
+  }
 }

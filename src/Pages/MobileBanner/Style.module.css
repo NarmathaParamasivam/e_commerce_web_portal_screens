@@ -3,14 +3,13 @@
   width: 25% !important;
     position: absolute !important;
     z-index: 1;
-    /* bottom: -5px; */
     top: -15%;
     left: 121px;
  
 }
 .mainContainer{
   position: relative;
-  margin-bottom: 7rem;
+ 
   margin-top: 7rem;
 }
 .cardDesign{
@@ -21,6 +20,7 @@
   border:none;
   
 }
+
 .cardText{
   padding: 3rem;
   padding-left: 40%;
@@ -58,8 +58,6 @@
 
 }
 .gpayCard{
-  /* background-color: white;
-  border:1px solid white; */
   border-radius: 0.2rem;
   display: flex;
   flex-direction: row;
@@ -76,11 +74,7 @@
 
 @media only screen and (min-width: 1440px){
   .mobileBanner{
-    /* top: -24% !important;
-    left: 140px !important; */
     width: 23% !important;
-   
-    
   }
 
 }
@@ -99,10 +93,53 @@
 }
 .gPay{
   font-size: small;
+  margin-bottom: 0rem;
 }
 .cardTitle{
   font-size: x-large;
 }
 }
+@media only screen and (min-width: 320px) and (max-width:425px){
+.cardText{
+       padding: 0rem; 
+       padding-left: 8rem;
 
+}
+ .cardTitle {
+  font-size: small;
+    line-height: 20px;
+
+}
+.cardText p{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap;
+}
+.gpayLogo{
+  width: 35%;
+  height: 45%;
+  padding: 0.3rem;
+}
+.gPay{
+  font-size: 10px;
+}
+.gpayCard{
+  margin:0rem;
+  align-items: center;
+}
+.googlePay{
+  padding: 0.2rem;
+}
+.cardDesign{
+  padding: 1rem;
+  height: 35vh;
+}
+.mobileBanner{
+  width: 47% !important;
+  left: -3px;
+  top: -22px;
+}
+}
 

@@ -8,6 +8,7 @@
   line-height: 2rem;
   color:#333333;
   border-radius: 5px;
+  padding:0px 36px;
 }
 .formBody{
   background-color: #E9F3F8;
@@ -17,30 +18,34 @@
 }
 .title{
   font-size: xx-large;
-  line-height: 3rem;
+  line-height:4rem;
   font-family: "Nunito";
   font-weight: 600;
   color: #222222;
+  margin-bottom: 0rem;
+  font-size: xxx-large;
 
 }
 .discount{
-  font-size: xx-large;
-  line-height: 3rem;
+  font-size: xxx-large;
+  line-height: 4rem;
   color:
 #ED8939;
 font-family: 'Nunito'; 
 font-weight: 600;
+margin-bottom: 0rem;
 
 }
 .content{
   line-height: 5rem;
   letter-spacing: 1px;
+  margin-bottom: 48px;
 }
 input{
   width: 23rem;
   border:1px solid gray;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: start;
   
 }
 .subTitle{
@@ -74,4 +79,43 @@ input{
     border-radius: 7px;
     background-color: black;
     color: white;
+    font-size: revert;
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .title{
+     line-height: 0.5rem; 
+   margin-bottom: 0rem;
+     font-size: x-small;
+     display: none;
+}
+
+.discount{
+  display: none;
+}
+.subTitle{
+  display: none;
+}
+
+.form{
+  line-height: 2rem;
+}
+.formBody{
+  height: fit-content;
+  margin-top: 3rem;
+}
+input{
+  width: 15rem !important;
+  font-size: x-small;
+  padding-left: 2rem;
+  
+}
+.regBtn{
+  padding: 3px;
+  font-size: x-small;
+}
+label{
+  font-size: xx-small !important;
+}
+
+
 }

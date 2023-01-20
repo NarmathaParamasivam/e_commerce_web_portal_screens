@@ -19,6 +19,7 @@
     "react-router-dom": "^6.5.0",
     "react-scripts": "^5.0.1",
     "reactstrap": "^9.1.5",
+    "swiper": "^8.4.6",
     "use-mediaquery": "^1.0.1",
     "web-vitals": "^2.1.4"
   },

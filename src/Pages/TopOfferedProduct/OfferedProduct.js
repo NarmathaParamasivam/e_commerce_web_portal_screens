@@ -16,6 +16,12 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
 const OfferedProduct = () => {
   const TopOfferedProduct = [
     {
@@ -93,12 +99,88 @@ const OfferedProduct = () => {
         AddImage: require("../../assets/Images/Vector11.png"),
         AddToCart: "Add To Cart",
       },
+
+      {
+        DiscountPercentage: "-25%",
+        ProductImage: require("../../assets/Images/brittany.png"),
+        Title: "Pacific barista beverage",
+        Unit: "1 UNIT",
+        Image: require("../../assets/Images/Vector13.png"),
+        Point: "4.5",
+        Amount: "12.00",
+        DiscountAmount: "8.00",
+        Sold: "Sold: 30/40",
+        SubImage: require("../../assets/Images/Vector10.png"),
+        Count: "1",
+        AddImage: require("../../assets/Images/Vector11.png"),
+        AddToCart: "Add To Cart",
+      },
+      {
+        DiscountPercentage: "-35%",
+        ProductImage: require("../../assets/Images/tylerNix.png"),
+        Title: "Kombucha local lilikoi",
+        Unit: "1 UNIT",
+        Image: require("../../assets/Images/Vector13.png"),
+        Point: "4.0",
+        Amount: "12.00",
+        DiscountAmount: "6.00",
+        Sold: "Sold: 9/25",
+        SubImage: require("../../assets/Images/Vector10.png"),
+        Count: "4",
+        AddImage: require("../../assets/Images/Vector11.png"),
+        AddToCart: "Add To Cart",
+      },
+      {
+        DiscountPercentage: "-15%",
+        ProductImage: require("../../assets/Images/olga.png"),
+        Title: "Cheese flavoured Lays",
+        Unit: "1 UNIT",
+        Image: require("../../assets/Images/Vector13.png"),
+        Point: "4.5",
+        Amount: "12.00",
+        DiscountAmount: "8.00",
+        Sold: "Sold: 12/60",
+        SubImage: require("../../assets/Images/Vector10.png"),
+        Count: "2",
+        AddImage: require("../../assets/Images/Vector11.png"),
+        AddToCart: "Add To Cart",
+      },
+      {
+          DiscountPercentage: "-39%",
+          ProductImage: require("../../assets/Images/madalyn.png"),
+          Title: "Oat milk barista",
+          Unit: "1 UNIT",
+          Image: require("../../assets/Images/Vector13.png"),
+          Point: "5.0",
+          Amount: "12.00",
+          DiscountAmount: "5.00",
+          Sold: "Sold: 12/35",
+          SubImage: require("../../assets/Images/Vector10.png"),
+          Count: "2",
+          AddImage: require("../../assets/Images/Vector11.png"),
+          AddToCart: "Add To Cart",
+        },
+        {
+          DiscountPercentage: "-12%",
+          ProductImage: require("../../assets/Images/elsa.png"),
+          Title: "Dr. raw relax hearts",
+          Unit: "1 UNIT",
+          Image: require("../../assets/Images/Vector13.png"),
+          Point: "3.5",
+          Amount: "13.00",
+          DiscountAmount: "8.00",
+          Sold: "Sold: 5/25",
+          SubImage: require("../../assets/Images/Vector10.png"),
+          Count: "6",
+          AddImage: require("../../assets/Images/Vector11.png"),
+          AddToCart: "Add To Cart",
+        },
       
   ];
   const [offered, setOfferedt]=useState(TopOfferedProduct);
 
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div class={Styles.headContent}>
         <div className={Styles.title}>
           <h4 className={Styles.mainTitle}>Top offered products</h4>
@@ -119,9 +201,16 @@ const OfferedProduct = () => {
 
       <div className="row mt-3 mb-5">
         <div className={Styles.productDetails}>
+        <Swiper
+            watchSlidesProgress={true}
+            slidesPerView={5}
+            className="mySwiper"
+          >
             {offered.map((data,i)=>{
                 return(
+                  <SwiperSlide>
                     <div key={i} className={`card ${Styles.cardStyle}`}>
+                      
                     <div className={`card ${Styles.cardImg}`}>
                       <div className={"d-flex justify-content-between p-2 "}>
                         <p className={Styles.discountCard}>{data.DiscountPercentage}</p>
@@ -165,11 +254,13 @@ const OfferedProduct = () => {
                         </div>
                       </div>
                     </div>
+                    
                   </div>
+                  </SwiperSlide>
                 )
             })}
          
-
+</Swiper>
           {/* <div className={`card ${Styles.cardStyle}`}>
             <div className={`card ${Styles.cardImg}`}>
               <div className="d-flex justify-content-between p-2">

@@ -10,7 +10,7 @@ import cupCake from "../../assets/Images/cupCake.png";
 
 const Banner = () => {
   return (
-    <div className="container mt-5 mb-5 ">
+    <div className="container mt-5">
       <div className="row">
         <div className={`d-flex gap-4 ${Styles.banner}`}>
         <div className={"col-lg-6"}>

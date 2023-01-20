@@ -16,8 +16,74 @@ import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import deva from "../../assets/Images/deva.png";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
 const ProductList = () => {
   const BestSellingProduct = [
+    {
+      Image: require("../../assets/Images/jar.png"),
+      Title: "Amber Pure Honey",
+      Unit: "1 UNIT",
+      Point: "4.5",
+      Amount: "18.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "1",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/avocado.png"),
+      Title: "Fresh Local Avocado",
+      Unit: "1 KG",
+      Point: "4.0",
+      Amount: "10.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "4",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/pharma.png"),
+      Title: "Pharma Cashew Butter",
+      Unit: "1 UNIT",
+      Point: "4.5",
+      Amount: "19.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "2",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/milk.png"),
+      Title: "Pure Dairy Milk",
+      Unit: "1 UNIT",
+      Point: "5.0",
+      Amount: "8.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "2",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
+    {
+      Image: require("../../assets/Images/deva.png"),
+      Title: "Suzane Creamy Cupcake",
+      Unit: "1 UNIT",
+      Point: "3.5",
+      Amount: "14.00",
+      StarImage: require("../../assets/Images/Vector13.png"),
+      SubImage: require("../../assets/Images/Vector10.png"),
+      Count: "6",
+      AddImage: require("../../assets/Images/Vector11.png"),
+      AddToCart: "Add To Cart",
+    },
     {
       Image: require("../../assets/Images/jar.png"),
       Title: "Amber Pure Honey",
@@ -82,7 +148,7 @@ const ProductList = () => {
   const [bestProduct, setBestProduct] = useState(BestSellingProduct);
   
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div class={Style.headContent}>
         <h4 className={Style.title}>Best Selling Product</h4>
         <div className={Style.sliderbtn2}>
@@ -91,8 +157,14 @@ const ProductList = () => {
         </div>
       </div>
       <div className={Style.productDetails}>
+      <Swiper
+            watchSlidesProgress={true}
+            slidesPerView={5}
+            className="mySwiper"
+          >
         {bestProduct.map((data, i) => {
           return (
+            <SwiperSlide>
             <div key={i} className={`card ${Style.cardStyle}`}>
               <div className={`card ${Style.cardImg}`}>
                 <div className={"d-flex justify-content-end p-2 "}>
@@ -133,9 +205,10 @@ const ProductList = () => {
                 </div>
               </div>
             </div>
+            </SwiperSlide>
           );
         })}
-
+</Swiper>
         {/* <div className={`card ${Style.cardStyle}`}>
           <div className={`card ${Style.cardImg}`}>
             <div className={"d-flex justify-content-end p-2 "}>

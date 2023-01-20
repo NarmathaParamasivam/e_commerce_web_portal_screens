@@ -11,7 +11,17 @@ import Vector8 from "../../assets/Images/Vector8.png";
 import sliderbtn from "../../assets/Images/sliderbtn.png";
 import sliderbtn1 from "../../assets/Images/sliderbtn1.png";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
 const Category = () => {
+
+  
+
+
   const basic = [
     {
       Image: require("../../assets/Images/Broccoli.png"),
@@ -37,11 +47,35 @@ const Category = () => {
       Image: require("../../assets/Images/breadherbflour.png"),
       Title: "Natural Herbs",
     },
+
+    {
+      Image: require("../../assets/Images/breadherbflour.png"),
+      Title: "Natural Herbs",
+    },
+    {
+      Image: require("../../assets/Images/breadherbflour.png"),
+      Title: "Natural Herbs",
+    },
+    {
+      Image: require("../../assets/Images/breadherbflour.png"),
+      Title: "Natural Herbs",
+    },
+    {
+      Image: require("../../assets/Images/breadherbflour.png"),
+      Title: "Natural Herbs",
+    },
+    {
+      Image: require("../../assets/Images/breadherbflour.png"),
+      Title: "Natural Herbs",
+    },
   ];
   const [data, setData] = useState(basic);
 
+ 
+
+
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div className="row">
         <div className={`${Style.categoryTitle}`}>
           <h4 className={`${Style.titleStyle}`}>Category</h4>
@@ -57,16 +91,24 @@ const Category = () => {
           </div>
         </div>
         <div className={Style.categorys}>
-          {data.map((items, i) => {
-            return (
-              <div key={i} className={`card ${Style.categoryCards}`}>
-                <div className={Style.categoryImg}>
-                  <img src={items.Image} />
-                </div>
-                <h6 className={Style.cardTitle}>{items.Title}</h6>
-              </div>
-            );
-          })}
+          <Swiper
+            watchSlidesProgress={true}
+            slidesPerView={6}
+            className="mySwiper"
+          >
+            {data.map((items, i) => {
+              return (
+                <SwiperSlide>
+                  <div key={i} className={`card ${Style.categoryCards}`}>
+                    <div className={Style.categoryImg}>
+                      <img src={items.Image} />
+                    </div>
+                    <h6 className={Style.cardTitle}>{items.Title}</h6>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
 
         {/* <div className={`card ${Style.categoryCards}`}>

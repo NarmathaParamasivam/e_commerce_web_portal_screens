@@ -14,9 +14,10 @@ import style from "./Style.module.css";
 
 const Footer = () => {
   return (
-    <div className="container mb-5">
-      <div className="row align-items-center;">
-        <div className="col-lg-3">
+    <div className="container mt-5 mb-5">
+     
+        <div className={style.footer}>
+        <div className={style.logoContent}>
           <div className={style.mainLogo}>
             <img className={style.footerLogo} src={MainLogo} />
           </div>
@@ -37,8 +38,9 @@ const Footer = () => {
               <img src={utube} />
             </div>
           </div>
-        </div>
-        <div className={`col-lg-2 ${style.quickLinks}`}>
+          </div>
+      <div className={style.footerPage}>
+      <div className={style.footerLink1}>
           <p className={style.fHeader}>Quick Links</p>
           <div className={style.pages}>
             <a href="url">Home</a>
@@ -55,41 +57,48 @@ const Footer = () => {
           <div className={style.pages}>
             <a href="url">Contact Us</a>
           </div>
-        </div>
+          </div>
 
-        <div className={`col-lg-1 ${style.quickLinks}`}>
+          <div className={style.footerLink2}>
           <p className={style.aboutHeader}>About</p>
           <div className={style.pages}>
             <p className={style.aboutContent}>
               How It Work Our Packages Promotions Refer A Friend
             </p>
           </div>
-        </div>
+       </div>
 
-        <div className={`col-lg-2 ${style.quickLinks}`}>
+       <div className={style.footerLink3}>
           <p className={style.helpHeader}>Help Center</p>
           <div className={style.pages}>
             <p className={style.helpContent}>
               Payments Shipping Product Returns FAQs Checkout Other Issues
             </p>
           </div>
-        </div>
-
-        <div className={`col-lg-4 ${style.quickLinks}`}>
+      </div>
+      </div>
+      <div className={style.footerLink4}>
         <p className={style.newsHeader}>Our Newsletter</p>
           <div className={style.pages}>
             <p className={style.newsletterContent}>
             Subscribe to our newsletter to get updates about our grand offers.
             </p>
-          </div>
-          <div className={style.footerInput}>
+            </div>
+            <div className={style.footerInput}>
           <input className={style.inputBox} type="email" placeholder="Enter your email-address" name="email"/>
           <button className={style.btnSend} type="submit">SEND <NearMeIcon className={style.sendIcon}/></button>
           </div>
+          </div>
+        
         </div>
-
+        <div className={`d-flex  justify-content-between ${style.templet}`}>
+        <span className={style.copyWrite}>&#169; 2022 TemplatesJungle. All rights reserved. </span>
+       <span className={style.footerEnd}>Design by 
+      
+       </span> 
       </div>
-    </div>
+      </div>
+    
   );
 };
 export default Footer;

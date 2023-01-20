@@ -22,9 +22,9 @@
   border: none;
   letter-spacing: 1px;
   cursor: pointer;
+  outline:none;
 }
 select {
- 
   cursor: pointer;
 }
 
@@ -33,7 +33,7 @@ select {
 }
 
 .dropdown input {
-  width: 60% !important;
+  width: 80% !important;
   height: 39px;
   border: none;
   position: absolute;
@@ -45,19 +45,17 @@ select {
   font-size: small;
   padding: 7px;
   display: flex;
+  outline: none;
 }
 
 .searchIcon {
   position: absolute;
 }
 .search {
-  /* position: absolute; */
-  position: relative;
-  right: 25px;
-  padding: 3px;
   
-  /* margin-right: 0rem;
-  margin-left: 38.5%; */
+  position: relative;
+  right: 28px;
+  padding: 3px;
 }
 .logo {
   left: 154px;
@@ -161,7 +159,7 @@ select {
 
 /* Bottom Header */
 .gift {
-  width: 9%;
+  width: 8%;
   height: fit-content;
   margin-right: 0.3rem;
 }
@@ -170,14 +168,13 @@ select {
   cursor: pointer;
 }
 .textLine {
-  
-    font-size: 0.8rem;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 0rem;
-    font-weight: bold;
-    font-family: "Poppins";
-    letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 0rem;
+  font-weight: bold;
+  font-family: "Poppins";
+  letter-spacing: 1px;
 }
 .pages {
   display: flex;
@@ -197,6 +194,12 @@ select {
   background-color: #ffc43f;
   color: black;
   letter-spacing: 0.23px;
+  font-size: smaller;
+  padding:0.3rem 0.9rem;
+}
+.btnStyle{
+  font-size: smaller;
+  padding:0.3rem 0.9rem;
 }
 button {
   border: none;
@@ -415,35 +418,25 @@ button {
     margin-bottom: 1px;
   }
 }
-@media only screen and (min-width: 1440px){
-  .search{
+@media only screen and (min-width: 1440px) {
+  .search {
     right: 35px;
   }
-  
-
- 
-
 }
-@media only screen and (max-width: 1024px){
-  .logo{
+@media only screen and (max-width: 1024px) {
+  .logo {
     width: 145px;
     height: 35px;
   }
-  .icons{
+  .icons {
     gap: 5px;
   }
-  .iconContent{
+  .iconContent {
     gap: 1rem;
   }
-  .inputBox
-  {
-  font-size: x-small !important;
- }
+  .inputBox {
+    font-size: x-small !important;
+  }
 }
-@media only screen and (max-width: 1024px){
-  
+@media only screen and (max-width: 1024px) {
 }
-
-
-
-

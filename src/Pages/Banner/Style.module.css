@@ -8,9 +8,8 @@
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  /* margin-top: 2rem; */
 }
-.topBanner{
+.topBanner {
   height: fit-content;
   cursor: pointer;
   margin: 2rem 0rem;
@@ -45,7 +44,6 @@ button.btnStyle {
   background: none;
   color: black;
   border-radius: 0.2rem;
- 
 }
 .btnStyle {
   border: 1px solid #727272;
@@ -129,7 +127,6 @@ button.btnStyle {
   display: flex;
 }
 .banner2Content {
-
   padding-left: 1rem !important;
   padding-top: 2rem !important;
   position: absolute !important;
@@ -155,11 +152,7 @@ button.btnStyle {
 .cardBody3 {
   background-color: #f9ebe7;
 }
-.cardContent2 {
 
-     /* margin-top: 1rem; */
-  
-}
 .bannerTitle {
   font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
@@ -174,124 +167,126 @@ button.btnStyle {
   font-size: 0.7rem;
   letter-spacing: 1px;
 }
-.cardBanner2{
-
+.cardBanner2 {
   display: flex;
-    flex-direction: column;
-    margin: 2rem 0rem;
-    /* margin-top: 1rem; */
-    gap: 17px;
+  flex-direction: column;
+  margin: 2rem 0rem;
+  gap: 17px;
+}
+.swiper-pagination >>> .swiper-pagination-bullet {
+  opacity: 1;
+  border: white solid 1px;
+  background-color: transparent;
 }
 
+.swiper-pagination >>> .swiper-pagination-bullet-active {
+  background-color: white;
+}
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
 @media only screen and (min-width: 1440px) {
- .banner2Content{
+  .banner2Content {
     margin-right: 14rem;
+  }
+  .bannerImg22 {
+    width: 67%;
+  }
+  .backedBanner3 {
+    margin-right: 16rem;
+  }
+  .bannerImage {
+    padding-right: 2rem;
+  }
+  .banner3 img {
+    width: 56%;
+  }
+  .bannerImg33 {
+    width: 55% !important;
+  }
 }
-.bannerImg22{
-  width: 67%;
-}
-.backedBanner3{
-  margin-right: 16rem;
-
-}
-.bannerImage{
-  padding-right: 2rem;
-}
-.banner3 img{
-width:56%;
-}
-.bannerImg33{
-  width:55% !important;
-}
-
-
-}
-@media only screen and (max-width: 1024px){
-  .bannerImg22{
-   
+@media only screen and (max-width: 1024px) {
+  .bannerImg22 {
     width: 92%;
   }
-  .bannerTitle{
+  .bannerTitle {
     font-size: 1.2rem;
   }
-  .freshProduct{
+  .freshProduct {
     font-size: 1.9rem;
   }
-  .bannerImg33{
-    width:79% !important;
+  .bannerImg33 {
+    width: 79% !important;
   }
   .adverticement {
     font-size: x-small;
-
-}
-.background{
-  height: 87vh;
-}
-}
-@media only screen and (min-width: 320px) and (max-width: 425px)
-{
-  .btnStyle{
-    margin-top: 1rem;
-  width: max-content;
-  padding-right: 7px;
-  padding-left: 7px;
-  font-size: x-small;
   }
- 
+  .background {
+    height: 87vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .btnStyle {
+    margin-top: 1rem;
+    width: max-content;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: x-small;
+  }
 
-  .freshProduct{
+  .freshProduct {
     font-size: small;
   }
 
-.bannerImage{
+  .bannerImage {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     padding-left: 2.9rem;
-}
-.percentage{
-  color: #ed8939;
-  font-size: revert;
-}
-.fruit{
-     width: 7rem;
-}
+  }
+  .percentage {
+    color: #ed8939;
+    font-size: revert;
+  }
+  .fruit {
+    width: 7rem;
+  }
 
-
-.bannerImg22{
-  width: 85%;
-
-}
-.banner2Content {
-  padding-left: 1rem !important;
-  padding-top: 1rem !important;
-  margin-right: 9rem;
-}
-.bannerTitle {
-  font-size: 0.8rem;
-}
-.bannerBtn2{
-  font-size: x-small;
-}
-.discount{
-  font-size: small;
-}
-.rectangle{
-  padding-top: 0.6rem;
-  padding-bottom: 0.7rem;
-  padding-right: 0.2rem;
-  width: 20px;
-}
-.bannerImg33{
-  width: 65%;
-
-}
-.backedBanner3 {
-  position: absolute;
-  margin-right: 10rem;
-  margin-top: 1rem;
-}
-.bannerBtn3{
-  background-color: #f9ebe7;
-  font-size: 10px;
-}
+  .bannerImg22 {
+    width: 85%;
+  }
+  .banner2Content {
+    padding-left: 1rem !important;
+    padding-top: 1rem !important;
+    margin-right: 9rem;
+  }
+  .bannerTitle {
+    font-size: 0.8rem;
+  }
+  .bannerBtn2 {
+    font-size: x-small;
+  }
+  .discount {
+    font-size: small;
+  }
+  .rectangle {
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    padding-right: 0.2rem;
+    width: 20px;
+  }
+  .bannerImg33 {
+    width: 65%;
+  }
+  .backedBanner3 {
+    position: absolute;
+    margin-right: 10rem;
+    margin-top: 1rem;
+  }
+  .bannerBtn3 {
+    background-color: #f9ebe7;
+    font-size: 10px;
+  }
+  .background {
+    height: 650px;
+  }
 }

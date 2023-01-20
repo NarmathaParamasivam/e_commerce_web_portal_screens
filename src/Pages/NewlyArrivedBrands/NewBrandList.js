@@ -9,8 +9,34 @@ import Rectangle2 from "../../assets/Images/Rectangle2.png";
 import Rectangle3 from "../../assets/Images/Rectangle3.png";
 import Rectangle4 from "../../assets/Images/Rectangle4.png";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
 const BrandList = () => {
   const basic = [
+    {
+      Image: require("../../assets/Images/Rectangle85.png"),
+      Title: "Amber Jar",
+      SubTitle: "Honey Best Nectar You Wish To Get",
+    },
+    {
+      Image: require("../../assets/Images/Rectangle2.png"),
+      Title: "Pure Herb",
+      SubTitle: "Pure herb the only natural brand",
+    },
+    {
+      Image: require("../../assets/Images/Rectangle3.png"),
+      Title: "Tuna",
+      SubTitle: "Where's tuna? Tuna, clear choice!",
+    },
+    {
+      Image: require("../../assets/Images/Rectangle4.png"),
+      Title: "Hotz",
+      SubTitle: "the one junk food that’s natural",
+    },
     {
       Image: require("../../assets/Images/Rectangle85.png"),
       Title: "Amber Jar",
@@ -35,7 +61,7 @@ const BrandList = () => {
   const [data, setData] = useState(basic);
 
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div className="row">
         <div className={` ${Style.categoryTitle}`}>
           <h4 className={Style.title}>Newly Arrived Brands</h4>
@@ -52,10 +78,16 @@ const BrandList = () => {
         </div>
       </div>
       <div className={`row d-flex flex-row justify-content-between ${Style.newProduct}`}>
+      <Swiper
+            watchSlidesProgress={true}
+            slidesPerView={4}
+            className="mySwiper"
+          >
         {data.map((items, i) => {
           return (
-            <div key={i} className="col-lg-3 col-md-6 col-sm-3 d-flex">
-              <div
+            <SwiperSlide>
+           
+              <div key={i}
                 className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}
               >
                 <div>
@@ -67,9 +99,11 @@ const BrandList = () => {
                   <h5 className={Style.cardTitle}>{items.SubTitle}</h5>
                 </div>
               </div>
-            </div>
+          
+            </SwiperSlide>
           );
         })}
+        </Swiper>
       </div>
 
       {/* <div className="row d-flex flex-row justify-content-between">

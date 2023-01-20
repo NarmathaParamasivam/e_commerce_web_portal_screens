@@ -8,7 +8,7 @@ import HttpsIcon from '@mui/icons-material/Https';
 
 const RegisterForm = () => {
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-lg-12 col-md-12 col-sm-12">
           <div className={`card d-flex flex-row justify-content-evenly py-3  ${Styles.formBody}`}>
@@ -17,8 +17,8 @@ const RegisterForm = () => {
 <h3 className={Styles.title}>Get </h3>
 <h3 className={Styles.discount}>20% Discount </h3>
 </div>
-<h3 className={Styles.title}>on your first</h3>
-<h3 className={`mb-4 {Styles.title}`} >purchase</h3>
+<h3 className={Styles.title}>On Your First</h3>
+<h3 className={`mb-4 ${Styles.title}`} >Purchase</h3>
 <div>
 <h6 className={Styles.subTitle}>Just Sign Up & Register it now to become </h6><h6 className={Styles.subTitle}>member of Templates Jungle.</h6>
 </div></div>
