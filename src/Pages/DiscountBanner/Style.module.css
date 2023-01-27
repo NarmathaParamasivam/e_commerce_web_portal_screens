@@ -156,3 +156,30 @@ button{
 
 
 }
+@media only screen and (max-width: 768px){
+.pexels1{
+  margin-left: 9rem;
+    width: 12rem;
+
+}
+.title{
+  font-size: large;
+  line-height: 10px;
+}
+.content{
+  padding:0rem;
+
+  
+}
+.btnShop{
+  font-size: x-small;
+width: 22%;
+}
+.pexels2{
+  width: 10rem;
+  margin-left: 11rem;
+}
+.cardBanner2{
+ 
+}
+}

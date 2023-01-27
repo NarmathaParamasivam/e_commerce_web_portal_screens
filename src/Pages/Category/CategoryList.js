@@ -18,10 +18,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const Category = () => {
-
-  
-
-
   const basic = [
     {
       Image: require("../../assets/Images/Broccoli.png"),
@@ -71,9 +67,6 @@ const Category = () => {
   ];
   const [data, setData] = useState(basic);
 
- 
-
-
   return (
     <div className="container mt-5">
       <div className="row">
@@ -92,9 +85,29 @@ const Category = () => {
         </div>
         <div className={Style.categorys}>
           <Swiper
+            loop="true"
             watchSlidesProgress={true}
             slidesPerView={6}
+            spaceBetween={10}
             className="mySwiper"
+            // breakpoints={{
+            //   320: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 0,
+            //   },
+            //   640: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 10,
+            //   },
+            //   768: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 10,
+            //   },
+            //   1024: {
+            //     slidesPerView: 6,
+            //     spaceBetween: 10,
+            //   },
+            // }}
           >
             {data.map((items, i) => {
               return (

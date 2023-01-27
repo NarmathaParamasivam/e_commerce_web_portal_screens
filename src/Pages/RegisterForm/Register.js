@@ -13,7 +13,7 @@ const RegisterForm = () => {
         <div className="col-lg-12 col-md-12 col-sm-12">
           <div className={`card d-flex flex-row justify-content-evenly py-3  ${Styles.formBody}`}>
             <div className={Styles.content}>
-                <div className="d-flex gap-3 ">
+                <div className={`d-flex gap-3 ${Styles.content1}`}>
 <h3 className={Styles.title}>Get </h3>
 <h3 className={Styles.discount}>20% Discount </h3>
 </div>

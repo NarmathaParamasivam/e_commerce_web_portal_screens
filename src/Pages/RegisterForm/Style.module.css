@@ -119,3 +119,31 @@ label{
 
 
 }
+@media only screen and (max-width: 768px) {
+  .title{
+    font-size: x-large;
+    line-height: 2rem;
+  }
+  .discount{
+    font-size: x-large;
+
+  }
+  .content1{
+    align-items: center;
+  }
+  .formBody{
+    height: 57vh;
+  }
+  input{
+    width: 16rem;
+  }
+  .regBtn{
+    font-size: small;
+    margin-top: 2rem;
+    line-height: 35px;
+  }
+  .form{
+    line-height: 2rem;
+  }
+ 
+}

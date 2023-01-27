@@ -212,3 +212,23 @@
     margin-bottom: 0rem;
   }
 } 
+@media only screen and (max-width: 768px){
+ 
+ .cardStyle{
+  width: 24%;
+ }
+ .cardPrice{
+  font-size: 10.5px;
+}
+.addCart{
+  font-size: 0.6rem;
+ }
+ .productSubtitle{
+  gap: 0.5rem;
+ }
+
+}
+
+
+
+
