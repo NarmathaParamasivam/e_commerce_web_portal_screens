@@ -1,0 +1,103 @@
+.title{
+  line-height: 2.3rem;
+  font-weight: 600;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  font-size: larger;
+}
+.subTitle{
+  color:#747474;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: "poppins";
+  font-size: small;
+  line-height: 1.5rem;
+}
+.cardStyle{
+border: 1px solid #ffffff;
+box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
+border-radius: 9px;
+height: fit-content;
+
+}
+.imgcardStyle{
+  border: 1px solid #ffffff;
+  border-radius: 9px;
+}
+.mainTitle{
+  font-weight: 600;
+  font-size: x-large;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 0rem;
+ 
+}
+.viewAll {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.4rem;
+  cursor: pointer;
+  align-items: center;
+ }
+
+.carosuelTitle {
+  font-size: 13px;
+  color: #787878;
+  letter-spacing: 1px;
+  width: max-content;
+}
+
+.arrow {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.dateImg{
+  width:12px;
+  height: 12px;
+}
+.clockImg{
+  width:12px;
+  height: 12px;
+}
+.dateContent{
+  border-right: 1rem;
+}
+.date{
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "poppins";
+  color: #9D9D9D;
+  letter-spacing: 1.5px;
+  line-height: 0.5rem;
+  margin-bottom: 0rem;
+  margin-top: 2px;
+  border-right: 2px;
+}
+.minit{
+ 
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "poppins";
+    color:#9D9D9D;
+    letter-spacing: 1.5px;
+    line-height: 0.5rem;
+    margin-bottom: 0rem;
+    margin-top: 2px;
+ 
+}
+@media only screen and (max-width: 1024px){
+  .title{
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 320px) and (max-width: 425px){
+.mainTitle{
+  font-size: 15px;
+}
+.carosuelTitle{
+  font-size: 10px;
+}
+.cardStyle{
+  margin:0.5rem;
+}
+}

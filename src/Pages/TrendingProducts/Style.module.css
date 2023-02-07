@@ -1,0 +1,234 @@
+.productHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.1rem 0rem;
+}
+.headContent {
+  margin-top: 2rem;
+}
+.productSubtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  align-items: center;
+}
+.subTitle {
+  font-size: 0.7rem;
+  color: #858585;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.subTitle:hover {
+  color: black;
+  font-weight: 900;
+}
+.productDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 1.7rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.cardPrice {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.3px;
+}
+.cardPrice:hover {
+  color: #ffa801;
+  font-family: "Poppins";
+
+  font-weight: bold;
+}
+.unitText {
+  color: #9d9d9d;
+  font-family: "poppins";
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-size: small;
+  margin-top: 0.2rem;
+}
+.star {
+  width: 0.8rem;
+  height: 0.7rem;
+}
+.starContent {
+  align-items: center;
+}
+.product {
+  width: 100%;
+  height: 155px;
+}
+.cardStyle {
+  padding: 0.7rem;
+  width: 18%;
+  height: 320px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
+  border-radius: 9px;
+  cursor: pointer;
+}
+.cardImg {
+  background: #f9f9f9;
+  height: 180px;
+  border: 1px;
+}
+.add {
+  width: 17px;
+  height: 16px;
+  background-color: #f2f2f2;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.add:hover {
+  background-color: #e2e2e2;
+}
+.sub:hover {
+  background-color: #e2e2e2;
+}
+.sub {
+  width: 20px;
+  height: 15px;
+  padding-top: 0.7rem;
+  background-color: #f2f2f2;
+  padding: 6px;
+  border-radius: 3px;
+}
+.addCart {
+  font-size: 0.7rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #787878;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.addCart:hover {
+  color: #222222;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+.count {
+  gap: 0.5rem;
+}
+.price {
+  font-weight: 600;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+}
+.rupee {
+  font-size: 15px !important;
+}
+.title {
+  letter-spacing: 1px;
+}
+.fixedPoint {
+  font-size: small;
+  width: fit-content;
+  font-weight: bold;
+}
+.addCartIcon {
+  width: 16px !important;
+  
+  color: #787878;
+}
+.addCartIcon:hover {
+  color: #222222;
+}
+.heartIcon {
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px;
+}
+.line {
+  color: rgb(212, 210, 210);
+}
+@media only screen and (max-width: 1024px) {
+  .productDetails {
+    gap: 7px;
+  }
+  .product {
+    height: 148px;
+  }
+  .cardPrice {
+    font-size: 11px;
+  }
+}
+ @media only screen and (min-width: 320px) and (max-width: 425px) {
+  .productHeader {
+    flex-wrap: wrap;
+    gap:1rem;
+  }
+  .cardStyle {
+    width: 49%;
+    
+  }
+
+  .productDetails {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .productSubtitle {
+    justify-content: left;
+    gap: 0.6rem;
+
+    flex-wrap: wrap;
+  }
+  .subTitle {
+    font-size: 0.7rem;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .addCart {
+    font-size: 0.6rem;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-size: 0.5rem;
+    margin-bottom: 0rem !important;
+  }
+  .product {
+    height: 100px;
+  }
+  .addCartIcon {
+    margin-top: 0px;
+  }
+  .count {
+    gap: 0.3rem;
+
+    align-items: center;
+  }
+  p {
+    margin-bottom: 0rem;
+  }
+} 
+@media only screen and (max-width: 768px){
+ 
+ .cardStyle{
+  width: 24%;
+ }
+ .cardPrice{
+  font-size: 10.5px;
+}
+.addCart{
+  font-size: 0.6rem;
+ }
+ .productSubtitle{
+  gap: 0.5rem;
+ }
+
+}
+
+
+
+

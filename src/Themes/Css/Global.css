@@ -1,0 +1,25 @@
+/* //Banner */
+.swiper-pagination >>> .swiper-pagination-bullet {
+  opacity: 1;
+  border: white solid 1px;
+  background-color: transparent;
+}
+.swiper-pagination >>> .swiper-pagination-bullet-active {
+  background-color: white;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ed8939 !important;
+}
+.swiper-pagination-bullet {
+  height: 10px !important;
+  width: 10px !important;
+  background: #fff;
+  opacity: 100 !important;
+}
+
+/* //categorys */
+.swiper-slide-visible{
+  padding:0.5rem !important;
+}
+
+

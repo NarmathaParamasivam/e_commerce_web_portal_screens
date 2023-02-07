@@ -2,12 +2,12 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Components/Common/HerizondalLayout/Header/Header";
 import Footer from "../Components/Common/HerizondalLayout/Footer/Footer";
-import BannerImage from "../Pages/Banner/BannerImage";
+import HomeScreen from "../HomeScreen/HomeScreen";
 const Layout = () => {
   return (
     <div>
       <Header />
-      <BannerImage/>
+      <HomeScreen />
       <div>
         <Outlet />
       </div>
