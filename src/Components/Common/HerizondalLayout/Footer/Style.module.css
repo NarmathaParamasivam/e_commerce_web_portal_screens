@@ -86,7 +86,12 @@ a:hover {
   font-weight: bold;
   font-size: small;
   line-height: 1.5rem;
+ 
+
 }
+.pages a{
+  color:black;
+} 
 .aboutContent {
 }
 .aboutHeader {
