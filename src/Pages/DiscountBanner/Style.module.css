@@ -23,12 +23,11 @@
 }
 .content {
   line-height: 20px;
- 
+
   line-height: 20px;
   position: absolute;
   padding-left: 1rem;
   justify-content: center;
-  
 }
 .title {
   font-family: "Nunito";
@@ -39,147 +38,130 @@
   letter-spacing: 0.02em;
   color: #222222;
 }
-.mainTitle{
+.mainTitle {
   margin-bottom: 0rem;
 }
-.banner{
+.banner {
   margin: 3rem 0rem;
 }
-.subTitle{
+.subTitle {
   letter-spacing: 0.03em;
   font-weight: 600;
-color: #777777;
-font-family: "poppins";
-font-size: 12px;
-    width: 83%;
+  color: #777777;
+  font-family: "poppins";
+  font-size: 12px;
+  width: 83%;
 }
-.btnShop{
+.btnShop {
   background: #222222;
-border-radius: 4px;
-color:white;
-font-family: "poppins";
-font-size: small;
-width: 33%;
-
+  border-radius: 4px;
+  color: white;
+  font-family: "poppins";
+  font-size: small;
+  width: 33%;
 }
-button{
-  padding:0.5rem;
+button {
+  padding: 0.5rem;
 }
-.card2{
+.card2 {
   width: 49%;
 }
-.cardBanner2{
-  background: #E1F7F9;
+.cardBanner2 {
+  background: #e1f7f9;
   display: flex;
   flex-direction: row;
   padding: 1rem;
   align-items: center;
   width: 98%;
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .pexels1 {
     width: 14.5rem;
-   
-
+  }
+  .pexels2 {
+    width: 12rem;
+  }
 }
-.pexels2{
-width: 12rem;
-
-}
-
-}
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1440px) {
   .pexels1 {
     width: 53%;
     margin-left: 18rem;
-   }
-   .content{
+  }
+  .content {
     padding-left: 2rem;
-   }
-.pexels2{
-  width: 46%;
-margin-left: 18rem ;
-
+  }
+  .pexels2 {
+    width: 46%;
+    margin-left: 18rem;
+  }
 }
-
-}
-@media only screen and (min-width: 320px) and (max-width: 425px){
-  .discount{
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .discount {
     font-size: small;
+  }
+  .title {
+    font-size: smaller;
+  }
+  .subTitle {
+    font-size: 10px;
+  }
+  .btnShop {
+    font-size: x-small;
+    width: 25%;
+  }
+  button {
+    padding: 0.3rem;
+  }
+  .cardBanner1 {
+    width: 72%;
+    padding: 10px;
+  }
+  .banner {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .cardBanner1 {
+    width: 100%;
+  }
+  .pexels1 {
+    width: 70%;
+    margin-left: 7rem;
+  }
+  .pexels2 {
+    width: 55%;
+    margin-left: 9rem;
+  }
+  .content {
+    line-height: 20px;
+    padding-left: 0.3rem;
+  }
+  .card2 {
+    width: 100%;
+  }
+  .subTitle {
+    width: 56%;
+  }
 }
-.title{    font-size: smaller;;
-}
-.subTitle{
-  font-size: 10px;
-}
-.btnShop{
- 
-  font-size: x-small;
-  width: 25%;
-}
-button{
-  padding: 0.3rem;
-}
-.cardBanner1{
-  width: 72%;
-  padding: 10px;
-}
-.banner{
-  flex-wrap: wrap;
-  gap:1rem;
-  
-}
-.cardBanner1 {
-  width: 100%;
-}
-.pexels1{
-  width: 70%;
-  margin-left: 7rem;
-}
-.pexels2{
-  width: 55%;
-  margin-left: 9rem;
-}
-.content{
-
-  line-height: 20px;
-  padding-left: 0.3rem;
-}
-.card2{
-  width: 100%;
-
-}
-.subTitle{
- 
-  width: 56%;
-}
-
-
-}
-@media only screen and (max-width: 768px){
-.pexels1{
-  margin-left: 9rem;
+@media only screen and (max-width: 768px) {
+  .pexels1 {
+    margin-left: 9rem;
     width: 12rem;
-
-}
-.title{
-  font-size: large;
-  line-height: 10px;
-}
-.content{
-  padding:0rem;
-
-  
-}
-.btnShop{
-  font-size: x-small;
-width: 22%;
-}
-.pexels2{
-  width: 10rem;
-  margin-left: 11rem;
-}
-.cardBanner2{
- 
-}
+  }
+  .title {
+    font-size: large;
+    line-height: 10px;
+  }
+  .content {
+    padding: 0rem;
+  }
+  .btnShop {
+    font-size: x-small;
+    width: 22%;
+  }
+  .pexels2 {
+    width: 10rem;
+    margin-left: 11rem;
+  }
+  .cardBanner2 {
+  }
 }
