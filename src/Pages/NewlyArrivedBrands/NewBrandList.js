@@ -77,101 +77,53 @@ const BrandList = () => {
           </div>
         </div>
       </div>
-      <div className={`row d-flex flex-row justify-content-between ${Style.newProduct}`}>
-      <Swiper
-            watchSlidesProgress={true}
-            slidesPerView={4}
-            className="mySwiper"
-            // breakpoints={{
-            //   320: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 10,
-            //   },
-            //   640: {
-            //     slidesPerView: 3,
-            //     spaceBetween: 10,
-            //   },
-            //   768: {
-            //     slidesPerView: 4,
-            //     spaceBetween: 10,
-            //   },
-            //   1024: {
-            //     slidesPerView: 6,
-            //     spaceBetween: 10,
-            //   },
-            // }}
-          >
-        {data.map((items, i) => {
-          return (
-            <SwiperSlide>
-           
-              <div key={i}
-                className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}
-              >
-                <div>
-                  <img className={Style.newBrand} src={items.Image} />
-                </div>
+      <div
+        className={`row d-flex flex-row justify-content-between ${Style.newProduct}`}
+      >
+        <Swiper
+          watchSlidesProgress={true}
+          slidesPerView={4}
+          className="mySwiper"
+          // breakpoints={{
+          //   320: {
+          //     slidesPerView: 2,
+          //     spaceBetween: 10,
+          //   },
+          //   640: {
+          //     slidesPerView: 3,
+          //     spaceBetween: 10,
+          //   },
+          //   768: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 10,
+          //   },
+          //   1024: {
+          //     slidesPerView: 6,
+          //     spaceBetween: 10,
+          //   },
+          // }}
+        >
+          {data.map((items, i) => {
+            return (
+              <SwiperSlide>
+                <div
+                  key={i}
+                  className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}
+                >
+                  <div>
+                    <img className={Style.newBrand} src={items.Image} />
+                  </div>
 
-                <div className="mt-4">
-                  <h6 className={Style.cardSubtitle}>{items.Title}</h6>
-                  <h5 className={Style.cardTitle}>{items.SubTitle}</h5>
+                  <div className="mt-4">
+                    <h6 className={Style.cardSubtitle}>{items.Title}</h6>
+                    <h5 className={Style.cardTitle}>{items.SubTitle}</h5>
+                  </div>
                 </div>
-              </div>
-          
-            </SwiperSlide>
-          );
-        })}
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
-
-      {/* <div className="row d-flex flex-row justify-content-between">
-       
-            <div className="col-lg-3 col-md-6 col-sm-3">
-          <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
-           <div>
-              <img className={Style.newBrand} src={Rectangle85} />
-              </div>
-
-            <div className="mt-4">
-              <h6 className={Style.cardSubtitle}>Amber Jar</h6>
-              <h5 className={Style.cardTitle}> Honey Best Nectar You Wish To Get</h5>
-            </div>
-          </div>
-          </div>
-          </div> */}
-      {/* <div className="col-lg-3 col-md-6 col-sm-3">
-          <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
-            <div>
-              <img className={Style.newBrand} src={Rectangle2} />
-            </div>
-            <div className="mt-4">
-              <h6 className={Style.cardSubtitle}>Pure Herb</h6>
-              <h5 className={Style.cardTitle}>Pure herb the only natural brand</h5>
-            </div>
-          </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-3">
-          <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
-            <div>
-              <img className={Style.newBrand} src={Rectangle3} />
-            </div>
-            <div className="mt-4">
-              <h6 className={Style.cardSubtitle}>Tuna</h6>
-              <h5 className={Style.cardTitle}>Where's tuna? Tuna, clear choice!</h5>
-            </div>
-          </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-3">
-          <div className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}>
-            <div>
-              <img className={Style.newBrand} src={Rectangle4} />
-            </div>
-            <div className="mt-4">
-              <h6 className={Style.cardSubtitle}>Hotz</h6>
-              <h5 className={Style.cardTitle}> the one junk food that’s natural</h5>
-            </div>
-          </div>
-          </div> */}
     </div>
   );
 };

@@ -1,0 +1,276 @@
+.title {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  align-items: center;
+}
+.mainTitle {
+  font-size: x-large;
+  margin-bottom: 0rem;
+}
+.clockImg {
+  width: 14px;
+  height: 13px;
+  margin-top: 2px;
+}
+.clockCard {
+  background: #ffc43f;
+  border-radius: 4px;
+  align-items: center;
+  padding: 1rem;
+}
+.clkContent {
+  letter-spacing: 0.03rem;
+  font-size: small;
+  font-weight: 400;
+}
+.sliderbtn1 {
+  background-color: #f1f1f1;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.4rem;
+  width: auto;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.discountCard {
+  background-color: #a3bf4c;
+  border-radius: 4px;
+  width: 25%;
+  font-family: "poppins";
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 1.2px;
+  font-size: small;
+  color: white;
+  letter-spacing: 2px;
+}
+.sliderbtn1:hover {
+  background-color: #ffc43f;
+}
+.sliderbtn2 {
+  display: flex;
+  justify-content: space-between;
+  height: 1.7rem;
+  width: 33%;
+  gap: 0.5rem;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0rem;
+  align-items: center;
+}
+
+.heartIcon {
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.productHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productSubtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.subTitle {
+  font-size: 0.7rem;
+  color: #858585;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.subTitle:hover {
+  color: black;
+  font-weight: 900;
+}
+.productDetails {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cardPrice {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0.3px;
+}
+.cardPrice:hover {
+  color: #ffa801;
+  font-family: "Poppins";
+  
+  font-weight: bold;
+}
+.unitText {
+  color: #9d9d9d;
+  font-family: "poppins";
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-size: small;
+  margin-top: 0.2rem;
+}
+.star {
+  width: 0.8rem;
+  height: 0.7rem;
+  
+}
+.starContent {
+  align-items: center;
+}
+.product {
+  width: 100%;
+
+  height: 145px;
+}
+.cardStyle {
+  cursor: pointer;
+  padding: 0.7rem;
+  /* width: 18%; */
+  width:100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
+  border-radius: 9px;
+}
+.cardImg {
+  background: #f9f9f9;
+  height: 180px;
+  border: 1px;
+}
+.indian-Rupee {
+  width: 30%;
+}
+.rupee {
+  font-size: 15px !important;
+}
+.add {
+  width: 17px;
+  height: 16px;
+
+  background-color: #f2f2f2;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.add:hover {
+  background-color: #e2e2e2;
+}
+.sub:hover {
+  background-color: #e2e2e2;
+}
+.sub {
+  width: 20px;
+  height: 15px;
+  padding-top: 0.7rem;
+
+  background-color: #f2f2f2;
+  padding: 6px;
+  border-radius: 3px;
+}
+.addCart {
+  font-size: 0.7rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #787878;
+  
+  font-weight: bold;
+  margin-right: 5px;
+
+  margin-bottom: 0rem;
+}
+.addCart:hover {
+  color: #222222;
+  font-family: "Poppins";
+ 
+  font-weight: bold;
+}
+.price {
+  font-weight: 600;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+}
+.title {
+  letter-spacing: 1px;
+}
+.fixedPoint {
+  font-size: small;
+  width: fit-content;
+  font-weight: bold;
+}
+.addCartIcon {
+ 
+  width: 16px !important;
+  color: #787878;
+}
+.addCartIcon:hover {
+  color: #222222;
+}
+.discountValue {
+  display: flex;
+  gap: 0.5rem;
+}
+.value {
+  margin-top: 0.7rem;
+  justify-content: center;
+  font-size: small;
+  color: #a8a8a8;
+}
+.sold {
+  color: #ed8939;
+  font-weight: 600;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  font-size: small;
+  margin-bottom: 0rem;
+  line-height: 28px;
+}
+.addSub {
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cardPrice {
+    font-size: 11px;
+  }
+  .productDetails {
+    gap: 15px;
+  }
+  .addSub {
+    gap: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+  .mainTitle {
+    font-size: 15px;
+}
+.clockCard{
+  display: none !important;
+}
+.cardStyle{
+  padding: 0.9rem;
+  width: 100%;
+  height: 20%;
+}
+
+
+}

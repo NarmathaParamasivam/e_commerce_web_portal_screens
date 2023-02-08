@@ -25,17 +25,17 @@ const RegisterForm = () => {
 <div className={Styles.form}>
     <lable className={Styles.regLable}>Email address</lable>
     <div className="d-flex">
-    {/* <img className={Styles.emailIcon} src={Vector19}/> */}
+  
     <EmailIcon className={Styles.emailIcon}/>
     <input className={Styles.regInput} type="text" placeholder="Enter the emailId..." ></input></div>
     <lable className={Styles.regLable}>Password</lable>
     <div className="d-flex">
-    {/* <img className={Styles.passwordIcon} src={Vector20}/> */}
+   
     <HttpsIcon className={Styles.passwordIcon}/>
     <input className={Styles.regInput} type="text" placeholder="Create a password..." ></input></div>
     <lable className={Styles.regLable}>Repeat Password</lable>
     <div className="d-flex">
-    {/* <img className={Styles.passwordIcon} src={Vector20}/> */}
+   
     <HttpsIcon className={Styles.passwordIcon}/>
     <input className={Styles.regInput} type="text" placeholder="Repeat a password..." ></input></div>
 

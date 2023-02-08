@@ -39,9 +39,6 @@ const Banner = () => {
                 <button className={Styles.btnShop}>SHOP IT</button>
               </div>
               <div className={Styles.bannerImg}>
-                {/* <img className={Styles.iceCream1} src={iceCream} />
-              <img className={Styles.iceCream2} src={deva1} />
-              <img className={Styles.iceCream1} src={iceCream} /> */}
                 <img className={Styles.pexels2} src={cupCake} />
               </div>
             </div>

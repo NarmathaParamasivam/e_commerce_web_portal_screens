@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Style from "./Style.module.css";
 import Group from "../../assets/Images/Group.png";
 import Group4 from "../../assets/Images/Group4.png";
@@ -34,63 +34,24 @@ const Service = () => {
       Discription: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit.",
     },
   ];
-  const [details, setDetails]=useState(Details);
+  const [details, setDetails] = useState(Details);
   return (
     <div className="container mt-5">
       <div className="row">
         <div className={Style.mainContainer}>
-            {details.map((data,i)=>{
-                return(
-                    <div key={i} className={Style.delivery}>
-                    <div className={Style.iconHeading}>
-                      <img clasName={Style.serviceIcon} src={data.Image} />
-                    </div>
-                    <div className={Style.details}>
-                      <h5 className={Style.title}>{data.Title}</h5>
-                      <p className={Style.content}>
-                        {data.Discription}
-                      </p>
-                    </div>
-                  </div>
-                )
-            })}
-        
-          {/* <div className={Style.delivery}>
-            <div className={Style.iconHeading}>
-              <img clasName={Style.serviceIcon} src={Group4} />
-              <h5 className={Style.title}>100% Secure Payment</h5>
-            </div>
-            <p className={Style.content}>
-              Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit.
-            </p>
-          </div>
-          <div className={Style.delivery}>
-            <div className={Style.iconHeading}>
-              <img clasName={Style.servicIicon} src={Group1} />
-              <h5 className={Style.title}>Quality Guarantee</h5>
-            </div>
-            <p className={Style.content}>
-              Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit.
-            </p>
-          </div>
-          <div className={Style.delivery}>
-            <div className={Style.iconHeading}>
-              <img clasName={Style.serviceIcon} src={Group2} />
-              <h5 className={Style.title}>Guaranteed Savings</h5>
-            </div>
-            <p className={Style.content}>
-              Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit.
-            </p>
-          </div>
-          <div className={Style.delivery}>
-            <div className={Style.iconHeading}>
-              <img clasName={Style.serviceIcon} src={Group3} />
-              <h5 className={Style.title}>Daily Offers</h5>
-            </div>
-            <p className={Style.content}>
-              Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit.
-            </p>
-          </div> */}
+          {details.map((data, i) => {
+            return (
+              <div key={i} className={Style.delivery}>
+                <div className={Style.iconHeading}>
+                  <img clasName={Style.serviceIcon} src={data.Image} />
+                </div>
+                <div className={Style.details}>
+                  <h5 className={Style.title}>{data.Title}</h5>
+                  <p className={Style.content}>{data.Discription}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

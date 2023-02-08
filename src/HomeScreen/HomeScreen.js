@@ -12,6 +12,9 @@ import OurLatestArticles from "../Pages/OurLatestArticles/LatestArticles.js";
 import MobileBanner from "../Pages/MobileBanner/MobileBanner.js";
 import PeopleFeedBack from "../Pages/PeopleFeedBack/PeopleFeedBack.js";
 import Services from "../Pages/Services/Service.js";
+import "../Config/Filter.json";
+import ProductCard from "../ProductCard/ProductDetails.js";
+
 
 const HomeScreen = () => {
   return (
@@ -21,14 +24,18 @@ const HomeScreen = () => {
       <NewBrandList />
       <TrendingProduct />
       <Banner />
+     
       <TopOfferedProduct />
       <RegisterForm />
+      
       <BestSellingProduct />
+      
       <JustLandedItems />
       <OurLatestArticles />
       <MobileBanner />
       <PeopleFeedBack />
       <Services />
+
     </div>
   );
 };

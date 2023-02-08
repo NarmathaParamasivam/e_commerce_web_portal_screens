@@ -124,36 +124,7 @@ const Category = () => {
           </Swiper>
         </div>
 
-        {/* <div className={`card ${Style.categoryCards}`}>
-            <div className={Style.categoryImg}>
-              <img src={breadBaguette} />
-            </div>
-            <h6 className={Style.cardTitle}>Breads & Sweets</h6>
-          </div>
-          <div className={`card ${Style.categoryCards}`}>
-            <div className={Style.categoryImg}>
-              <img src={wineGlass} />
-            </div>
-            <h6 className={Style.cardTitle}>Wine Drinks</h6>
-          </div>
-          <div className={`card ${Style.categoryCards}`}>
-            <div className={Style.categoryImg}>
-              <img  src={softDrinks} />
-            </div>
-            <h6 className={Style.cardTitle}>Oil and Ghee</h6>
-          </div>
-          <div className={`card ${Style.categoryCards}`}>
-            <div className={Style.categoryImg}>
-              <img src={animalDrumstrick} />
-            </div>
-            <h6 className={Style.cardTitle}>Raw Meat</h6>
-          </div>
-          <div className={`card ${Style.categoryCards}`}>
-            <div className={Style.categoryImg}>
-              <img src={breadherbflour} />
-            </div>
-            <h6 className={Style.cardTitle}>Natural Herbs</h6>
-          </div> */}
+        
       </div>
     </div>
   );
