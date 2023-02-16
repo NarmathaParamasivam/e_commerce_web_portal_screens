@@ -66,12 +66,15 @@
   justify-content: space-between;
   margin: 3rem 0rem;
   align-items: center;
+ 
 }
 
 .heartIcon {
   background-color: white;
   border-radius: 10px;
   padding: 4px;
+  display: flex;
+  /* fill:red; */
 }
 
 .productHeader {
@@ -97,12 +100,12 @@
   color: black;
   font-weight: 900;
 }
-.productDetails {
-  /* display: flex; */
-  flex-direction: row;
-  justify-content: space-between;
+.productsDetails {
+  display: flex;
+  flex-direction: row !important;
+  /* justify-content: space-between; */
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
 }
 .cardPrice {
   font-family: "Poppins";
@@ -145,11 +148,12 @@
   cursor: pointer;
   padding: 0.7rem;
   /* width: 18%; */
-  width:100%;
+  /* width:100%; */
   height: 100%;
   border: 1px solid #ffffff;
   box-shadow: 0px 5px 22px rgb(0 0 0 / 8%);
   border-radius: 9px;
+  width: 13rem;
 }
 .cardImg {
   background: #f9f9f9;
@@ -226,6 +230,7 @@
 }
 .discountValue {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 .value {
@@ -246,12 +251,16 @@
 .addSub {
   gap: 0.5rem;
 }
+.disCount{
+  display: flex;
+justify-content: space-between;
+}
 
 @media only screen and (max-width: 1024px) {
   .cardPrice {
     font-size: 11px;
   }
-  .productDetails {
+  .productsDetails {
     gap: 15px;
   }
   .addSub {
@@ -267,10 +276,7 @@
   display: none !important;
 }
 .cardStyle{
-  padding: 0.9rem;
-  width: 100%;
   height: 20%;
-}
-
-
+  width: 0% !important;
+ }
 }

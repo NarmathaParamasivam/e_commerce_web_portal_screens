@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProductCard from "../../ProductCard/ProductDetails.js"
+import ProductCard from "../../Components/Common/ProductCard/ProductDetails.js";
 import Style from "./Style.module.css";
 // import jar from "../../assets/Images/jar.png";
 // import pharma from "../../assets/Images/pharma.png";
@@ -18,10 +18,11 @@ import sliderbtn1 from "../../assets/Images/sliderbtn1.png";
 // import deva from "../../assets/Images/deva.png";
 
 // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-// import "swiper/css";
+//Import Swiper styles
+import "swiper/css";
+import { bestSellingProducts } from "../../Config/ProductConfig.js";
 
 const ProductList = () => {
   // const BestSellingProduct = [
@@ -146,8 +147,8 @@ const ProductList = () => {
   //     AddToCart: "Add To Cart",
   //   },
   // ];
-//   const [bestProduct, setBestProduct] = useState(BestSellingProduct);
-
+  //   const [bestProduct, setBestProduct] = useState(BestSellingProduct);
+  const [bestProduct, setBestProduct] = useState(bestSellingProducts);
   return (
     <div className="container mt-5">
       <div class={Style.headContent}>
@@ -157,8 +158,8 @@ const ProductList = () => {
           <img className={Style.sliderbtn1} src={sliderbtn1} />
         </div>
       </div>
-      <ProductCard/>
-      {/* <div className={Style.productDetails}>
+
+      <div className={Style.productDetails}>
         <Swiper
           watchSlidesProgress={true}
           slidesPerView={5}
@@ -167,55 +168,56 @@ const ProductList = () => {
           {bestProduct.map((data, i) => {
             return (
               <SwiperSlide>
-                <div key={i} className={`card ${Style.cardStyle}`}>
-                  <div className={`card ${Style.cardImg}`}>
-                    <div className={"d-flex justify-content-end p-2 "}>
-                      <FavoriteBorderIcon className={Style.heartIcon} />
-                    </div>
-                    <div className="d-flex justify-content-center w-100">
-                      <img className={Style.product} src={data.Image} />
-                    </div>
-                  </div>
-                  <div className="d-flex flex-column">
-                    <p className={Style.cardPrice}>{data.Title}</p>
+                <ProductCard key={i} Data={data} />
+                {/* <div key={i} className={`card ${Style.cardStyle}`}>
+                   <div className={`card ${Style.cardImg}`}>
+                     <div className={"d-flex justify-content-end p-2 "}>
+                       <FavoriteBorderIcon className={Style.heartIcon} />
+                     </div>
+                     <div className="d-flex justify-content-center w-100">
+                     <img className={Style.product} src={data.Image} />
+                     </div>
+                   </div>
+                   <div className="d-flex flex-column">
+                     <p className={Style.cardPrice}>{data.Title}</p>
                     <div className="d-flex flex-row gap-2 align-items-center">
-                      <p className={Style.unitText}>{data.Unit}</p>
-                      <div
-                        className={`d-flex flex-row gap-1 ${Style.starContent}`}
+                       <p className={Style.unitText}>{data.Unit}</p>
+                       <div
+                         className={`d-flex flex-row gap-1 ${Style.starContent}`}
                       >
-                        <img className={Style.star} src={data.StarImage} />
-                        <p className={`mb-0 ${Style.fixedPoint}`}>
-                          {data.Point}
-                        </p>
-                      </div>
-                    </div>
+                         <img className={Style.star} src={data.StarImage} />
+                         <p className={`mb-0 ${Style.fixedPoint}`}>
+                           {data.Point}
+                         </p>
+                       </div>
+                     </div>
 
-                    <p className={Style.price}>
-                      <CurrencyRupeeIcon className={Style.rupee} />
-                      {data.Amount}
-                    </p>
-                    <div className="d-flex flex-row justify-content-between align-item-center mt-1 ">
-                      <div
-                        className={`d-flex flex-row justify-content-between ${Style.addSub}`}
-                      >
-                        <img className={Style.sub} src={data.SubImage} />
-                        <p className="mb-0">{data.Count}</p>
-                        <img className={Style.add} src={data.AddImage} />
-                      </div>
-                      <div
-                        className={`d-flex align-items-center ${Style.mainCart}`}
-                      >
-                        <p className={Style.addCart}>{data.AddToCart}</p>
-                        <ShoppingCartIcon className={Style.addCartIcon} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                     <p className={Style.price}>
+                       <CurrencyRupeeIcon className={Style.rupee} />
+                       {data.Amount}
+                     </p>
+                     <div className="d-flex flex-row justify-content-between align-item-center mt-1 ">
+                       <div
+                         className={`d-flex flex-row justify-content-between ${Style.addSub}`}
+                       >
+                         <img className={Style.sub} src={data.SubImage} />
+                         <p className="mb-0">{data.Count}</p>
+                         <img className={Style.add} src={data.AddImage} />
+                       </div>
+                       <div
+                         className={`d-flex align-items-center ${Style.mainCart}`}
+                       >
+                         <p className={Style.addCart}>{data.AddToCart}</p>
+                         <ShoppingCartIcon className={Style.addCartIcon} />
+                       </div>
+                     </div>
+                   </div>
+                 </div> */}
               </SwiperSlide>
             );
           })}
         </Swiper>
-      </div> */}
+      </div>
     </div>
   );
 };

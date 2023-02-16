@@ -19,13 +19,14 @@ import tomatoketchup from "../../assets/Images/tomatoketchup.png";
 import watermelonJuice from "../../assets/Images/watermelonJuice.png";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import ProductCart from "../../ProductCard/ProductDetails.js";
+import ProductDetails from "../../Components/Common/ProductCard/ProductDetails.js";
+import {justLandedItems} from "../../Config/ProductConfig.js";
 
-// Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
+//Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-// import "swiper/css";
+//Import Swiper styles
+import "swiper/css";
 
 const JustLandedItems = () => {
   // const JustLandedItems = [
@@ -151,7 +152,7 @@ const JustLandedItems = () => {
   //   },
   // ];
   // const [justLandedItems, setJustLandedItems] = useState(JustLandedItems);
-
+const [landedItems, setLandedItems]=useState(justLandedItems);
   return (
     <div className="container mt-5">
       <div class={Style.headContent}>
@@ -161,17 +162,19 @@ const JustLandedItems = () => {
           <img className={Style.sliderbtn1} src={sliderbtn1} />
         </div>
       </div>
-      <ProductCart/>
-      {/* <div className={Style.productDetails}>
+     
+      <div className={Style.productDetails}>
         <Swiper
           watchSlidesProgress={true}
           slidesPerView={5}
           className="mySwiper"
         >
-          {justLandedItems.map((data, i) => {
+
+           {landedItems.map((data, i) => {
             return (
+             
               <SwiperSlide>
-                <div key={i} className={`card ${Style.cardStyle}`}>
+                {/* <div key={i} className={`card ${Style.cardStyle}`}>
                   <div className={`card ${Style.cardImg}`}>
                     <div className={"d-flex justify-content-end p-2 "}>
                       <FavoriteBorderIcon className={Style.heartIcon} />
@@ -213,12 +216,13 @@ const JustLandedItems = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                 <ProductDetails key={i} Data={data}/>
               </SwiperSlide>
             );
-          })}
+          })} 
         </Swiper>
-      </div> */}
+      </div>
     </div>
   );
 };

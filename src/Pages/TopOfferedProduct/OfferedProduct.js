@@ -21,7 +21,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import ProductCard from "../../ProductCard/ProductDetails.js";
+import ProductCard from "../../Components/Common/ProductCard/ProductDetails.js";
+import { topTrendingProducts } from "../../Config/ProductConfig.js";
 
 const OfferedProduct = () => {
   // const TopOfferedProduct = [
@@ -177,7 +178,7 @@ const OfferedProduct = () => {
   //     AddToCart: "Add To Cart",
   //   },
   // ];
-  // const [offered, setOfferedt] = useState(TopOfferedProduct);
+  const [offered, setOfferedt] = useState(topTrendingProducts);
 
   return (
     <div className="container mt-5">
@@ -198,18 +199,21 @@ const OfferedProduct = () => {
           <img className={Styles.sliderbtn1} src={sliderbtn1} />
         </div>
       </div>
-<ProductCard/>
-      {/* <div className="row mt-3 mb-5">
+      {/* <ProductCard /> */}
+      <div className="row mt-3 mb-5">
         <div className={Styles.productDetails}>
           <Swiper
             watchSlidesProgress={true}
             slidesPerView={5}
             className="mySwiper"
           >
+            {/* <ProductCard topTrendingProducts={topTrendingProducts} /> */}
             {offered.map((data, i) => {
               return (
                 <SwiperSlide>
-                  <div key={i} className={`card ${Styles.cardStyle}`}>
+                  <ProductCard key={i} Data={data} />
+
+                  {/* <div key={i} className={`card ${Styles.cardStyle}`}>
                     <div className={`card ${Styles.cardImg}`}>
                       <div className={"d-flex justify-content-between p-2 "}>
                         <p className={Styles.discountCard}>
@@ -259,13 +263,13 @@ const OfferedProduct = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </SwiperSlide>
               );
             })}
           </Swiper>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

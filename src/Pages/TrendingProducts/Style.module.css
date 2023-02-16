@@ -29,9 +29,11 @@
 .productDetails {
   display: flex;
   flex-direction: row;
-  gap: 1.7rem;
+  gap: 1rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
+
 }
 .cardPrice {
   font-family: "Poppins";
