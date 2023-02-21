@@ -38,7 +38,9 @@ const ProductDetails = (props) => {
     setCount(count + 1);
   };
   const decreament = () => {
-    setCount(count - 1);
+    if (count == 0 || count >= 0) {
+      setCount(count - 1);
+    }
   };
 
   return (
