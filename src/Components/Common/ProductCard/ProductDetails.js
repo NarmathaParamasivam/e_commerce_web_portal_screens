@@ -23,6 +23,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import topTrendingProducts from "../../../Config/ProductConfig.js";
 // import AiFillHeart from "react-icons/ai";
+import {getMyWishList} from "../../../Redux/Wishlist/Action";
+import {getaddtocart} from "../../../Redux/AddToCart/Action";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const ProductDetails = (props) => {
   const { Data } = props;
@@ -30,15 +34,22 @@ const ProductDetails = (props) => {
   const [heart, setHeart] = useState(false);
   const [isheart, setIsheart] = useState(false);
   const [count, setCount] = useState(0);
+  const dispatch = useDispatch();
+  const wishlistItems = useSelector((state) => state.wishlistReducer.numOfItems);
+  const addTocartCount = useSelector((state) => state.addTocartReducer.addcart);
+ 
+
   const handleClick = () => {
+   
     setHeart(!heart);
     setIsheart(!isheart);
+    dispatch(getMyWishList(wishlistItems+1));
   };
   const increament = () => {
     setCount(count + 1);
   };
   const decreament = () => {
-    if (count == 0 || count >= 0) {
+    if ( count > 0 ) {
       setCount(count - 1);
     }
   };
@@ -129,7 +140,7 @@ const ProductDetails = (props) => {
                   }}
                 />
               </div>
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center" onClick={() =>{dispatch(getaddtocart(addTocartCount+1))}}>
                 <p className={Styles.addCart}>{Data.AddToCart}</p>
                 <ShoppingCartIcon className={Styles.addCartIcon} />
               </div>

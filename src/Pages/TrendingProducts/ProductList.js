@@ -22,7 +22,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { trendingProducts } from "../../Config/ProductConfig.js";
 
 import ProductDetails from "../../Components/Common/ProductCard/ProductDetails.js";
-import { useDispatch } from "react-redux";
+
 
 const ProductList = () => {
   // const TrendingProducts = [
@@ -150,11 +150,9 @@ const ProductList = () => {
   // ];
   // const [product, setProduct] = useState(TrendingProducts);
   const [product, setProduct] = useState(trendingProducts);
-  const dispatch = useDispatch();
+ 
 
-  const handleClick = () => {
-    dispatch(getMyWishList);
-}
+
 
   return (
     <div className="container mt-5">

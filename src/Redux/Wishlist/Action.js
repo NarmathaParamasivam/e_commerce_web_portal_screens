@@ -1,8 +1,8 @@
-import {GET_MY_WISHLIST,GET_MY_WISHLIST_SUCCESSFUL} from "./ActionType.js"
+import { GET_MY_WISHLIST } from "./ActionType.js"
 
-export const getMyWishList = (customerId) => ({
+export const getMyWishList = (product) => ({
   type: GET_MY_WISHLIST,
-  payload: customerId,
+  payload: product,
 });
 
 // export const getMyWishListSuccessfull = (wishlist) => ({

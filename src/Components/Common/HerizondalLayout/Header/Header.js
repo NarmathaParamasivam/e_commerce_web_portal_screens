@@ -26,12 +26,21 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
 const Header = () => {
   const [position, setPosition] = useState(0); //Badge
-
+  // const wishlistItems = useSelector(
+  //   (state) => state.wishlistReducer.numOfItems
+  // );
+  const wishlistItems = useSelector((state) =>state.wishlistReducer.numOfItems);
+  // console.log(wishlistItems,"items");
+  const addTocartCount = useSelector((state) => state.addTocartReducer.addcart);
+  
   const isMobile = useMediaQuery({ minWidth: 768 });
   const isTabScreen = useMediaQuery({ minWidth: 768 });
-  // const laptopView =  useMediaPredicate("(maxWidth: 1044px)");
+ 
   const badgeStyle = {
     "& .MuiBadge-badge": {
       color: "black",
@@ -120,7 +129,10 @@ const Header = () => {
                       </Badge>
                     </div>
                     <div className={style.heartBadge}>
-                      <Badge sx={badgeStyle} badgeContent={12}>
+                      <Badge
+                        sx={badgeStyle}
+                        badgeContent={wishlistItems}
+                      >
                         <FavoriteRoundedIcon
                           color="black"
                           className={style.icon2}
@@ -128,7 +140,7 @@ const Header = () => {
                       </Badge>
                     </div>
                     <div className={style.cartBadge}>
-                      <Badge sx={badgePosition} badgeContent={22}>
+                      <Badge sx={badgePosition} badgeContent={addTocartCount}>
                         <ShoppingCartRoundedIcon
                           color="black"
                           className={style.icon3}
