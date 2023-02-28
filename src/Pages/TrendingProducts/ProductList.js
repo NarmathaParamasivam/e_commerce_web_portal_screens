@@ -22,137 +22,82 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { trendingProducts } from "../../Config/ProductConfig.js";
 
 import ProductDetails from "../../Components/Common/ProductCard/ProductDetails.js";
-
+import categoryList from "../../Config/CategoryConfig";
+import { topTrendingProducts } from "../../Config/ProductConfig";
 
 const ProductList = () => {
-  // const TrendingProducts = [
-  //   {
-  //     ProductImage: require("../../assets/Images/watermelonJuice.png"),
-  //     Title: "Sunstar Fresh Melon Juice",
-  //     Unit: "1 UNIT",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "4,5",
-  //     Rupee: "18.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "4",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/tomatoes.png"),
-  //     Title: "Fresh Local Tomatoes",
-  //     Unit: "1 KG",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "4.0",
-  //     Rupee: "5.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "2",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/cucumber.png"),
-  //     Title: "Fresh Cucumber",
-  //     Unit: "1 KG",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "4.5",
-  //     Rupee: "6.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "4",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/tomatoketchup.png"),
-  //     Title: "Heinz tomato ketchup",
-  //     Unit: "1 UNIT",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "5.0",
-  //     Rupee: "9.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "2",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/avocado.png"),
-  //     Title: "Local Avocado",
-  //     Unit: "1 KG",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "3.5",
-  //     Rupee: "12.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "3",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/biscuits.png"),
-  //     Title: "Munch Crunchy Cookies",
-  //     Unit: "1 UNIT",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "4.5",
-  //     Rupee: "8.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "1",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/bananas.png"),
-  //     Title: "Fresh Bananas",
-  //     Unit: "1 KG",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "4.0",
-  //     Rupee: "10.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "4",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/orangeJuice.png"),
-  //     Title: "Fresh Orange Juice",
-  //     Unit: "1 UNIT",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "4.5",
-  //     Rupee: "12.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "2",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  //   {
-  //     ProductImage: require("../../assets/Images/milk.png"),
-  //     Title: "Pure Dairy milk",
-  //     Unit: "1 UNIT",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "5.0",
-  //     Rupee: "8.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "2",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
+  //   const [category, setCategory] = useState(subTitle,topTrendingProducts)
 
-  //   {
-  //     ProductImage: require("../../assets/Images/Raspberries.png"),
-  //     Title: "Raspberries",
-  //     Unit: "1 KG",
-  //     Image: require("../../assets/Images/Vector13.png"),
-  //     Point: "3.5",
-  //     Rupee: "14.00",
-  //     SubImage: require("../../assets/Images/Vector10.png"),
-  //     Count: "6",
-  //     AddImage: require("../../assets/Images/Vector11.png"),
-  //     AddToCart: "Add To Cart",
-  //   },
-  // ];
-  // const [product, setProduct] = useState(TrendingProducts);
+  const subTitle = [
+    {
+      id: 7,
+      title: "ALL",
+    },
+    {
+      id: 1,
+      title: "FRUITS & VEGES",
+    },
+    {
+      id: 2,
+      title: "JUICES",
+    },
+    {
+      id: 3,
+      title: "BREADS & SWEETS",
+    },
+    {
+      id: 4,
+      title: "OIL & GHEE",
+    },
+    {
+      id: 5,
+      title: "RAW MEATS",
+    },
+    {
+      id: 6,
+      title: "NATURAL HERBS",
+    },
+  ];
   const [product, setProduct] = useState(trendingProducts);
- 
+  const [subHead, setSubHead] = useState(subTitle);
+  const [active, setIsactive] = useState(false);
 
+  const productList = (id) => {
+    if (id === 7) {
+      setProduct(trendingProducts);
+    } else {
+      const filterProduct = product.filter((list) => {
+        return id === list.categoryId;
+      });
+      console.log(filterProduct, "start");
+      setProduct(filterProduct);
+    }
+  };
 
+  // const productList = () =>{
+  //   if(category.categoryId==1){
+  //     console.log("fruit and veg");
+  //     if(category.categoryId==3){
+  //       console.log("oil and Ghee");
+  //     }else{
+  //       console.log("empty");
+  //     }
+  //   }
+  // const productSubtitle=()=>{
+  //     if(categoryList.categorysId==subTitle.Id){
+  //        return( topTrendingProducts);
+
+  //     }
+  // }
+  //   const filterProducts = () => {
+  //     const myArrayFiltered = topTrendingProducts.filter((elem) => {
+  //       return subTitle.some((ele) => {
+  //         return ele.Id && elem.categoryId === ele.Title && elem.Title;
+  //       });
+  //     });
+  //     console.log(myArrayFiltered, "start");
+  //     return myArrayFiltered;
+  //   };
 
   return (
     <div className="container mt-5">
@@ -160,19 +105,33 @@ const ProductList = () => {
         <div className={`${Style.productHeader}`}>
           <h4 className={`mb-0 ${Style.title}`}>Trending Product</h4>
           <div className={Style.productSubtitle}>
-            <h6 className={Style.subTitle}>ALL</h6>
+            {subHead.map((title, i) => (
+              <h6 
+                key={i}
+                
+                className={`active ${Style.subTitle} `}
+                onClick={() => {setIsactive(true)
+                    productList(title.id)
+                  
+                }}
+              >
+                {title.title}
+              </h6>
+            ))}
 
-            <h6 className={Style.subTitle}>FRUITS & VEGES</h6>
+            {/* <h6 className={Style.subTitle}>ALL</h6>
 
-            <h6 className={Style.subTitle}>JUICES</h6>
+            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>FRUITS & VEGES</h6>
 
-            <h6 className={Style.subTitle}>BREADS & SWEETS</h6>
+            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>JUICES</h6>
 
-            <h6 className={Style.subTitle}>OIL & GHEE</h6>
+            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>BREADS & SWEETS</h6>
 
-            <h6 className={Style.subTitle}>RAW MEATS</h6>
+            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>OIL & GHEE</h6>
 
-            <h6 className={Style.subTitle}>NATURAL HERBS</h6>
+            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>RAW MEATS</h6>
+
+            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>NATURAL HERBS</h6> */}
           </div>
         </div>
       </div>
@@ -180,49 +139,11 @@ const ProductList = () => {
 
       <div className={Style.productDetails}>
         {product.map((data, i) => {
-          return (
-            <ProductDetails key={i} Data={data} />
-            // <div key={i} className={`card ${Style.cardStyle}`}>
-            //   <div className={`card ${Style.cardImg}`}>
-            //     <div className={"d-flex justify-content-end p-2 "}>
-            //       <FavoriteBorderIcon className={Style.heartIcon} />
-            //     </div>
-            //     <img className={Style.product} src={data.ProductImage} />
-            //   </div>
-            //   <div className="d-flex flex-column">
-            //     <p className={Style.cardPrice}>{data.Title}</p>
-            //     <div className="d-flex flex-row gap-2 align-items-center">
-            //       <p className={Style.unitText}>{data.Unit}</p>
-            //       <div className={`d-flex flex-row gap-1 ${Style.starContent}`}>
-            //         <img className={Style.star} src={data.Image} />
-            //         <p className={`mb-0 ${Style.fixedPoint}`}>{data.Point}</p>
-            //       </div>
-            //     </div>
-
-            //     <p className={Style.price}>
-            //       {" "}
-            //       <CurrencyRupeeIcon className={Style.rupee} />
-            //       {data.Rupee}
-            //     </p>
-            //     <div className="d-flex flex-row justify-content-between mt-1">
-            //       <div
-            //         className={`d-flex flex-row justify-content-between     align-items-center ${Style.count}`}
-            //       >
-            //         <img className={Style.sub} src={data.SubImage} />
-            //         <p className="mb-0">{data.Count}</p>
-            //         <img className={Style.add} src={data.AddImage} />
-            //       </div>
-            //       <div className="d-flex align-items-center">
-            //         <p className={`mb-0 ${Style.addCart}`}>{data.AddToCart}</p>
-            //         <ShoppingCartIcon className={Style.addCartIcon} />
-            //       </div>
-            //     </div>
-            //   </div>
-            // </div>
-          );
+          return <ProductDetails key={i} Data={data} />;
         })}
       </div>
     </div>
   );
 };
+
 export default ProductList;

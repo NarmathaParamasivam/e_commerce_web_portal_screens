@@ -31,16 +31,14 @@ import { useEffect } from "react";
 
 const Header = () => {
   const [position, setPosition] = useState(0); //Badge
-  // const wishlistItems = useSelector(
-  //   (state) => state.wishlistReducer.numOfItems
-  // );
-  const wishlistItems = useSelector((state) =>state.wishlistReducer.numOfItems);
-  // console.log(wishlistItems,"items");
+  const wishlistItems = useSelector(
+    (state) => state.wishlistReducer.numOfItems
+  );
   const addTocartCount = useSelector((state) => state.addTocartReducer.addcart);
-  
+
   const isMobile = useMediaQuery({ minWidth: 768 });
   const isTabScreen = useMediaQuery({ minWidth: 768 });
- 
+
   const badgeStyle = {
     "& .MuiBadge-badge": {
       color: "black",
@@ -129,10 +127,7 @@ const Header = () => {
                       </Badge>
                     </div>
                     <div className={style.heartBadge}>
-                      <Badge
-                        sx={badgeStyle}
-                        badgeContent={wishlistItems}
-                      >
+                      <Badge sx={badgeStyle} badgeContent={wishlistItems}>
                         <FavoriteRoundedIcon
                           color="black"
                           className={style.icon2}

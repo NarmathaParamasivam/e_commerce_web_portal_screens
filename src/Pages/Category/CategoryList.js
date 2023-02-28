@@ -20,49 +20,49 @@ import "swiper/css";
 const Category = () => {
   const basic = [
     {
-      Image: require("../../assets/Images/Broccoli.png"),
-      Title: "Fruits & Veges",
+      image: require("../../assets/Images/Broccoli.png"),
+      title: "Fruits & Veges",
     },
     {
-      Image: require("../../assets/Images/breadBaguette.png"),
-      Title: "Breads & Sweets",
+      image: require("../../assets/Images/breadBaguette.png"),
+      title: "Breads & Sweets",
     },
     {
-      Image: require("../../assets/Images/wineGlass.png"),
-      Title: "Wine Drinks",
+      image: require("../../assets/Images/wineGlass.png"),
+      title: "Wine Drinks",
     },
     {
-      Image: require("../../assets/Images/softDrinks.png"),
-      Title: "Oil and Ghee",
+      image: require("../../assets/Images/softDrinks.png"),
+      title: "Oil and Ghee",
     },
     {
-      Image: require("../../assets/Images/animalDrumstrick.png"),
-      Title: "Raw Meat",
+      image: require("../../assets/Images/animalDrumstrick.png"),
+      title: "Raw Meat",
     },
     {
-      Image: require("../../assets/Images/breadherbflour.png"),
-      Title: "Natural Herbs",
+      image: require("../../assets/Images/breadherbflour.png"),
+      title: "Natural Herbs",
     },
 
     {
-      Image: require("../../assets/Images/breadherbflour.png"),
-      Title: "Natural Herbs",
+      image: require("../../assets/Images/breadherbflour.png"),
+      title: "Natural Herbs",
     },
     {
-      Image: require("../../assets/Images/breadherbflour.png"),
-      Title: "Natural Herbs",
+      image: require("../../assets/Images/breadherbflour.png"),
+      title: "Natural Herbs",
     },
     {
-      Image: require("../../assets/Images/breadherbflour.png"),
-      Title: "Natural Herbs",
+      image: require("../../assets/Images/breadherbflour.png"),
+      title: "Natural Herbs",
     },
     {
-      Image: require("../../assets/Images/breadherbflour.png"),
-      Title: "Natural Herbs",
+      image: require("../../assets/Images/breadherbflour.png"),
+      title: "Natural Herbs",
     },
     {
-      Image: require("../../assets/Images/breadherbflour.png"),
-      Title: "Natural Herbs",
+      image: require("../../assets/Images/breadherbflour.png"),
+      title: "Natural Herbs",
     },
   ];
   const [data, setData] = useState(basic);
@@ -114,9 +114,9 @@ const Category = () => {
                 <SwiperSlide>
                   <div key={i} className={`card ${Style.categoryCards}`}>
                     <div className={Style.categoryImg}>
-                      <img src={items.Image} />
+                      <img src={items.image} />
                     </div>
-                    <h6 className={Style.cardTitle}>{items.Title}</h6>
+                    <h6 className={Style.cardTitle}>{items.title}</h6>
                   </div>
                 </SwiperSlide>
               );

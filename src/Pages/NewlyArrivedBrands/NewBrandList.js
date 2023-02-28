@@ -18,44 +18,44 @@ import "swiper/css";
 const BrandList = () => {
   const basic = [
     {
-      Image: require("../../assets/Images/Rectangle85.png"),
-      Title: "Amber Jar",
-      SubTitle: "Honey Best Nectar You Wish To Get",
+      image: require("../../assets/Images/Rectangle85.png"),
+      title: "Amber Jar",
+      subTitle: "Honey Best Nectar You Wish To Get",
     },
     {
-      Image: require("../../assets/Images/Rectangle2.png"),
-      Title: "Pure Herb",
-      SubTitle: "Pure herb the only natural brand",
+      image: require("../../assets/Images/Rectangle2.png"),
+      title: "Pure Herb",
+      subTitle: "Pure herb the only natural brand",
     },
     {
-      Image: require("../../assets/Images/Rectangle3.png"),
-      Title: "Tuna",
-      SubTitle: "Where's tuna? Tuna, clear choice!",
+      image: require("../../assets/Images/Rectangle3.png"),
+      title: "Tuna",
+      subTitle: "Where's tuna? Tuna, clear choice!",
     },
     {
-      Image: require("../../assets/Images/Rectangle4.png"),
-      Title: "Hotz",
-      SubTitle: "the one junk food that’s natural",
+      image: require("../../assets/Images/Rectangle4.png"),
+      title: "Hotz",
+      subTitle: "the one junk food that’s natural",
     },
     {
-      Image: require("../../assets/Images/Rectangle85.png"),
-      Title: "Amber Jar",
-      SubTitle: "Honey Best Nectar You Wish To Get",
+      image: require("../../assets/Images/Rectangle85.png"),
+      title: "Amber Jar",
+      subTitle: "Honey Best Nectar You Wish To Get",
     },
     {
-      Image: require("../../assets/Images/Rectangle2.png"),
-      Title: "Pure Herb",
-      SubTitle: "Pure herb the only natural brand",
+      image: require("../../assets/Images/Rectangle2.png"),
+      title: "Pure Herb",
+      subTitle: "Pure herb the only natural brand",
     },
     {
-      Image: require("../../assets/Images/Rectangle3.png"),
-      Title: "Tuna",
-      SubTitle: "Where's tuna? Tuna, clear choice!",
+      image: require("../../assets/Images/Rectangle3.png"),
+      title: "Tuna",
+      subTitle: "Where's tuna? Tuna, clear choice!",
     },
     {
-      Image: require("../../assets/Images/Rectangle4.png"),
-      Title: "Hotz",
-      SubTitle: "the one junk food that’s natural",
+      image: require("../../assets/Images/Rectangle4.png"),
+      title: "Hotz",
+      subTitle: "the one junk food that’s natural",
     },
   ];
   const [data, setData] = useState(basic);
@@ -111,12 +111,12 @@ const BrandList = () => {
                   className={`card d-flex flex-row justify-conten-between ${Style.cardStyle}`}
                 >
                   <div>
-                    <img className={Style.newBrand} src={items.Image} />
+                    <img className={Style.newBrand} src={items.image} />
                   </div>
 
                   <div className="mt-4">
-                    <h6 className={Style.cardSubtitle}>{items.Title}</h6>
-                    <h5 className={Style.cardTitle}>{items.SubTitle}</h5>
+                    <h6 className={Style.cardSubtitle}>{items.title}</h6>
+                    <h5 className={Style.cardTitle}>{items.subTitle}</h5>
                   </div>
                 </div>
               </SwiperSlide>

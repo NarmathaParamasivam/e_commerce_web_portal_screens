@@ -1,83 +1,57 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./Style.module.css";
-// import TrendingProduct from "../../../Pages/TrendingProducts/ProductList.js";
-// import OfferedProduct from "../../../Pages/TopOfferedProduct/OfferedProduct";
-// import Vector15 from "../../assets/Images/Vector15.png";
-// import sliderbtn from "../../assets/Images/sliderbtn.png";
-// import sliderbtn1 from "../../assets/Images/sliderbtn1.png";
-// import brittany from "../../assets/Images/brittany.png";
-// import tylerNix from "../../assets/Images/tylerNix.png";
-// import olga from "../../assets/Images/olga.png";
-// import madalyn from "../../assets/Images/madalyn.png";
-// import elsa from "../../assets/Images/elsa.png";
-// import Vector14 from "../../assets/Images/Vector14.png";
-// import Vector13 from "../../src/assets/Images/Vector13.png";
-// import Vector10 from "../../assets/Images/Vector10.png";
-// import Vector11 from "../../assets/Images/Vector11.png";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import {topTrendingProducts,trendingProducts,justLandedItems,bestSellingProducts} from "../../../Config/ProductConfig.js";
 import "swiper/css";
 import topTrendingProducts from "../../../Config/ProductConfig.js";
-// import AiFillHeart from "react-icons/ai";
-import {getMyWishList} from "../../../Redux/Wishlist/Action";
-import {getaddtocart} from "../../../Redux/AddToCart/Action";
+import { getMyWishList } from "../../../Redux/Wishlist/Action";
+import { getaddtocart } from "../../../Redux/AddToCart/Action";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
 const ProductDetails = (props) => {
   const { Data } = props;
-  //   let isheart=true;
+
   const [heart, setHeart] = useState(false);
   const [isheart, setIsheart] = useState(false);
   const [count, setCount] = useState(0);
   const dispatch = useDispatch();
-  const wishlistItems = useSelector((state) => state.wishlistReducer.numOfItems);
+  const wishlistItems = useSelector(
+    (state) => state.wishlistReducer.numOfItems
+  );
   const addTocartCount = useSelector((state) => state.addTocartReducer.addcart);
- 
 
   const handleClick = () => {
-   
     setHeart(!heart);
     setIsheart(!isheart);
-    dispatch(getMyWishList(wishlistItems+1));
+    dispatch(getMyWishList(wishlistItems + 1));
   };
   const increament = () => {
     setCount(count + 1);
   };
   const decreament = () => {
-    if ( count > 0 ) {
+    if (count > 0) {
       setCount(count - 1);
     }
   };
 
   return (
-    // <div className="">
     <div className="row mt-3 mb-3">
       <div className={Styles.productsDetails}>
-        {/* <Swiper
-            watchSlidesProgress={true}
-            slidesPerView={5}
-            className="mySwiper"
-          > */}
-        {/* {product.map((data, i) => {
-              console.log("data", data.Image);
-              return ( */}
-        {/* <SwiperSlide> */}
         <div className={`card ${Styles.cardStyle}`}>
           <div className={`card ${Styles.cardImg}`}>
             <div
               className={`p-2 ${Styles.disCount}`}
               style={{
-                justifyContent: Data?.DiscountPercentage
+                justifyContent: Data?.discountPercentage
                   ? "space-between"
                   : "flex-end",
               }}
             >
-              {Data?.DiscountPercentage ? (
+              {Data?.discountPercentage ? (
                 <p className={Styles.discountCard}>{Data.DiscountPercentage}</p>
               ) : null}
               {isheart ? (
@@ -93,32 +67,32 @@ const ProductDetails = (props) => {
                 />
               )}
             </div>
-            <img className={Styles.product} src={Data.ProductImage} />
+            <img className={Styles.product} src={Data.productImage} />
           </div>
           <div className="d-flex flex-column">
-            <p className={Styles.cardPrice}>{Data.Title}</p>
+            <p className={Styles.cardPrice}>{Data.title}</p>
             <div className="d-flex flex-row gap-2 align-items-center">
-              <p className={Styles.unitText}>{Data.Unit}</p>
+              <p className={Styles.unitText}>{Data.unit}</p>
               <div className={`d-flex flex-row gap-1 ${Styles.starContent}`}>
-                <img className={Styles.star} src={Data.Image} />
-                <p className={`mb-0 ${Styles.fixedPoint}`}>{Data.Point}</p>
+                <img className={Styles.star} src={Data.image} />
+                <p className={`mb-0 ${Styles.fixedPoint}`}>{Data.point}</p>
               </div>
             </div>
             <div className={Styles.discountValue}>
-              {Data?.Amount ? (
+              {Data?.amount ? (
                 <del className={Styles.value}>
                   <CurrencyRupeeIcon className={Styles.rupee} />
-                  {Data.Amount}
+                  {Data.amount}
                 </del>
               ) : (
                 ""
               )}
               <p className={Styles.price}>
                 <CurrencyRupeeIcon className={Styles.rupee} />
-                {Data.DiscountAmount}
+                {Data.discountAmount}
               </p>
             </div>
-            <p className={Styles.sold}>{Data.Sold}</p>
+            <p className={Styles.sold}>{Data.sold}</p>
 
             <div className="d-flex flex-row justify-content-between">
               <div
@@ -126,7 +100,7 @@ const ProductDetails = (props) => {
               >
                 <img
                   className={Styles.sub}
-                  src={Data.SubImage}
+                  src={Data.subImage}
                   onClick={() => {
                     decreament();
                   }}
@@ -134,26 +108,26 @@ const ProductDetails = (props) => {
                 <p className="mb-0">{count}</p>
                 <img
                   className={Styles.add}
-                  src={Data.AddImage}
+                  src={Data.addImage}
                   onClick={() => {
                     increament();
                   }}
                 />
               </div>
-              <div className="d-flex align-items-center" onClick={() =>{dispatch(getaddtocart(addTocartCount+1))}}>
-                <p className={Styles.addCart}>{Data.AddToCart}</p>
+              <div
+                className="d-flex align-items-center"
+                onClick={() => {
+                  dispatch(getaddtocart(addTocartCount + 1));
+                }}
+              >
+                <p className={Styles.addCart}>{Data.addTocart}</p>
                 <ShoppingCartIcon className={Styles.addCartIcon} />
               </div>
             </div>
           </div>
         </div>
-        {/* </SwiperSlide> */}
-        {/* );
-            })} */}
-        {/* </Swiper> */}
       </div>
     </div>
-    // </div>
   );
 };
 export default ProductDetails;

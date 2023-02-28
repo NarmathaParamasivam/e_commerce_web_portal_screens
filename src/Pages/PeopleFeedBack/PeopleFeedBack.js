@@ -2,57 +2,57 @@ import React, { useState } from "react";
 import Style from "./Style.module.css";
 
 const PeopleFeedBack = () => {
-  const FeedBack = [
+  const feedBack = [
     {
-      FeedBack: "Blue Diamon Almonds",
+      feedBack: "Blue Diamon Almonds",
     },
     {
-      FeedBack: "Angie’s Boomchickapop Corn",
+      feedBack: "Angie’s Boomchickapop Corn",
     },
     {
-      FeedBack: "Salty kettle Corn",
+      feedBack: "Salty kettle Corn",
     },
     {
-      FeedBack: "Chobani Greek Yogurt",
+      feedBack: "Chobani Greek Yogurt",
     },
     {
-      FeedBack: "Sweet Vanilla Yogurt",
+      feedBack: "Sweet Vanilla Yogurt",
     },
     {
-      FeedBack: "Foster Farms Takeout Crispy wings",
+      feedBack: "Foster Farms Takeout Crispy wings",
     },
     {
-      FeedBack: "Warrior Blend Organic",
+      feedBack: "Warrior Blend Organic",
     },
     {
-      FeedBack: "Encore Seafoods Stuffed Alaskan Salmon",
+      feedBack: "Encore Seafoods Stuffed Alaskan Salmon",
     },
     {
-      FeedBack: "Chao Cheese Creamy",
+      feedBack: "Chao Cheese Creamy",
     },
     {
-      FeedBack: "Chicken Meatballs",
+      feedBack: "Chicken Meatballs",
     },
     {
-      FeedBack: "Werther’s Caramel hard candies",
+      feedBack: "Werther’s Caramel hard candies",
     },
     {
-      FeedBack: "Mate Coffee Creamer",
+      feedBack: "Mate Coffee Creamer",
     },
     {
-      FeedBack: "Pasture Raised chicken eggs",
+      feedBack: "Pasture Raised chicken eggs",
     },
     {
-      FeedBack: "Tree Top Fruit water",
+      feedBack: "Tree Top Fruit water",
     },
     {
-      FeedBack: "Natural Vanilla Light Roast Coffee",
+      feedBack: "Natural Vanilla Light Roast Coffee",
     },
     {
-      FeedBack: "Sweet Vanilla Essence Yogurt",
+      feedBack: "Sweet Vanilla Essence Yogurt",
     },
   ];
-  const [peopleFeedBack, setPeopleFeedBack] = useState(FeedBack);
+  const [peopleFeedBack, setPeopleFeedBack] = useState(feedBack);
   return (
     <div className={`container ${Style.mainContainer}`}>
       <h4 className={Style.title}>People Are Also Looking For</h4>
@@ -61,7 +61,7 @@ const PeopleFeedBack = () => {
           {peopleFeedBack.map((data, i) => {
             return (
               <div className={`card ${Style.cardStyle}`}>
-                <h6>{data.FeedBack}</h6>
+                <h6>{data.feedBack}</h6>
               </div>
             );
           })}

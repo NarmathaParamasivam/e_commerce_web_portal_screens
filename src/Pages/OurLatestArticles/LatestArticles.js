@@ -9,41 +9,41 @@ import Vector25 from "../../assets/Images/Vector25.png";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
 
 const LatestArticles = () => {
-  const LatestArticles = [
+  const latestArticles = [
     {
-      ProductImage: require("../../assets/Images/Rectangle94.png"),
-      DateImage: require("../../assets/Images/Vector24.png"),
-      ClockImg: require("../../assets/Images/Vector25.png"),
-      Date: "12 Jan, 2021",
-      Time: "15 Min",
-      Title: "Right Way To Preserve The Fruits & Other Organics",
-      Discription:
+      productImage: require("../../assets/Images/Rectangle94.png"),
+      dateImage: require("../../assets/Images/Vector24.png"),
+      clockImg: require("../../assets/Images/Vector25.png"),
+      date: "12 Jan, 2021",
+      time: "15 Min",
+      title: "Right Way To Preserve The Fruits & Other Organics",
+      discription:
         "Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit. Aliquet Eleifend Viverra Enim Tincidunt Donec Quam. A in Arcu, Hendrerit Neque Dolor Morbi...",
     },
 
     {
-      ProductImage: require("../../assets/Images/veg2.png"),
-      DateImage: require("../../assets/Images/Vector24.png"),
-      ClockImg: require("../../assets/Images/Vector25.png"),
-      Date: "12 Jan, 2021",
-      Time: "15 Min",
-      Title: "How To Maintain The Freshness Of Vegetables",
-      Discription:
+      productImage: require("../../assets/Images/veg2.png"),
+      dateImage: require("../../assets/Images/Vector24.png"),
+      clockImg: require("../../assets/Images/Vector25.png"),
+      date: "12 Jan, 2021",
+      time: "15 Min",
+      title: "How To Maintain The Freshness Of Vegetables",
+      discription:
         "Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit. Aliquet Eleifend Viverra Enim Tincidunt Donec Quam. A in Arcu, Hendrerit Neque Dolor Morbi...",
     },
 
     {
-      ProductImage: require("../../assets/Images/Rectangle7.png"),
-      DateImage: require("../../assets/Images/Vector24.png"),
-      ClockImg: require("../../assets/Images/Vector25.png"),
-      Date: "12 Jan, 2021",
-      Time: "15 Min",
-      Title: "Right Way To Preserve The Fruits & Other Organics",
-      Discription:
+      productImage: require("../../assets/Images/Rectangle7.png"),
+      dateImage: require("../../assets/Images/Vector24.png"),
+      clockImg: require("../../assets/Images/Vector25.png"),
+      date: "12 Jan, 2021",
+      time: "15 Min",
+      title: "Right Way To Preserve The Fruits & Other Organics",
+      discription:
         "Lorem Ipsum Dolor Sit Amet, Consectetur Adipi Elit. Aliquet Eleifend Viverra Enim Tincidunt Donec Quam. A in Arcu, Hendrerit Neque Dolor Morbi...",
     },
   ];
-  const [articles, setArticles] = useState(LatestArticles);
+  const [articles, setArticles] = useState(latestArticles);
   return (
     <div className="container mt-5">
       <div className="d-flex justify-content-between align-items-center mt-5 mb-5">
@@ -59,24 +59,24 @@ const LatestArticles = () => {
             <div key={i} className={"col-lg-4 col-md-6 col-sm-12"}>
               <div className={`card ${Styles.cardStyle}`}>
                 <div className={`card p-3 ${Styles.imgcardStyle}`}>
-                  <img className="card-img-top" src={data.ProductImage} />
+                  <img className="card-img-top" src={data.productImage} />
                 </div>
                 <div className="card-body">
                   <div className="d-flex justify-content-start gap-3 mb-3">
                     <div className="d-flex align-item-center gap-2">
-                      <img className={Styles.dateImg} src={data.DateImage} />
+                      <img className={Styles.dateImg} src={data.dateImage} />
 
-                      <p className={Styles.date}>{data.Date}</p>
+                      <p className={Styles.date}>{data.date}</p>
                     </div>
                     <div className="d-flex align-item-center gap-2">
-                      <img className={Styles.clockImg} src={data.ClockImg} />
+                      <img className={Styles.clockImg} src={data.clockImg} />
 
-                      <p className={Styles.minit}>{data.Time}</p>
+                      <p className={Styles.minit}>{data.time}</p>
                     </div>
                   </div>
-                  <h4 className={`card-title ${Styles.title}`}>{data.Title}</h4>
+                  <h4 className={`card-title ${Styles.title}`}>{data.title}</h4>
                   <p className={`card-text ${Styles.subTitle}`}>
-                    {data.Discription}
+                    {data.discription}
                   </p>
                 </div>
               </div>

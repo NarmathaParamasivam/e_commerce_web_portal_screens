@@ -4,11 +4,12 @@ const initialState = {
   numOfItems: 0,
 };
 const wishlistReducer = (state = initialState, action) => {
-  switch (action.type){
+  switch (action.type) {
     case GET_MY_WISHLIST:
-    return{
-        ...state,numOfItems:action.payload,
-    }
+      return {
+        ...state,
+        numOfItems: action.payload,
+      };
     default:
       return state;
   }

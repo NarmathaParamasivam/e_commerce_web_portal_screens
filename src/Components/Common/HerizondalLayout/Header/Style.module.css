@@ -38,12 +38,12 @@ select {
   border: none;
   position: absolute;
   font-size: revert;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 0.2rem;
   background-color: #f8f8f8;
   font-family: "Poppins";
   font-size: small;
-  padding: 7px;
+  padding: 10px;
   display: flex;
   outline: none;
 }
