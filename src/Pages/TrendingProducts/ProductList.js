@@ -10,7 +10,6 @@ import Vector13 from "../../assets/Images/Vector13.png";
 import Vector10 from "../../assets/Images/Vector10.png";
 import Vector11 from "../../assets/Images/Vector11.png";
 import Vector14 from "../../assets/Images/Vector14.png";
-
 import biscuits from "../../assets/Images/biscuits.png";
 import bananas from "../../assets/Images/bananas.png";
 import orangeJuice from "../../assets/Images/orangeJuice.png";
@@ -26,8 +25,6 @@ import categoryList from "../../Config/CategoryConfig";
 import { topTrendingProducts } from "../../Config/ProductConfig";
 
 const ProductList = () => {
-  //   const [category, setCategory] = useState(subTitle,topTrendingProducts)
-
   const subTitle = [
     {
       id: 7,
@@ -58,46 +55,23 @@ const ProductList = () => {
       title: "NATURAL HERBS",
     },
   ];
+
   const [product, setProduct] = useState(trendingProducts);
   const [subHead, setSubHead] = useState(subTitle);
-  const [active, setIsactive] = useState(false);
+  const [active, setIsactive] = useState(null);
 
   const productList = (id) => {
     if (id === 7) {
       setProduct(trendingProducts);
     } else {
-      const filterProduct = product.filter((list) => {
+      const filterProduct = trendingProducts.filter((list) => {
         return id === list.categoryId;
       });
       console.log(filterProduct, "start");
       setProduct(filterProduct);
     }
+    setIsactive(true);
   };
-
-  // const productList = () =>{
-  //   if(category.categoryId==1){
-  //     console.log("fruit and veg");
-  //     if(category.categoryId==3){
-  //       console.log("oil and Ghee");
-  //     }else{
-  //       console.log("empty");
-  //     }
-  //   }
-  // const productSubtitle=()=>{
-  //     if(categoryList.categorysId==subTitle.Id){
-  //        return( topTrendingProducts);
-
-  //     }
-  // }
-  //   const filterProducts = () => {
-  //     const myArrayFiltered = topTrendingProducts.filter((elem) => {
-  //       return subTitle.some((ele) => {
-  //         return ele.Id && elem.categoryId === ele.Title && elem.Title;
-  //       });
-  //     });
-  //     console.log(myArrayFiltered, "start");
-  //     return myArrayFiltered;
-  //   };
 
   return (
     <div className="container mt-5">
@@ -106,32 +80,20 @@ const ProductList = () => {
           <h4 className={`mb-0 ${Style.title}`}>Trending Product</h4>
           <div className={Style.productSubtitle}>
             {subHead.map((title, i) => (
-              <h6 
+              <h6
                 key={i}
-                
                 className={`active ${Style.subTitle} `}
-                onClick={() => {setIsactive(true)
-                    productList(title.id)
-                  
+                onClick={() => {
+                  productList(title.id);
+                  setIsactive(title.id);
+                }}
+                style={{
+                  borderBottom: active === title.id ? "#ffa801 solid 3px" : " ",
                 }}
               >
                 {title.title}
               </h6>
             ))}
-
-            {/* <h6 className={Style.subTitle}>ALL</h6>
-
-            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>FRUITS & VEGES</h6>
-
-            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>JUICES</h6>
-
-            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>BREADS & SWEETS</h6>
-
-            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>OIL & GHEE</h6>
-
-            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>RAW MEATS</h6>
-
-            <h6 className={Style.subTitle} onClick={()=>{filterProducts()}}>NATURAL HERBS</h6> */}
           </div>
         </div>
       </div>

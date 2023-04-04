@@ -128,9 +128,10 @@ button.btnStyle {
 }
 .banner2Content {
   padding-left: 1rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   position: absolute;
   margin-right: 10rem !important;
+  color:rgb(77, 58, 87);
 }
 .cardBody {
   background-color: #eef5e4;
@@ -147,7 +148,7 @@ button.btnStyle {
 .backedBanner3 {
   position: absolute;
   margin-right: 12rem !important;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .cardBody3 {
   background-color: #f9ebe7;
@@ -185,7 +186,7 @@ button.btnStyle {
 .swiper-pagination-bullet-active {
   background-color: white !important;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and ( min-width: 1024px),(max-width: 1440px ) {
   .banner2Content {
     margin-right: 14rem;
   }
